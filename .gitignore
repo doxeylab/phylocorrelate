@@ -1,0 +1,6 @@
+.DS_Store
+*.fst
+*.RDS
+credentials.json
+.secret
+genomes.txt

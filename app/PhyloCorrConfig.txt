@@ -2,11 +2,11 @@ URL              = "https://phylocorrelate.uwaterloo.ca/app"
 IndexURL         = "https://phylocorrelate.uwaterloo.ca"
 
 UseBlastp        = FALSE
-BlastpDB         = "/home/benjmtremblay_gmail_com/PhyloCorrProteomes/AllProteomes.faa"
+BlastpDB         = "/home/$USER/phylocorrelate/blastdb/AllProteomes.faa"
 
 UseGmailBlastp   = FALSE
 ServerEmail      = "phylocorrelate@gmail.com"
-AdminEmail       = "benjmtremblay@gmail.com"
-GmailCredentials = "/home/benjmtremblay_gmail_com/PhyloCorrApp3/blastp/credentials.json"
-GmailCache       = "/home/benjmtremblay_gmail_com/PhyloCorrApp3/blastp/.secret"
+AdminEmail       = "phylocorrelate@gmail.com"
+GmailCredentials = "/home/$USER/phylocorrelate/app/blastp/credentials.json"
+GmailCache       = "/home/$USER/phylocorrelate/app/blastp/.secret"
 BlastpThreads    = 2

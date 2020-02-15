@@ -23,7 +23,7 @@ Right now the apps send emails automatically whenever someone submits a message 
 
 Inside the `app` folder is a configuration file, `PhyloCorrConfig.txt`. Editing this can change some of the behaviours of the app. Remember to change the file paths to match your system.
 
-- `URL = "https://phylocorrelate.uwaterloo.ca/app": server app URL
+- `URL = "https://phylocorrelate.uwaterloo.ca/app"`: server app URL
 - `IndexURL = "https://phylocorrelate.uwaterloo.ca"`: server index URL
 - `UseBlastp = FALSE`: `TRUE`/`FALSE`; enable/disable BLAST functionality
 - `BlastpDB = "/home/$USER/phylocorrelate/blastdb/AllProteomes.faa"`: Location of BLAST database

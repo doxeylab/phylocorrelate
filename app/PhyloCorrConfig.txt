@@ -1,4 +1,5 @@
-URL              = "https://www.phylocorrelate.uwaterloo.ca/app"
+URL              = "https://phylocorrelate.uwaterloo.ca/app"
+IndexURL         = "https://phylocorrelate.uwaterloo.ca"
 
 UseBlastp        = FALSE
 BlastpDB         = "/home/benjmtremblay_gmail_com/PhyloCorrProteomes/AllProteomes.faa"

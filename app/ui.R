@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # ui.R
-# Last modified: 2020-02-15 14:06:52 (CET)
+# Last modified: 2020-02-15 14:16:45 (CET)
 # BJM Tremblay
 
 msg("Loading ui.R")
@@ -19,7 +19,7 @@ ui <- function(request) fluidPage(
     collapsible = TRUE,
     title = div(
       HTML(paste0(
-        "<a href='", CONFIGS$URL, "'>PhyloCorrelate</a>"
+        "<a href='", CONFIGS$IndexURL, "'>PhyloCorrelate</a>"
       ))
     ),
 

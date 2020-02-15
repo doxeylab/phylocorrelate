@@ -1,2 +1,5 @@
 - Repo needs a licence
 - Write script to generate data files
+- Need to implement clean up functions so blastp folder doesn't fill up
+  past a certain point ('logs' and 'queries' files, 'results' and 'app'
+  folders)

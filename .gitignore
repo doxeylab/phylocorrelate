@@ -4,3 +4,4 @@
 credentials.json
 .secret
 genomes.txt
+*.swp

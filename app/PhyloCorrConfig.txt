@@ -1,0 +1,11 @@
+URL              = "https://www.phylocorrelate.uwaterloo.ca/app"
+
+UseBlastp        = FALSE
+BlastpDB         = "/home/benjmtremblay_gmail_com/PhyloCorrProteomes/AllProteomes.faa"
+
+UseGmailBlastp   = FALSE
+ServerEmail      = "phylocorrelate@gmail.com"
+AdminEmail       = "benjmtremblay@gmail.com"
+GmailCredentials = "/home/benjmtremblay_gmail_com/PhyloCorrApp3/blastp/credentials.json"
+GmailCache       = "/home/benjmtremblay_gmail_com/PhyloCorrApp3/blastp/.secret"
+BlastpThreads    = 2

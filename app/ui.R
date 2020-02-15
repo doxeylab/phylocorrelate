@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # ui.R
-# Last modified: 2020-02-14 22:39:38 (CET)
+# Last modified: 2020-02-15 14:06:52 (CET)
 # BJM Tremblay
 
 msg("Loading ui.R")
@@ -18,7 +18,9 @@ ui <- function(request) fluidPage(
     position = "fixed-top",
     collapsible = TRUE,
     title = div(
-      HTML("<a href='https://phylocorrelate.uwaterloo.ca'>PhyloCorrelate</a>")
+      HTML(paste0(
+        "<a href='", CONFIGS$URL, "'>PhyloCorrelate</a>"
+      ))
     ),
 
     tabPanel("PFAM",

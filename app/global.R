@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-13 22:05:14 (CET)
+# Last modified: 2020-02-15 14:09:27 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -34,19 +34,24 @@ msg("  ggplot")
 library(ggplot2)
 msg("  reshape2")
 library(reshape2)
+msg("  magrittr")
+library(magrittr)
 msg("  promises")
 library(promises)
 msg("  future")
 suppressPackageStartupMessages(library(future))
 plan(multiprocess)
 
+CONFIGS <- readr::read_lines("PhyloCorrConfig.txt") %>%
+  Filter(function(x) x != "", .) %>%
+  Filter(function(x) !grepl("^\\s+$", x), .) %>%
+  paste0(collapse = ",") %>%
+  paste0("list(", ., ")") %>%
+  parse(text = .) %>%
+  eval()
+
 startBlast <- function() {
-  if (!Sys.info()["user"] %in% c("bjmt", "ben") &&
-      file.exists("blastp/blastp.R") &&
-      !file.exists("blastp/LIVE")) {
-      msg("Missing LIVE file, launching blastp/blastp.R")
-    system("Rscript blastp/blastp.R &")
-  }
+  if (CONFIGS$UseBlastp) system("Rscript blastp/blastp.R &")
 }
 
 BlastpVer <- 3L
@@ -805,20 +810,20 @@ plotMatrixComp <- function(entry, comparison, runs = TRUE, isBlastp = FALSE, bId
   what <- substr(y, 1, 1)
   if (isBlastp) {
     if (is.null(x)) return()
-    x_col <- x
+    x_col <- as.logical(x)
     x <- paste("BLASTP input", bId)
   } else {
-    x_col <- switch(what,
+    x_col <- as.logical(switch(what,
                P = PFAMTable(x),
                T = TIGRFAMTable(x),
                K = KOTable(x)
-             )
+             ))
   }
-  y_col <- switch(what,
+  y_col <- as.logical(switch(what,
              P = PFAMTable(y),
              T = TIGRFAMTable(y),
              K = KOTable(y)
-           )
+           ))
   msg("Making plotMatrixComp for", x, "and", y)
   out <- if (runs) getRuns(x_col, y_col) else matrix(c(x_col, y_col), ncol = 2)
   treesize <- nrow(out)
@@ -851,9 +856,9 @@ checkQuery <- function(x) {
                                "following characters (as well as",
                                "whitespace) are allowed:",
                                "ABCDEFGHIKLMNPQRSTUVWYZX*-")))
-  if (nchar(x) < 5 || nchar(x) > 5000)
+  if (nchar(x) < 5 || nchar(x) > 10000)
     return(list(status = FALSE,
-                reason = paste("Queries must be in between 5-5000 characters",
+                reason = paste("Queries must be in between 5-10000 characters",
                                "long.")))
   return(list(status = TRUE))
 }

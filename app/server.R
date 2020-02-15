@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-12 17:50:46 (CET)
+# Last modified: 2020-02-15 14:13:53 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
@@ -472,6 +472,15 @@ server <- function(input, output, session) {
   })
   observeEvent(input$BLASTP_INPUT_BUTTON, {
     req(input$BLASTP_INPUT_SEQUENCE)
+    if (!CONFIGS$UseBlastp) {
+      showModal(modalDialog( title = "Error",
+        paste(
+          "BLASTP functionality has been disabled. Enable it by editing",
+          "the config file."
+        )
+      ))
+      return()
+    }
     startBlast()
     Id <- getBlastpId(
       input$BLASTP_INPUT_SEQUENCE,

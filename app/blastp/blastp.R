@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-02-14 22:42:09 (CET)
+# Last modified: 2020-02-15 13:57:31 (CET)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis
@@ -17,14 +17,21 @@
 
 BlastpVer <- 3L
 
-AppDir <- "PhyloCorrApp3"
-AppURL <- "https://phylocorrelate.uwaterloo.ca/app/"
-Proteomes <- "~/PhyloCorrProteomes/AllProteomes.faa"
+library(magrittr)
 
-admin_email <- "benjmtremblay@gmail.com"
+CONFIGS <- readr::read_lines("PhyloCorrConfig.txt") %>%
+  Filter(function(x) x != "", .) %>%
+  Filter(function(x) !grepl("^\\s+$", x), .) %>%
+  paste0(collapse = ",") %>%
+  paste0("list(", ., ")") %>%
+  parse(text = .) %>%
+  eval()
 
-queries_columns <- c("JOBID", "EMAIL", "SESSION", "EVALUE",
-                     "PIDENT", "QLENP", "SLENP", "QUERY")
+AppDir <- getwd()
+
+queries_columns <- c(
+  "JOBID", "EMAIL", "SESSION", "EVALUE", "PIDENT", "QLENP", "SLENP", "QUERY"
+)
 BlastpSleepTime <- 5
 
 setwd("~")
@@ -48,34 +55,48 @@ checkDirs()
 
 Date <- function() format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))
 msg <- function(...) {
-  d <- Date()
-  x <- paste0(c(d, ...), collapse = " ")
+  x <- paste0(c(Date(), ...), collapse = " ")
   cat(x, sep = "\n", file = Bdir("logs"), append  = TRUE)
 }
 
-pid <- Sys.getpid()
+msg("Initializing BLASTP process with the following configs")
+msg("  URL              =", CONFIGS$URL)
+msg("  UseBlastp        =", CONFIGS$UseBlastp)
+msg("  BlastpDB         =", CONFIGS$BlastpDB)
+msg("  UseGmailBlastp   =", CONFIGS$UseGmailBlastp)
+msg("  ServerEmail      =", CONFIGS$ServerEmail)
+msg("  AdminEmail       =", CONFIGS$AdminEmail)
+msg("  GmailCredentials =", CONFIGS$AdminEmail)
+msg("  GmailCache       =", CONFIGS$GmailCache)
+msg("  BlastpThreads    =", CONFIGS$BlastpThreads)
 
+msg("  Getting PID")
+pid <- Sys.getpid()
+msg("    PID is:", pid)
+
+msg("  Setting error handler")
 err_handler <- function() {
   msg("Error occurred!")
   cat(geterrmessage(), file = Bdir("logs"), append = TRUE)
   file.remove(Bdir("LIVE"))
-  gmailr::gm_send_message(
-    gmailr::gm_mime() %>%
-      gmailr::gm_from("phylocorrelate@gmail.com") %>%
-      gmailr::gm_to(admin_email) %>%
-      gmailr::gm_subject("PhyloCorrelate BLASTP error") %>%
-      gmailr::gm_text_body(geterrmessage())
-  )
+  if (CONFIGS$UseGmailBlastp)
+    gmailr::gm_send_message(
+      gmailr::gm_mime() %>%
+        gmailr::gm_from(CONFIGS$ServerEmail) %>%
+        gmailr::gm_to(CONFIGS$AdminEmail) %>%
+        gmailr::gm_subject("PhyloCorrelate BLASTP error") %>%
+        gmailr::gm_text_body(geterrmessage())
+    )
   msg("Quitting with pid", pid)
   q()
 }
 
 options(error = err_handler)
 
-msg("Booting up with pid", pid)
-
 dir.create(Bdir("results"), showWarnings = FALSE)
 dir.create(Bdir("app"), showWarnings = FALSE)
+
+msg("  Checking for KILL order")
 if (file.exists(Bdir("KILL"))) {
   msg("Found KILL file, quitting", pid)
   q()
@@ -88,19 +109,31 @@ getOldPid <- function() {
   pid0
 }
 
+msg("  Checking for existing LIVE process")
 if (file.exists(Bdir("LIVE"))) {
   pid0 <- getOldPid()
-  msg("Detected existing LIVE file, checking pid", pid0)
+  msg("    Detected existing LIVE file, checking pid", pid0)
   status = try(ps::ps_status(ps::ps_handle(pid0)), silent = TRUE)
   if (!inherits(status, "try-error")) {
-    msg("pid", pid0, "is running, quitting pid", pid)
+    msg("PID", pid0, "is running, quitting pid", pid)
     q()
   } else {
-    msg("pid", pid0, "couldn't be found, running")
+    msg("    PID", pid0, "couldn't be found, running")
   }
 }
 
 cat(pid, file = Bdir("LIVE"))
+
+msg("  Loading GMail data")
+if (CONFIGS$UseGmailBlastp) {
+  Sys.setenv(GMAILR_APP = CONFIGS$GmailCredentials)
+  gmailr::gm_auth_configure(CONFIGS$GmailCredentials)
+  gmailr::gm_auth(email = TRUE, cache = CONFIGS$GmailCache)
+} else {
+  msg("    GMail disabled")
+}
+
+msg("  Loading preamble")
 
 suppressPackageStartupMessages(library(fst))
 
@@ -158,32 +191,29 @@ testHyper <- function(z, y) {
   )$p.value
 }
 
-msg("Running")
-
-gmailr::gm_auth_configure(Bdir("credentials.json"))
-gmailr::gm_auth(email = TRUE, cache = Bdir(".secret"))
-
 send_mail <- function(Id, email) {
-  gmailr::gm_send_message(
-    gmailr::gm_mime() %>%
-      gmailr::gm_from("phylocorrelate@gmail.com") %>%
-      gmailr::gm_to(email) %>%
-      gmailr::gm_subject(paste("PhyloCorrelate BLASTP job", Id))  %>%
-      gmailr::gm_text_body(paste(
-        "Your job is done! Visit", paste0(AppURL, "?blastp=", Id),
-        "to view your results."
-      ))
-  )
+  if (CONFIGS$UseGmailBlastp)
+    gmailr::gm_send_message(
+      gmailr::gm_mime() %>%
+        gmailr::gm_from(CONFIGS$ServerEmail) %>%
+        gmailr::gm_to(email) %>%
+        gmailr::gm_subject(paste("PhyloCorrelate BLASTP job", Id))  %>%
+        gmailr::gm_text_body(paste(
+          "Your job is done! Visit", paste0(CONFIGS$URL, "/?blastp=", Id),
+          "to view your results."
+        ))
+    )
 }
 
 send_mail_msg <- function(Id, email, msg) {
-  gmailr::gm_send_message(
-    gmailr::gm_mime() %>%
-      gmailr::gm_from("phylocorrelate@gmail.com") %>%
-      gmailr::gm_to(email) %>%
-      gmailr::gm_subject(paste("PhyloCorrelate BLASTP job", Id)) %>%
-      gmailr::gm_text_body(msg)
-  )
+  if (CONFIGS$UseGmailBlastp)
+    gmailr::gm_send_message(
+      gmailr::gm_mime() %>%
+        gmailr::gm_from(CONFIGS$ServerEmail) %>%
+        gmailr::gm_to(email) %>%
+        gmailr::gm_subject(paste("PhyloCorrelate BLASTP job", Id)) %>%
+        gmailr::gm_text_body(msg)
+    )
 }
 
 int2date <- function(x) as.Date(as.POSIXct.numeric(x, origin = "1970-01-01"))
@@ -194,67 +224,65 @@ badBlast <- function(msg, JOBID, oA) {
             compress = FALSE)
 }
 
+msg("Launching main loop")
+
+if (!CONFIGS$UseBlastp) {
+  stop("The blast process should not be run when UseBlastp=FALSE")
+}
+
 ## ----------------------------------------------------------------------------
 
 repeat {
 
+  msg("  Loop start: sleeping")
   Sys.sleep(BlastpSleepTime)
+  msg("  Loop start: done sleeping")
 
   checkDirs()
   dir.create(Bdir(), FALSE)
   dir.create(Mdir(), FALSE)
 
+  msg("  Checking for queries file")
   if (!file.exists(Bdir("queries"))) {
-    msg("No new queries, BREAK")
+    msg("    No queries file, KILL")
     break
   }
+  msg("  Checking for KILL file")
   if (file.exists(Bdir("KILL"))) break
+  msg("  Checking for LIVE file")
   if (!file.exists(Bdir("LIVE"))) {
-    msg("LIVE file is missing, creating new file")
+    msg("    LIVE file is missing, creating new file")
     cat(pid, file = Bdir("LIVE"))
   }
   pid0 <- getOldPid()
   if (pid0 != pid) {
-    msg("Pid in LIVE file doesn't match current process, quitting")
-    send_message(
-      mime(
-        To = admin_email,
-        From = "phylocorrelate@gmail.com",
-        Subject = "PhyloCorrApp/blastp",
-        body = "malformed pid in LIVE file"
-      )
-    )
-    break 
+    stop("PID in LIVE file doesn't match current process, quitting")
   }
 
+  msg("  Loading queries file")
   queries <- suppressMessages(readr::read_tsv(Bdir("queries"), col_names = FALSE))
 
+  msg("  Checking for queries")
   if (nrow(queries) == 0) {
-    msg("No new queries, BREAK")
+    msg("    Empty queries file, KILL")
     break
   }
+  msg("  Checking for right number of columns")
   if (ncol(queries) != length(queries_columns)) {
-    msg("Detected badly formatted queries, moving to misc")
-    send_message(
-      mime(
-        To = admin_email,
-        From = "phylocorrelate@gmail.com",
-        Subject = "PhyloCorrApp/blastp",
-        body = "malformed queries file"
-      )
-    )
     file.copy(from = Bdir("queries"), to = Mdir(paste(Date(), "queries")))
     file.remove(Bdir("queries"))
+    stop("Detected badly formatted queries, moving to misc")
   }
 
   colnames(queries) <- queries_columns
   queries <- queries[!queries$JOBID %in% strtoi(list.files(Adir())), ]
+  msg("  Removing completed queries")
   if (nrow(queries) == 0) {
-    msg("No new queries, BREAK")
+    msg("    No new queries, KILL")
     break
   }
 
-  msg("Running job", queries$JOBID[1])
+  msg("  Running job", queries$JOBID[1])
 
   f <- Bdir("query.faa")
   cat(c(">1", queries$QUERY[1]), file = f, sep = "\n", append = FALSE)
@@ -262,53 +290,55 @@ repeat {
   o <- Rdir(queries$JOBID[1])
   oA <- Adir(queries$JOBID[1])
   qLen <- nchar(queries$QUERY[1])
-  cmd <- paste("blastp -query", f, "-db ", Proteomes,
+  cmd <- paste("blastp -query", f, "-db ", CONFIGS$BlastpDB,
                "-out", o, "-outfmt '6 qseqid sseqid evalue pident length'",
                "-evalue", queries$EVALUE[1],
-               "-max_target_seqs 100000000 -num_threads 2")
+               "-max_target_seqs 100000000 -num_threads",
+               CONFIGS$BlastpThreads)
 
+  msg("  Checking if BLASTP needs to be run")
   if (queries$JOBID[1] %in% strtoi(list.files(Rdir()))) {
-    msg("Detected previous blastp results")
+    msg("    Detected previous blastp results")
   } else {
-    msg("Running blastp")
+    msg("  Running blastp")
     b <- system(cmd)
     if (b != 0) {
-      send_message(
-        mime(
-          To = admin_email,
-          From = "phylocorrelate@gmail.com",
-          Subject = "PhyloCorrApp/blastp",
-          body = paste0("failed blastp run (JOBID#", queries$JOBID, ")")
-        )
-      )
       badBlast("BLASTP_ERROR", queries$JOBID[1], oA)
-      if (queries$EMAIL[1] != "")
-        send_mail_msg(queries$JOBID[1], queries$EMAIL[1],
-                      paste("Sorry, but an error occurred while running blastp.",
-                            "The admin has been notified and a follow-up",
-                            "email will be sent once the issue has been resolved."))
-      next
+      # if (queries$EMAIL[1] != "")
+      #   send_mail_msg(queries$JOBID[1], queries$EMAIL[1],
+      #                 paste("Sorry, but an error occurred while running blastp.",
+      #                       "The admin has been notified and a follow-up",
+      #                       "email will be sent once the issue has been resolved."))
+      stop("Failed blastp run (JOBID#", queries$JOBID, ") ",
+           "[remember to delete placeholer app/ entry]")
     }
-    msg("blastp run successful")
+    msg("    blastp run successful")
   }
 
+  msg("  Loading blastp results")
   res <- suppressMessages(readr::read_tsv(o, col_names = FALSE))
+  msg("    Checking if empty")
   if (nrow(res) == 0) {
+    msg("    No results found")
     badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
     next
   }
 
   colnames(res) <- c("qseqid", "sseqid", "evalue", "pident", "length")
   res <- res[res$pident >= queries$PIDENT[1], ]
+  msg("    Filtering by pident")
   if (nrow(res) == 0) {
+    msg("      No results")
     badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
     next
   }
 
   res$qlenp <- res$length / qLen * 100
   rm(qLen)
+  msg("    Filtering by qlenp")
   res <- res[res$qlenp >= queries$QLENP[1], ]
   if (nrow(res) == 0) {
+    msg("      No results")
     badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
     next
   }
@@ -318,30 +348,34 @@ repeat {
   res$slenp <- as.numeric(res$slenp)
   res$slenp <- res$length / res$slenp * 100
   res <- res[res$slenp >= queries$SLENP[1], ]
+  msg("    Filtering by slenp")
   if (nrow(res) == 0) {
+    msg("      No results")
     badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
     next
   }
 
-  resCounts <- logical(length(genomes))
-  names(resCounts) <- genomes
-  for (i in seq_along(resCounts)) {
-    if (any(grepl(names(resCounts)[i], res$sseqid))) resCounts[i] <- TRUE
-  }
+  msg("  Creating genome table")
+  resCounts <- structure(
+    as.logical(pmatch(genomes, res$sseqid, nomatch = 0)), names = genomes
+  )
 
+  msg("    Checking final count")
   if (sum(resCounts) <= 1) {
+    msg("      Too few")
     badBlast("BLASTP_TOOFEW", queries$JOBID[1], oA)
     next
   }
 
   if (all(resCounts)) {
+    msg("      Too many")
     badBlast("BLASTP_TOOMANY", queries$JOBID[1], oA)
     next
   }
 
-  msg("Running analyses")
+  msg("  Running analyses")
 
-  msg("Comparing to PFAMs ..")
+  msg("    Comparing to PFAMs ..")
 
   PFAMTable <- read_fst(Ddir("PFAMTable.fst"))
 
@@ -364,8 +398,8 @@ repeat {
   rm(PFAM_runs)
   rm(PFAMTable)
 
-  msg("OK")
-  msg("Comparing to TIGRFAMs ..")
+  msg("      OK")
+  msg("    Comparing to TIGRFAMs ..")
 
   TIGRFAMTable <- read_fst(Ddir("TIGRFAMTable.fst"))
 
@@ -388,8 +422,8 @@ repeat {
   rm(TIGRFAM_runs)
   rm(TIGRFAMTable)
 
-  msg("OK")
-  msg("Comparing to KOs ..")
+  msg("      OK")
+  msg("    Comparing to KOs ..")
 
   KOTable <- read_fst(Ddir("KOTable.fst"))
 
@@ -411,29 +445,16 @@ repeat {
   rm(KO_runs)
   rm(KOTable)
 
-  msg("OK")
-  msg("Prepping output ..")
+  msg("      OK")
+  msg("  Prepping output ..")
 
   PFAMCounts <- readRDS(Ddir("PFAMCounts.RDS"))
   PFAMLinks <- readRDS(Ddir("PFAMLinks2.RDS"))
   PFAMDesc <- readRDS(Ddir("PFAMDescriptions.RDS"))
   PFAMButtons <- readRDS(Ddir("PFAMButtons2.RDS"))
 
-  msg("  Making PFAM results")
+  msg("    Making PFAM results")
   
-  msg(class(PFAMLinks))
-  msg(class(PFAMDesc))
-  msg(class(PFAMButtons))
-  msg(class(PFAM_Ov))
-  msg(class(PFAMCounts))
-  msg(class(PFAMCounts - sum(resCounts)))
-  msg(class(PFAM_JC))
-  msg(class(PFAM_rJC))
-  msg(class(PFAM_Hyper))
-  msg(class(PFAM_tdr))
-  msg(class(PFAM_tdr_rhp))
-  msg(class(PFAMs))
-
   PFAM_all <- data.frame(
     Links = PFAMLinks[PFAMs],
     Description = PFAMDesc[PFAMs],
@@ -463,7 +484,7 @@ repeat {
   rm(PFAMDesc)
   rm(PFAMs)
 
-  msg("  Making TIGRFAM results")
+  msg("    Making TIGRFAM results")
 
   TIGRFAMCounts <- readRDS(Ddir("TIGRFAMCounts.RDS"))
   TIGRFAMLinks <- readRDS(Ddir("TIGRFAMLinks2.RDS"))
@@ -499,7 +520,7 @@ repeat {
   rm(TIGRFAMDesc)
   rm(TIGRFAMs)
 
-  msg("  Making KO results")
+  msg("    Making KO results")
 
   KOCounts <- readRDS(Ddir("KOCounts.RDS"))
   KOLinks <- readRDS(Ddir("KOLinks2.RDS"))
@@ -549,7 +570,7 @@ repeat {
     KO = KO_all
   )
 
-  msg("  Saving..")
+  msg("    Saving..")
 
   saveRDS(finalOut, oA, compress = FALSE)
 

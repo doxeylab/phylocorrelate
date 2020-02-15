@@ -9,7 +9,7 @@
 
 ### CRAN
 
-`shiny`, `shinyWidgets`, `DT`, `shinycssloaders`, `igraph`, `plotly`, `visNetwork`, `shinythemes`, `ggplot2`, `reshape2`, `magrittr`, `promises`, `future`, `readr`, `gmailr`, `ps`
+`shiny`, `shinyWidgets`, `DT`, `shinycssloaders`, `igraph`, `plotly`, `visNetwork`, `shinythemes`, `ggplot2`, `reshape2`, `magrittr`, `promises`, `future`, `readr`, `gmailr`, `ps`, `fst`
 
 ### BioConductor (version 10 or later)
 

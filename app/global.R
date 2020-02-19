@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-15 14:09:27 (CET)
+# Last modified: 2020-02-19 18:09:03 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -134,9 +134,6 @@ KORunLens <- function(i = NULL, j = NULL, drop = TRUE) {
 KOPathTDR <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/KORunsPathwayTDR.fst", i, j, drop, KOs)
 }
-KOPathTDRrhp <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/KORunsPathwayTDRrhp.fst", i, j, drop, KOs)
-}
 KOJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/KOJaccardCoef.fst", i, j, drop, KOs)
 }
@@ -165,9 +162,6 @@ PFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
 PFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAMRunsGObpTDR.fst", i, j, drop, PFAMs)
 }
-PFAMGObpTDRrhp <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/PFAMRunsGObpTDRrhp.fst", i, j, drop, PFAMs)
-}
 PFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAMJaccardCoef.fst", i, j, drop, PFAMs)
 }
@@ -194,10 +188,8 @@ TIGRFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAM_RunsLen.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/TIGRFAMRunsGObpTDR.fst", i, j, drop, TIGRFAMs)
-}
-TIGRFAMGObpTDRrhp <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/TIGRFAMRunsGObpTDRrhp.fst", i, j, drop, TIGRFAMs)
+  # getDat("data/TIGRFAMRunsGObpTDR.fst", i, j, drop, TIGRFAMs)
+  getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAMJaccardCoef.fst", i, j, drop, TIGRFAMs)
@@ -244,7 +236,6 @@ getPFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(PFAMRunJaccardCoef(, entry), 3),
     rHyperP = PFAMRunHyperP(, entry),
     PMF = PFAMGObpTDR(, entry),
-    # PMF2 = PFAMGObpTDRrhp(, entry),
     row.names = PFAMs
   )
   o <- o[order(o$rJC, decreasing = TRUE), ]
@@ -264,10 +255,9 @@ getTIGRFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(TIGRFAMRunJaccardCoef(, entry), 3),
     rHyperP = TIGRFAMRunHyperP(, entry),
     PMF = TIGRFAMGObpTDR(, entry),
-    # PMF2 = TIGRFAMGObpTDRrhp(, entry),
     row.names = TIGRFAMs
   )
-  o <- o[order(o$rJC, decreasing = TRUE), ]
+  o <- o[order(o$PMF, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -284,7 +274,6 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(KORunJaccardCoef(, entry), 3),
     rHyperP = KORunHyperP(, entry),
     PMF = KOPathTDR(, entry),
-    # PMF2 = KOPathTDRrhp(, entry),
     row.names = KOs
   )
   o <- o[order(o$rJC, decreasing = TRUE), ]

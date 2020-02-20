@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-20 21:37:01 (CET)
+# Last modified: 2020-02-21 00:08:43 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
@@ -834,7 +834,8 @@ server <- function(input, output, session) {
     "PFAM" = FALSE,
     "Results - KO" = FALSE,
     "Results - TIGRFAM" = FALSE,
-    "Results - PFAM" = FALSE
+    "Results - PFAM" = FALSE,
+    "BLASTP_INPUT_TAB" = TRUE
   )
 
   observeEvent(input$NAVBARPG, {

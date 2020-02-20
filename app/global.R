@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-20 21:22:16 (CET)
+# Last modified: 2020-02-21 00:05:47 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -134,7 +134,8 @@ KORunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/KO_RunsLen.fst", i, j, drop, KOs)
 }
 KOPathTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/KORunsPathwayTDR.fst", i, j, drop, KOs)
+  # getDat("data/KORunsPathwayTDR.fst", i, j, drop, KOs)
+  getDat("data/KO_PMF_OccDiffvsrHyperP.fst", i, j, drop, KOs)
 }
 KOJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/KOJaccardCoef.fst", i, j, drop, KOs)
@@ -162,7 +163,8 @@ PFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAM_RunsLen.fst", i, j, drop, PFAMs)
 }
 PFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  getDat("data/PFAMRunsGObpTDR.fst", i, j, drop, PFAMs)
+  # getDat("data/PFAMRunsGObpTDR.fst", i, j, drop, PFAMs)
+  getDat("data/PFAM_PMF_OccDiffvsrHyperP.fst", i, j, drop, PFAMs)
 }
 PFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAMJaccardCoef.fst", i, j, drop, PFAMs)
@@ -191,7 +193,7 @@ TIGRFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
 }
 TIGRFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
   # getDat("data/TIGRFAMRunsGObpTDR.fst", i, j, drop, TIGRFAMs)
-  getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP2.fst", i, j, drop, TIGRFAMs)
+  getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP3.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAMJaccardCoef.fst", i, j, drop, TIGRFAMs)
@@ -240,7 +242,7 @@ getPFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     PMF = PFAMGObpTDR(, entry),
     row.names = PFAMs
   )
-  o <- o[order(o$rJC, decreasing = TRUE), ]
+  o <- o[order(o$PMF, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -278,7 +280,7 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     PMF = KOPathTDR(, entry),
     row.names = KOs
   )
-  o <- o[order(o$rJC, decreasing = TRUE), ]
+  o <- o[order(o$PMF, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -1474,7 +1476,7 @@ PFAMTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching Function")
+      th("PMF",  title = "Probability of a Matching GO:BP Term")
     )
   )
 ))
@@ -1493,7 +1495,7 @@ TIGRFAMTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching Function")
+      th("PMF",  title = "Probability of a Matching GO:BP Term")
     )
   )
 ))
@@ -1512,7 +1514,7 @@ KEGGTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching Function")
+      th("PMF",  title = "Probability of a Matching Pathway")
     )
   )
 ))

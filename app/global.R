@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-19 18:09:03 (CET)
+# Last modified: 2020-02-20 21:22:16 (CET)
 # BJM Tremblay
 
 msg <- function(...) {
@@ -20,6 +20,8 @@ msg("  DT")
 suppressPackageStartupMessages(library(DT))
 msg("  shinycssloaders")
 library(shinycssloaders)
+msg("  shinyjs")
+suppressPackageStartupMessages(library(shinyjs))
 msg("  igraph")
 suppressPackageStartupMessages(library(igraph))
 msg("  plotly")
@@ -189,7 +191,7 @@ TIGRFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
 }
 TIGRFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
   # getDat("data/TIGRFAMRunsGObpTDR.fst", i, j, drop, TIGRFAMs)
-  getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP.fst", i, j, drop, TIGRFAMs)
+  getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP2.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAMJaccardCoef.fst", i, j, drop, TIGRFAMs)
@@ -1283,7 +1285,7 @@ make_list_globals <- function(fam, input = list(),
 
   if (!is.null(out$runs)) out$runs <- out$runs == "Runs-adjusted"
   if (!is.null(out$rHyperP)) out$rHyperP <- 10^(-out$rHyperP)
-  
+
   out
 
 }
@@ -1291,7 +1293,7 @@ make_list_globals <- function(fam, input = list(),
 make_tab_main <- function(fam, blastp = FALSE) {
 
   ff <- function(x) paste0(x, if (blastp) "_BLASTP_" else "_", fam)
-  
+
   tagList(
 
     br(),
@@ -1323,11 +1325,11 @@ make_tab_main <- function(fam, blastp = FALSE) {
           ),
           sliderInput(
             ff("GLOBAL_FILTER_MAX_OCCDIFF"), "Maximum OccDiff",
-            min = 0, max = 27372, value = 5000, step = 1, ticks = TRUE
+            min = 0, max = 27372, value = 27372, step = 1, ticks = TRUE
           ),
           sliderInput(
             ff("GLOBAL_FILTER_MIN_JC"), "Minimum JC",
-            min = 0, max = 1, value = 0.25, step = 0.01, ticks = TRUE
+            min = 0, max = 1, value = 0, step = 0.01, ticks = TRUE
           ),
           sliderInput(
             ff("GLOBAL_FILTER_MIN_RJC"), "Minimum rJC",
@@ -1336,11 +1338,11 @@ make_tab_main <- function(fam, blastp = FALSE) {
           sliderInput(
             ff("GLOBAL_FILTER_MAX_RHYPERP"),
             "Maximum -log10(rHyperP)",
-            min = 0, max = 320, value = 10, step = 1, ticks = TRUE
+            min = 0, max = 320, value = 0, step = 1, ticks = TRUE
           ),
           sliderInput(
             ff("GLOBAL_FILTER_MIN_PMF"), "Minimum PMF",
-            min = 0, max = 1, value = 0, step = 0.01, ticks = TRUE
+            min = 0, max = 1, value = 0.5, step = 0.01, ticks = TRUE
           )
         ),
         tabPanel("Tab Filters",
@@ -1353,7 +1355,7 @@ make_tab_main <- function(fam, blastp = FALSE) {
       tabsetPanel(
         tabPanel("Correlation Table",
           br(),
-          if (!blastp) tags$em("Click on PFAM IDs to use them as query."),
+          if (!blastp) tags$em("Click on family IDs to use them as query."),
           br(), br(),
           DT::dataTableOutput(ff("MAIN_CORR_TABLE")),
           value = ff("TAB_MAIN_CORR_TABLE")

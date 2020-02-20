@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-15 14:13:53 (CET)
+# Last modified: 2020-02-20 21:37:01 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
@@ -819,6 +819,38 @@ server <- function(input, output, session) {
         }
       }
     )
+  })
+
+  #-----------------------------------------------------------------------------
+  # Loading indicators
+
+  # msg("hide")
+  # Sys.sleep(3)
+  # hide(id = "UI_KO_LOADING", anim = TRUE, animType = "fade")
+
+  TAB_HAS_LOADED <- reactiveValues(
+    "KEGG Orthologs" = FALSE,
+    "TIGRFAM" = FALSE,
+    "PFAM" = FALSE,
+    "Results - KO" = FALSE,
+    "Results - TIGRFAM" = FALSE,
+    "Results - PFAM" = FALSE
+  )
+
+  observeEvent(input$NAVBARPG, {
+    req(input$NAVBARPG)
+    if (!TAB_HAS_LOADED[[input$NAVBARPG]]) {
+      Sys.sleep(3)
+      hide(anim = TRUE, animType = "fade", id = switch(input$NAVBARPG,
+        "KEGG Orthologs" = "UI_KO_LOADING",
+        "TIGRFAM" = "UI_TIGRFAM_LOADING",
+        "PFAM" = "UI_PFAM_LOADING",
+        "Results - KO" = "UI_BLASTP_KO_LOADING",
+        "Results - TIGRFAM" = "UI_BLASTP_TIGRFAM_LOADING",
+        "Results - PFAM" = "UI_BLASTP_PFAM_LOADING"
+      ))
+      TAB_HAS_LOADED[[input$NAVBARPG]] <- TRUE
+    }
   })
 
 }

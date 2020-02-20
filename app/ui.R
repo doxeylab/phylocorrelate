@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # ui.R
-# Last modified: 2020-02-15 14:16:45 (CET)
+# Last modified: 2020-02-20 21:36:15 (CET)
 # BJM Tremblay
 
 msg("Loading ui.R")
@@ -23,16 +23,22 @@ ui <- function(request) fluidPage(
       ))
     ),
 
-    tabPanel("PFAM",
-      uiOutput("UI_PFAM")
+    tabPanel("KEGG Orthologs",
+      useShinyjs(),
+      div(id = "UI_KO_LOADING", h2("Loading...")),
+      uiOutput("UI_KO")
     ),
 
     tabPanel("TIGRFAM",
+      useShinyjs(),
+      div(id = "UI_TIGRFAM_LOADING", h2("Loading...")),
       uiOutput("UI_TIGRFAM")
     ),
 
-    tabPanel("KEGG Orthologs",
-      uiOutput("UI_KO")
+    tabPanel("PFAM",
+      useShinyjs(),
+      div(id = "UI_PFAM_LOADING", h2("Loading...")),
+      uiOutput("UI_PFAM")
     ),
 
     navbarMenu("BLASTP",
@@ -41,18 +47,24 @@ ui <- function(request) fluidPage(
         uiOutput("UI_BLASTP_INPUT")
       , value = "BLASTP_INPUT_TAB"),
 
-      tabPanel("Results - PFAM",
-        uiOutput("UI_BLASTP_PFAM")
+      tabPanel("Results - KO",
+        useShinyjs(),
+        div(id = "UI_BLASTP_KO_LOADING", h2("Loading...")),
+        uiOutput("UI_BLASTP_KO")
       ),
 
       tabPanel("Results - TIGRFAM",
+        useShinyjs(),
+        div(id = "UI_BLASTP_TIGRFAM_LOADING", h2("Loading...")),
         uiOutput("UI_BLASTP_TIGRFAM")
       ),
 
-      tabPanel("Results - KO",
-        uiOutput("UI_BLASTP_KO")
+      tabPanel("Results - PFAM",
+        useShinyjs(),
+        div(id = "UI_BLASTP_PFAM_LOADING", h2("Loading...")),
+        uiOutput("UI_BLASTP_PFAM")
       )
-      
+
     ),
 
     tabPanel("Help",

@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # ui.R
-# Last modified: 2020-02-20 21:36:15 (CET)
+# Last modified: 2020-02-22 11:43:42 (CET)
 # BJM Tremblay
 
 msg("Loading ui.R")
@@ -22,6 +22,8 @@ ui <- function(request) fluidPage(
         "<a href='", CONFIGS$IndexURL, "'>PhyloCorrelate</a>"
       ))
     ),
+
+    # profvis_ui("profiler"),
 
     tabPanel("KEGG Orthologs",
       useShinyjs(),

@@ -1,8 +1,10 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-21 00:05:47 (CET)
+# Last modified: 2020-02-22 11:43:35 (CET)
 # BJM Tremblay
+
+# library(profvis)
 
 msg <- function(...) {
   time <- format(as.POSIXlt(Sys.time(), tz = "America/Toronto"))

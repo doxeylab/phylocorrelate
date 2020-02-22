@@ -1,12 +1,13 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-22 11:28:49 (CET)
+# Last modified: 2020-02-22 11:43:38 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
 server <- function(input, output, session) {
 
+  # callModule(profvis_server, "profiler")
   # Rprof(
   #   strftime(Sys.time(), "%Y-%m-%d-%H-%M-%S.Rprof"),
   #   interval = 0.01, line.profiling = TRUE,

@@ -1,14 +1,24 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-21 00:08:43 (CET)
+# Last modified: 2020-02-22 11:28:49 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
 server <- function(input, output, session) {
 
+  # Rprof(
+  #   strftime(Sys.time(), "%Y-%m-%d-%H-%M-%S.Rprof"),
+  #   interval = 0.01, line.profiling = TRUE,
+  #   gc.profiling = TRUE, memory.profiling = TRUE
+  # )
+
   msg("Session start:", session$token)
-  onSessionEnded({function() msg("Session stop:", session$token)})
+  onSessionEnded({function() {
+      msg("Session stop:", session$token)
+      # Rprof(NULL)
+    }
+  })
 
   THRESH_MSG_ID <- character()
 
@@ -824,10 +834,6 @@ server <- function(input, output, session) {
   #-----------------------------------------------------------------------------
   # Loading indicators
 
-  # msg("hide")
-  # Sys.sleep(3)
-  # hide(id = "UI_KO_LOADING", anim = TRUE, animType = "fade")
-
   TAB_HAS_LOADED <- reactiveValues(
     "KEGG Orthologs" = FALSE,
     "TIGRFAM" = FALSE,
@@ -841,7 +847,7 @@ server <- function(input, output, session) {
   observeEvent(input$NAVBARPG, {
     req(input$NAVBARPG)
     if (!TAB_HAS_LOADED[[input$NAVBARPG]]) {
-      Sys.sleep(3)
+      # Sys.sleep(3)
       hide(anim = TRUE, animType = "fade", id = switch(input$NAVBARPG,
         "KEGG Orthologs" = "UI_KO_LOADING",
         "TIGRFAM" = "UI_TIGRFAM_LOADING",

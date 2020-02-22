@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # ui.R
-# Last modified: 2020-02-22 11:43:42 (CET)
+# Last modified: 2020-02-22 12:33:18 (CET)
 # BJM Tremblay
 
 msg("Loading ui.R")
@@ -27,19 +27,28 @@ ui <- function(request) fluidPage(
 
     tabPanel("KEGG Orthologs",
       useShinyjs(),
-      div(id = "UI_KO_LOADING", h2("Loading...")),
+      div(
+        id = "UI_KO_LOADING", h2("Loading..."),
+        style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+      ),
       uiOutput("UI_KO")
     ),
 
     tabPanel("TIGRFAM",
       useShinyjs(),
-      div(id = "UI_TIGRFAM_LOADING", h2("Loading...")),
+      div(
+        id = "UI_TIGRFAM_LOADING", h2("Loading..."),
+        style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+      ),
       uiOutput("UI_TIGRFAM")
     ),
 
     tabPanel("PFAM",
       useShinyjs(),
-      div(id = "UI_PFAM_LOADING", h2("Loading...")),
+      div(
+        id = "UI_PFAM_LOADING", h2("Loading..."),
+        style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+      ),
       uiOutput("UI_PFAM")
     ),
 
@@ -51,19 +60,28 @@ ui <- function(request) fluidPage(
 
       tabPanel("Results - KO",
         useShinyjs(),
-        div(id = "UI_BLASTP_KO_LOADING", h2("Loading...")),
+        div(
+          id = "UI_BLASTP_KO_LOADING", h2("Loading..."),
+          style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+        ),
         uiOutput("UI_BLASTP_KO")
       ),
 
       tabPanel("Results - TIGRFAM",
         useShinyjs(),
-        div(id = "UI_BLASTP_TIGRFAM_LOADING", h2("Loading...")),
+        div(
+          id = "UI_BLASTP_TIGRFAM_LOADING", h2("Loading..."),
+          style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+        ),
         uiOutput("UI_BLASTP_TIGRFAM")
       ),
 
       tabPanel("Results - PFAM",
         useShinyjs(),
-        div(id = "UI_BLASTP_PFAM_LOADING", h2("Loading...")),
+        div(
+          id = "UI_BLASTP_PFAM_LOADING", h2("Loading..."),
+          style = "z-index:1;position:absolute;background-color:white;width:100%;text-align:center;"
+        ),
         uiOutput("UI_BLASTP_PFAM")
       )
 

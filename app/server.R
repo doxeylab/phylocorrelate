@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # server.R
-# Last modified: 2020-02-22 11:43:38 (CET)
+# Last modified: 2020-03-22 14:53:26 (CET)
 # BJM Tremblay
 
 msg("Loading server.R")
@@ -105,6 +105,46 @@ server <- function(input, output, session) {
 
   #-----------------------------------------------------------------------------
   # Correlation Table
+
+  observe({
+    query <- parseQueryString(session$clientData$url_search)
+    req(query[["goto"]])
+    switch(substr(query[["goto"]], 1, 1),
+      P = {
+        if (query[["goto"]] %in% names(PFAMDesc)) {
+          SidePanelInputValues$INPUT_PFAM <- query[["goto"]]
+          updateNavbarPage(session, "NAVBARPG", "PFAM")
+        } else {
+          showModal(modalDialog(
+            title = "Error",
+            paste("Incorrect query,", query[["goto"]], "does not exist.")
+          ))
+        }
+      },
+      T = {
+        if (query[["goto"]] %in% names(TIGRFAMDesc)) {
+          SidePanelInputValues$INPUT_TIGRFAM <- query[["goto"]]
+          updateNavbarPage(session, "NAVBARPG", "TIGRFAM")
+        } else {
+          showModal(modalDialog(
+            title = "Error",
+            paste("Incorrect query,", query[["goto"]], "does not exist.")
+          ))
+        }
+      },
+      K = {
+        if (query[["goto"]] %in% names(KODesc)) {
+          SidePanelInputValues$INPUT_KO <- query[["goto"]]
+          updateNavbarPage(session, "NAVBARPG", "KEGG Orthologs")
+        } else {
+          showModal(modalDialog(
+            title = "Error",
+            paste("Incorrect query,", query[["goto"]], "does not exist.")
+          ))
+        }
+      }
+    )
+  })
 
   output$MAIN_CORR_TABLE_PFAM <- DT::renderDataTable({
     req(SidePanelInputValues$INPUT_PFAM)
@@ -224,7 +264,7 @@ server <- function(input, output, session) {
 
   #-----------------------------------------------------------------------------
   # GO/Pathway Enrichment
-  
+
   output$MAIN_GOPATH_ENRICH_PFAM <- DT::renderDataTable({
     req(SidePanelInputValues$INPUT_PFAM)
     globals <- make_list_globals("PFAM", input,

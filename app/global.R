@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-02-22 11:43:35 (CET)
+# Last modified: 2020-03-22 14:46:56 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -145,6 +145,9 @@ KOJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
 KOTable <- function(j) {
   fst::read_fst("data/KOTable.fst", j)[[1]]
 }
+KOBestPMF <- function(i = NULL, j = NULL, drop = TRUE) {
+  getDat("data/KOBestPMF.fst", i, j, drop, KOs)
+}
 
 PFAMOverlaps <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAMOverlaps.fst", i, j, drop, PFAMs)
@@ -174,6 +177,9 @@ PFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
 PFAMTable <- function(j) {
   fst::read_fst("data/PFAMTable.fst", j)[[1]]
 }
+PFAMBestPMF <- function(i = NULL, j = NULL, drop = TRUE) {
+  getDat("data/PFAMBestPMF.fst", i, j, drop, PFAMs)
+}
 
 TIGRFAMOverlaps <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAMOverlaps.fst", i, j, drop, TIGRFAMs)
@@ -202,6 +208,9 @@ TIGRFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
 }
 TIGRFAMTable <- function(j) {
   fst::read_fst("data/TIGRFAMTable.fst", j)[[1]]
+}
+TIGRFAMBestPMF <- function(i = NULL, j = NULL, drop = TRUE) {
+  getDat("data/TIGRFAMBestPMF.fst", i, j, drop, TIGRFAMs)
 }
 
 #------------------------------------------------------------------------------
@@ -241,7 +250,8 @@ getPFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(PFAMJaccardCoef(, entry), 3),
     rJC = round(PFAMRunJaccardCoef(, entry), 3),
     rHyperP = PFAMRunHyperP(, entry),
-    PMF = PFAMGObpTDR(, entry),
+    # PMF = PFAMGObpTDR(, entry),
+    PMF = PFAMBestPMF(, entry),
     row.names = PFAMs
   )
   o <- o[order(o$PMF, decreasing = TRUE), ]
@@ -260,7 +270,8 @@ getTIGRFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(TIGRFAMJaccardCoef(, entry), 3),
     rJC = round(TIGRFAMRunJaccardCoef(, entry), 3),
     rHyperP = TIGRFAMRunHyperP(, entry),
-    PMF = TIGRFAMGObpTDR(, entry),
+    # PMF = TIGRFAMGObpTDR(, entry),
+    PMF = TIGRFAMBestPMF(, entry),
     row.names = TIGRFAMs
   )
   o <- o[order(o$PMF, decreasing = TRUE), ]
@@ -279,7 +290,8 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(KOJaccardCoef(, entry), 3),
     rJC = round(KORunJaccardCoef(, entry), 3),
     rHyperP = KORunHyperP(, entry),
-    PMF = KOPathTDR(, entry),
+    # PMF = KOPathTDR(, entry),
+    PMF = KOBestPMF(, entry),
     row.names = KOs
   )
   o <- o[order(o$PMF, decreasing = TRUE), ]
@@ -359,8 +371,9 @@ getTableFiltered <- function(entry, globals = list(), keepEntry = FALSE, isBlast
            o$OccDiff <= globals$OccDiff &
            o$JC >= globals$JC &
            o$rHyperP <= globals$rHyperP &
-           o$PMF >= globals$PMF &
+           # o$PMF >= globals$PMF &
            o$rJC >= globals$rJC, ]
+    o <- o[o$PMF %in% globals$PMF, ]
     o <- o[!is.na(o$rJC), ]
   } else {
     o <- cleanBlastpTable(entry)
@@ -370,7 +383,8 @@ getTableFiltered <- function(entry, globals = list(), keepEntry = FALSE, isBlast
     o <- filter_blastp_col(o, o$JC >= globals$JC)
     o <- filter_blastp_col(o, o$rJC >= globals$rJC)
     o <- filter_blastp_col(o, o$rHyperP <= globals$rHyperP)
-    o <- filter_blastp_col(o, o$PMF >= globals$PMF)
+    # o <- filter_blastp_col(o, o$PMF >= globals$PMF)
+    o <- filter_blastp_col(o, o$PMF %in% globals$PMF)
   }
   msg("Table size:", nrow(o))
   o
@@ -1217,8 +1231,8 @@ make_corr_table <- function(entry, fam, globals = list(), THRESH_MSG_ID, isBlast
     ),
     escape = FALSE
   ) %>% formatStyle(0, cursor = "pointer") %>%
-    formatSignif("rHyperP", 3) %>%
-      formatSignif("PMF", 3)
+    formatSignif("rHyperP", 3)# %>%
+      # formatSignif("PMF", 3)
   list(table = out, THRESH_MSG_ID = THRESH_MSG_ID, keep = nrow(res) == 0)
 }
 
@@ -1344,9 +1358,14 @@ make_tab_main <- function(fam, blastp = FALSE) {
             "Maximum -log10(rHyperP)",
             min = 0, max = 320, value = 0, step = 1, ticks = TRUE
           ),
-          sliderInput(
+          # sliderInput(
+          #   ff("GLOBAL_FILTER_MIN_PMF"), "Minimum PMF",
+          #   min = 0, max = 1, value = 0.5, step = 0.01, ticks = TRUE
+          # )
+          checkboxGroupInput(
             ff("GLOBAL_FILTER_MIN_PMF"), "Minimum PMF",
-            min = 0, max = 1, value = 0.5, step = 0.01, ticks = TRUE
+            choices = c("Very unlikely", "Unlikely", "Likely", "Very likely"),
+            selected = c("Likely", "Very likely")
           )
         ),
         tabPanel("Tab Filters",

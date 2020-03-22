@@ -3,3 +3,4 @@
 - Need to implement clean up functions so blastp folder doesn't fill up
   past a certain point ('logs' and 'queries' files, 'results' and 'app'
   folders)
+- Once DomainStats has it's own domain name, add links to it for PFAM

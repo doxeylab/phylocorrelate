@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-02-15 13:57:31 (CET)
+# Last modified: 2020-03-22 15:57:12 (CET)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis
@@ -465,8 +465,8 @@ repeat {
     JC = PFAM_JC,
     rJC = PFAM_rJC,
     rHyperP = PFAM_Hyper,
-    PMF = PFAM_tdr,
-    PMF2 = PFAM_tdr_rhp,
+    CS = PFAM_tdr,
+    # PMF2 = PFAM_tdr_rhp,
     row.names = PFAMs,
     stringsAsFactors = FALSE
   )
@@ -501,8 +501,8 @@ repeat {
     JC = TIGRFAM_JC,
     rJC = TIGRFAM_rJC,
     rHyperP = TIGRFAM_Hyper,
-    PMF = TIGRFAM_tdr,
-    PMF2 = TIGRFAM_tdr_rhp,
+    CS = TIGRFAM_tdr,
+    # PMF2 = TIGRFAM_tdr_rhp,
     row.names = TIGRFAMs,
     stringsAsFactors = FALSE
   )
@@ -537,8 +537,8 @@ repeat {
     JC = KO_JC,
     rJC = KO_rJC,
     rHyperP = KO_Hyper,
-    PMF = KO_tdr,
-    PMF2 = KO_tdr_rhp,
+    CS = KO_tdr,
+    # PMF2 = KO_tdr_rhp,
     row.names = KOs,
     stringsAsFactors = FALSE
   )

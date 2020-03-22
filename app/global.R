@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-22 14:46:56 (CET)
+# Last modified: 2020-03-22 15:57:48 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -136,7 +136,6 @@ KORunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/KO_RunsLen.fst", i, j, drop, KOs)
 }
 KOPathTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  # getDat("data/KORunsPathwayTDR.fst", i, j, drop, KOs)
   getDat("data/KO_PMF_OccDiffvsrHyperP.fst", i, j, drop, KOs)
 }
 KOJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
@@ -168,7 +167,6 @@ PFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/PFAM_RunsLen.fst", i, j, drop, PFAMs)
 }
 PFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  # getDat("data/PFAMRunsGObpTDR.fst", i, j, drop, PFAMs)
   getDat("data/PFAM_PMF_OccDiffvsrHyperP.fst", i, j, drop, PFAMs)
 }
 PFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
@@ -200,7 +198,6 @@ TIGRFAMRunLens <- function(i = NULL, j = NULL, drop = TRUE) {
   getDat("data/TIGRFAM_RunsLen.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMGObpTDR <- function(i = NULL, j = NULL, drop = TRUE) {
-  # getDat("data/TIGRFAMRunsGObpTDR.fst", i, j, drop, TIGRFAMs)
   getDat("data/TIGRFAM_PMF_OccDiffvsrHyperP3.fst", i, j, drop, TIGRFAMs)
 }
 TIGRFAMJaccardCoef <- function(i = NULL, j = NULL, drop = TRUE) {
@@ -250,11 +247,10 @@ getPFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(PFAMJaccardCoef(, entry), 3),
     rJC = round(PFAMRunJaccardCoef(, entry), 3),
     rHyperP = PFAMRunHyperP(, entry),
-    # PMF = PFAMGObpTDR(, entry),
-    PMF = PFAMBestPMF(, entry),
+    CS = PFAMBestPMF(, entry),
     row.names = PFAMs
   )
-  o <- o[order(o$PMF, decreasing = TRUE), ]
+  o <- o[order(o$CS, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -270,11 +266,10 @@ getTIGRFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(TIGRFAMJaccardCoef(, entry), 3),
     rJC = round(TIGRFAMRunJaccardCoef(, entry), 3),
     rHyperP = TIGRFAMRunHyperP(, entry),
-    # PMF = TIGRFAMGObpTDR(, entry),
-    PMF = TIGRFAMBestPMF(, entry),
+    CS = TIGRFAMBestPMF(, entry),
     row.names = TIGRFAMs
   )
-  o <- o[order(o$PMF, decreasing = TRUE), ]
+  o <- o[order(o$CS, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -290,11 +285,10 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     JC = round(KOJaccardCoef(, entry), 3),
     rJC = round(KORunJaccardCoef(, entry), 3),
     rHyperP = KORunHyperP(, entry),
-    # PMF = KOPathTDR(, entry),
-    PMF = KOBestPMF(, entry),
+    CS = KOBestPMF(, entry),
     row.names = KOs
   )
-  o <- o[order(o$PMF, decreasing = TRUE), ]
+  o <- o[order(o$CS, decreasing = TRUE), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -371,9 +365,8 @@ getTableFiltered <- function(entry, globals = list(), keepEntry = FALSE, isBlast
            o$OccDiff <= globals$OccDiff &
            o$JC >= globals$JC &
            o$rHyperP <= globals$rHyperP &
-           # o$PMF >= globals$PMF &
            o$rJC >= globals$rJC, ]
-    o <- o[o$PMF %in% globals$PMF, ]
+    o <- o[o$CS %in% globals$CS, ]
     o <- o[!is.na(o$rJC), ]
   } else {
     o <- cleanBlastpTable(entry)
@@ -383,8 +376,7 @@ getTableFiltered <- function(entry, globals = list(), keepEntry = FALSE, isBlast
     o <- filter_blastp_col(o, o$JC >= globals$JC)
     o <- filter_blastp_col(o, o$rJC >= globals$rJC)
     o <- filter_blastp_col(o, o$rHyperP <= globals$rHyperP)
-    # o <- filter_blastp_col(o, o$PMF >= globals$PMF)
-    o <- filter_blastp_col(o, o$PMF %in% globals$PMF)
+    o <- filter_blastp_col(o, o$CS %in% globals$CS)
   }
   msg("Table size:", nrow(o))
   o
@@ -1062,7 +1054,7 @@ cleanBlastpTable <- function(x) {
     JC = round(use_blastp_col(x$JC), 3),
     rJC = round(use_blastp_col(x$rJC), 3),
     rHyperP = use_blastp_col(x$rHyperP),
-    PMF = use_blastp_col(x$PMF),
+    CS = use_blastp_col(x$CS),
     row.names = rownames(x)
   )
 }
@@ -1231,8 +1223,7 @@ make_corr_table <- function(entry, fam, globals = list(), THRESH_MSG_ID, isBlast
     ),
     escape = FALSE
   ) %>% formatStyle(0, cursor = "pointer") %>%
-    formatSignif("rHyperP", 3)# %>%
-      # formatSignif("PMF", 3)
+    formatSignif("rHyperP", 3)
   list(table = out, THRESH_MSG_ID = THRESH_MSG_ID, keep = nrow(res) == 0)
 }
 
@@ -1284,7 +1275,7 @@ make_list_globals <- function(fam, input = list(),
     JC = input[[ff("GLOBAL_FILTER_MIN_JC")]],
     rJC = input[[ff("GLOBAL_FILTER_MIN_RJC")]],
     rHyperP = input[[ff("GLOBAL_FILTER_MAX_RHYPERP")]],
-    PMF = input[[ff("GLOBAL_FILTER_MIN_PMF")]],
+    CS = input[[ff("GLOBAL_FILTER_MIN_PMF")]],
     Ont = TabFilterGopathEnrichValues[[ff("FILTER_GOPATH_ENRICH_ONTOLOGY_VALUE")]],
     FDR = TabFilterGopathEnrichValues[[ff("FILTER_GOPATH_ENRICH_MAX_FDR_VALUE")]],
     FP = TabFilterGopathEnrichValues[[ff("FILTER_GOPATH_ENRICH_MAX_FP_VALUE")]],
@@ -1358,14 +1349,10 @@ make_tab_main <- function(fam, blastp = FALSE) {
             "Maximum -log10(rHyperP)",
             min = 0, max = 320, value = 0, step = 1, ticks = TRUE
           ),
-          # sliderInput(
-          #   ff("GLOBAL_FILTER_MIN_PMF"), "Minimum PMF",
-          #   min = 0, max = 1, value = 0.5, step = 0.01, ticks = TRUE
-          # )
           checkboxGroupInput(
-            ff("GLOBAL_FILTER_MIN_PMF"), "Minimum PMF",
-            choices = c("Very unlikely", "Unlikely", "Likely", "Very likely"),
-            selected = c("Likely", "Very likely")
+            ff("GLOBAL_FILTER_MIN_PMF"), "Confidence Score",
+            choices = c("Very low", "Low", "High", "Very high"),
+            selected = c("Low", "High", "Very high")
           )
         ),
         tabPanel("Tab Filters",
@@ -1497,7 +1484,7 @@ PFAMTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching GO:BP Term")
+      th("CS",  title = "Confidence Score: Probability of a Matching GO:BP Term")
     )
   )
 ))
@@ -1516,7 +1503,7 @@ TIGRFAMTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching GO:BP Term")
+      th("CS",  title = "Confidence Score: Probability of a Matching GO:BP Term")
     )
   )
 ))
@@ -1535,7 +1522,7 @@ KEGGTableCols <- htmltools::withTags(table(
       th("JC", title = "Jaccard Coefficient"),
       th("rJC", title = "Runs-adjusted Jaccard Coefficient"),
       th("rHyperP", title = "Hypergeometric P-value"),
-      th("PMF",  title = "Probability of a Matching Pathway")
+      th("CS",  title = "Confidence Score: Probability of a Matching Pathway")
     )
   )
 ))

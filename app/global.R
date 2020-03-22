@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-22 15:57:48 (CET)
+# Last modified: 2020-03-22 22:56:29 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -394,6 +394,13 @@ getCorrMat <- function(entry, size, globals = list(), isBlastp = FALSE) {
     msg("No results")
     return(matrix(nrow = 0, ncol = 0))
   }
+  if (globals$metric == "CS") {
+    CSlevels <- c("Very low", "Low", "High", "Very high")
+    d[[globals$metric]] <- factor(
+      d[[globals$metric]],
+      levels = CSlevels
+    )
+  }
   d <- d[order(d[[globals$metric]], decreasing = TRUE), ]
   if (nrow(d) > size) d <- d[1:size, ]
   if (nrow(d) <= 1) {
@@ -411,15 +418,18 @@ getCorrMat <- function(entry, size, globals = list(), isBlastp = FALSE) {
   out <- switch(what,
     P = switch(globals$metric,
           JC = as.matrix(PFAMJaccardCoef(toget, toget)),
-          rJC = as.matrix(PFAMRunJaccardCoef(toget, toget))
+          rJC = as.matrix(PFAMRunJaccardCoef(toget, toget)),
+          CS = as.matrix(PFAMBestPMF(toget, toget))
         ),
     T = switch(globals$metric,
           JC = as.matrix(TIGRFAMJaccardCoef(toget, toget)),
-          rJC = as.matrix(TIGRFAMRunJaccardCoef(toget, toget))
+          rJC = as.matrix(TIGRFAMRunJaccardCoef(toget, toget)),
+          CS = as.matrix(TIGRFAMBestPMF(toget, toget))
         ),
     K = switch(globals$metric,
           JC = as.matrix(KOJaccardCoef(toget, toget)),
-          rJC = as.matrix(KORunJaccardCoef(toget, toget))
+          rJC = as.matrix(KORunJaccardCoef(toget, toget)),
+          CS = as.matrix(KOBestPMF(toget, toget))
         )
   )
   if (isBlastp) {
@@ -427,6 +437,13 @@ getCorrMat <- function(entry, size, globals = list(), isBlastp = FALSE) {
     out <- rbind(out, Query = c(d[rownames(out), globals$metric], 1))
   }
   out
+}
+
+intToCS <- function(x) {
+  x <- as.integer(x)
+  CSlevels <- c("Very low", "Low", "High", "Very high", "")
+  x[x == 0] <- 5
+  CSlevels[x]
 }
 
 makeCorrNetwork <- function(entry, globals = list(), isBlastp = FALSE) {
@@ -443,14 +460,26 @@ makeCorrNetwork <- function(entry, globals = list(), isBlastp = FALSE) {
   } else {
     what <- substr(entry, 1, 1)
   }
-  m[m < switch(globals$metric,
-               JC = globals$JC,
-               rJC = globals$rJC)] <- 0
-  diag(m) <- 0
+  CSlevels <- c("Very low", "Low", "High", "Very high")
+  if (globals$metric != "CS") {
+    m[m < switch(globals$metric, JC = globals$JC, rJC = globals$rJC)] <- 0
+    diag(m) <- 0
+  } else {
+    m <- matrix(
+      as.integer(factor(as.character(m), levels = CSlevels)),
+      nrow = nrow(m), dimnames = dimnames(m)
+    )
+    m[!intToCS(m) %in% globals$CS] <- 0
+    diag(m) <- 0
+  }
   m <- m[apply(m, 2, function(x) any(x > 0)), apply(m, 2, function(x) any(x > 0))]
   col_e <- m[, entry]
   row_e <- m[entry, ]
-  m[m < globals$min2nd] <- 0
+  if (globals$metric != "CS") {
+    m[m < globals$min2nd] <- 0
+  } else {
+    m[!intToCS(m) %in% globals$cswhich] <- 0
+  }
   m[, entry] <- col_e
   m[entry, ] <- row_e
   msg("Network size:", nrow(m))
@@ -468,8 +497,8 @@ makeCorrNetwork <- function(entry, globals = list(), isBlastp = FALSE) {
   if (isBlastp) {
     data$nodes$title[data$nodes$id == entry] <- entry
   }
-  data$edges$value <- data$edges$weight
-  data$edges$title <- data$edges$weight
+  data$edges$value <- data$edges$weight / 4
+  data$edges$title <- intToCS(data$edges$weight)
   data$nodes$color.background <- "gold"
   data$nodes$color.background[data$nodes$id == entry] <- "tomato"
   visNetwork(nodes = data$nodes, edges = data$edges) %>%
@@ -486,15 +515,18 @@ makeDistPlot <- function(entry, type, isBlastp = FALSE) {
     scores <- switch(what,
       P = switch(type,
             JC = PFAMJaccardCoef(, entry),
-            rJC = PFAMRunJaccardCoef(, entry)
+            rJC = PFAMRunJaccardCoef(, entry),
+            rHyperP = PFAMRunHyperP(, entry)
           ),
       T = switch(type,
             JC = TIGRFAMJaccardCoef(, entry),
-            rJC = TIGRFAMRunJaccardCoef(, entry)
+            rJC = TIGRFAMRunJaccardCoef(, entry),
+            rHyperP = TIGRFAMRunHyperP(, entry)
           ),
       K = switch(type,
             JC = KOJaccardCoef(, entry),
-            rJC = KORunJaccardCoef(, entry)
+            rJC = KORunJaccardCoef(, entry),
+            rHyperP = KORunHyperP(, entry)
           ),
     )
     scores <- scores[names(scores) != entry]
@@ -540,6 +572,27 @@ makeDistPlot <- function(entry, type, isBlastp = FALSE) {
                        ticklen = 5,
                        tickwidth = 1,
                        range = c(0, 1)
+                     ),
+             yaxis = list(
+                       title = "Count",
+                       type = "log"
+                     )
+           ),
+    rHyperP = plot_ly(
+           x = as.integer(-log10(scores)),
+           type = "histogram",
+           xbins = list(start = 0, end = 320, size = 1)
+         ) %>%
+           layout(
+             title = paste0("-log10(rHyperP) scores for ", entry),
+             xaxis = list(
+                       title = "-log10(rHyperP) scores",
+                       autotick = FALSE,
+                       showline = TRUE,
+                       dtick = 50,
+                       ticklen = 5,
+                       tickwidth = 1,
+                       range = c(0, 320)
                      ),
              yaxis = list(
                        title = "Count",
@@ -1107,14 +1160,21 @@ make_tab_filter_network <- function(fam, blastp = FALSE, globals = list()) {
   tabPanel(br(), br(),
     radioButtons(
       ff("FILTER_CORR_NETWORK_METRIC"), "Metric",
-      choices = c("JC", "rJC"),
+      choices = c("JC", "rJC", "CS"),
       selected = globals[[ff("FILTER_CORR_NETWORK_METRIC_VALUE")]]
     ),
     sliderInput(
-      ff("FILTER_CORR_NETWORK_MIN_SECONDARY_EDGE"), "Minimum of secondary edges",
+      ff("FILTER_CORR_NETWORK_MIN_SECONDARY_EDGE"),
+      "Minimum of secondary edges (JC/rJC only)",
       min = 0, max = 1,
       value = globals[[ff("FILTER_CORR_NETWORK_MIN_SECONDARY_EDGE_VALUE")]],
       step = 0.01, ticks = TRUE
+    ),
+    checkboxGroupInput(
+      ff("FILTER_CORR_NETWORK_CS_SECONDARY_EDGE"),
+      "Confidence Score",
+      choices = c("Very low", "Low", "High", "Very high"),
+      selected = c("Low", "High", "Very high")
     )
   )
 
@@ -1127,7 +1187,7 @@ make_tab_filter_score_dist <- function(fam, blastp = FALSE, globals = list()) {
   tabPanel(br(), br(),
     radioButtons(
       ff("FILTER_SCORE_DIST_METRIC"), "Metric",
-      choices = c("JC", "rJC"),
+      choices = c("JC", "rJC", "rHyperP"),
       selected = globals[[ff("FILTER_SCORE_DIST_METRIC_VALUE")]]
     )
   )
@@ -1269,6 +1329,7 @@ make_list_globals <- function(fam, input = list(),
     entry = SidePanelInputValues[[ff("INPUT")]],
     metric = TabFilterCorrNetworkValues[[ff("FILTER_CORR_NETWORK_METRIC_VALUE")]],
     min2nd = TabFilterCorrNetworkValues[[ff("FILTER_CORR_NETWORK_MIN_SECONDARY_EDGE_VALUE")]],
+    cswhich = TabFilterCorrNetworkValues[[ff("FILTER_CORR_NETWORK_CS_SECONDARY_EDGE")]],
     Ov = input[[ff("GLOBAL_FILTER_MIN_OV")]],
     Occ = input[[ff("GLOBAL_FILTER_MIN_OCC")]],
     OccDiff = input[[ff("GLOBAL_FILTER_MAX_OCCDIFF")]],

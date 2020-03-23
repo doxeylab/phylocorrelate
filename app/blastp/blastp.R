@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-03-23 19:50:13 (CET)
+# Last modified: 2020-03-23 20:07:04 (CET)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis
@@ -402,6 +402,7 @@ repeat {
     PFAM_runs <- getRuns(resCounts, PFAMTable[, i])
     PFAM_rJC[i] <- JC(PFAM_runs$x, PFAM_runs$y)
   }
+  PFAMCounts <- readRDS(Ddir("PFAMCounts.RDS"))
   PFAM_OccDiff <- abs(PFAMCounts - sum(resCounts))
   PFAM_pmf <- calc_pmf_pfam(PFAM_rJC, PFAM_OccDiff, PFAM_Hyper)
 
@@ -426,6 +427,7 @@ repeat {
     TIGRFAM_runs <- getRuns(resCounts, TIGRFAMTable[, i])
     TIGRFAM_rJC[i] <- JC(TIGRFAM_runs$x, TIGRFAM_runs$y)
   }
+  TIGRFAMCounts <- readRDS(Ddir("TIGRFAMCounts.RDS"))
   TIGRFAM_OccDiff <- abs(TIGRFAMCounts - sum(resCounts))
   TIGRFAM_pmf <- calc_pmf_tigrfam(TIGRFAM_rJC, TIGRFAM_OccDiff, TIGRFAM_Hyper)
 
@@ -449,6 +451,7 @@ repeat {
     KO_runs <- getRuns(resCounts, KOTable[, i])
     KO_rJC[i] <- JC(KO_runs$x, KO_runs$y)
   }
+  KOCounts <- readRDS(Ddir("KOCounts.RDS"))
   KO_OccDiff <- abs(KOCounts - sum(resCounts))
   KO_pmf <- calc_pmf_ko(KO_rJC, KO_OccDiff, KO_Hyper)
 
@@ -460,7 +463,6 @@ repeat {
   msg("      OK")
   msg("  Prepping output ..")
 
-  PFAMCounts <- readRDS(Ddir("PFAMCounts.RDS"))
   PFAMLinks <- readRDS(Ddir("PFAMLinks2.RDS"))
   PFAMDesc <- readRDS(Ddir("PFAMDescriptions.RDS"))
   PFAMButtons <- readRDS(Ddir("PFAMButtons2.RDS"))
@@ -497,7 +499,6 @@ repeat {
 
   msg("    Making TIGRFAM results")
 
-  TIGRFAMCounts <- readRDS(Ddir("TIGRFAMCounts.RDS"))
   TIGRFAMLinks <- readRDS(Ddir("TIGRFAMLinks2.RDS"))
   TIGRFAMDesc <- readRDS(Ddir("TIGRFAMDescriptions.RDS"))
   TIGRFAMButtons <- readRDS(Ddir("TIGRFAMButtons2.RDS"))
@@ -532,7 +533,6 @@ repeat {
 
   msg("    Making KO results")
 
-  KOCounts <- readRDS(Ddir("KOCounts.RDS"))
   KOLinks <- readRDS(Ddir("KOLinks2.RDS"))
   KODesc <- readRDS(Ddir("KODescriptions.RDS"))
   KOButtons <- readRDS(Ddir("KOButtons2.RDS"))

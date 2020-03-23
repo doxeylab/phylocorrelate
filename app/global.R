@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-22 22:56:29 (CET)
+# Last modified: 2020-03-23 19:49:55 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -58,7 +58,7 @@ startBlast <- function() {
   if (CONFIGS$UseBlastp) system("Rscript blastp/blastp.R &")
 }
 
-BlastpVer <- 3L
+BlastpVer <- 4L
 
 startBlast()
 

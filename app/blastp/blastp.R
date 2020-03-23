@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-03-22 15:57:12 (CET)
+# Last modified: 2020-03-23 19:50:13 (CET)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis
@@ -15,7 +15,7 @@
 
 ## Script parameters ----------------------------------------------------------
 
-BlastpVer <- 3L
+BlastpVer <- 4L
 
 library(magrittr)
 
@@ -157,30 +157,7 @@ JC <- function(x, y) {
 Ov <- function(x, y) {
   sum(x & y)
 }
-tdr_pfam <- function(x) {
-  mod <- readRDS(Bdir("fdr/PFAM_TDR_approxfun.RDS"))
-  mod(x)
-}
-tdr_pfam_rhp <- function(x) {
-  mod <- readRDS(Bdir("fdr/PFAM_TDR_approxfun_rHyperP.RDS"))
-  mod(x)
-}
-tdr_tigrfam <- function(x) {
-  mod <- readRDS(Bdir("fdr/TIGRFAM_TDR_approxfun.RDS"))
-  mod(x)
-}
-tdr_tigrfam_rhp <- function(x) {
-  mod <- readRDS(Bdir("fdr/TIGRFAM_TDR_approxfun_rHyperP.RDS"))
-  mod(x)
-}
-tdr_ko <- function(x) {
-  mod <- readRDS(Bdir("fdr/KO_TDR_approxfun.RDS"))
-  mod(x)
-}
-tdr_ko_rhp <- function(x) {
-  mod <- readRDS(Bdir("fdr/KO_TDR_approxfun_rHyperP.RDS"))
-  mod(x)
-}
+
 testHyper <- function(z, y) {
   fisher.test(
     matrix(c(
@@ -189,6 +166,41 @@ testHyper <- function(z, y) {
     ), ncol = 2),
     alternative = "g"
   )$p.value
+}
+
+calc_pmf_any <- function(rJC, OccDiff, rHyperP, pmf_rjc, pmf_od_rhp) {
+  lvls <- c("Very low", "Low", "High", "Very high")
+  rJCpmf <- pmf_rjc[as.character(as.integer(rJC * 100) / 100)]
+  OccDiff[OccDiff > 27000] <- 27000
+  OccDiff <- as.integer(OccDiff / 100)
+  rHyperP <- -log10(rHyperP)
+  rHyperP[rHyperP > 300] <- 300
+  rHyperP[is.infinite(rHyperP)] <- 300
+  rHyperP <- as.integer(rHyperP)
+  OccDiffrHyperPpmf <- mapply(
+    function(x, y) pmf_od_rhp[x, y],
+    rHyperP + 1, OccDiff + 1
+  )
+  BestPMF <- pmax(
+    as.integer(factor(rJCpmf, levels = lvls)),
+    as.integer(factor(OccDiffrHyperPpmf, levels = lvls))
+  )
+  lvls[BestPMF]
+}
+calc_pmf_pfam <- function(rJC, OccDiff, rHyperP) {
+  pmf_rjc <- readRDS(Bdir("fdr/PFAM-rJC.RDS"))
+  pmf_od_rhp <- readRDS(Bdir("fdr/PFAM-OccDiff_rHyperP.RDS"))
+  calc_pmf_any(rJC, OccDiff, rHyperP, pmf_rjc, pmf_od_rhp)
+}
+calc_pmf_tigrfam <- function(rJC, OccDiff, rHyperP) {
+  pmf_rjc <- readRDS(Bdir("fdr/TIGRFAM-rJC.RDS"))
+  pmf_od_rhp <- readRDS(Bdir("fdr/TIGRFAM-OccDiff_rHyperP.RDS"))
+  calc_pmf_any(rJC, OccDiff, rHyperP, pmf_rjc, pmf_od_rhp)
+}
+calc_pmf_ko <- function(rJC, OccDiff, rHyperP) {
+  pmf_rjc <- readRDS(Bdir("fdr/KO-rJC.RDS"))
+  pmf_od_rhp <- readRDS(Bdir("fdr/KO-OccDiff_rHyperP.RDS"))
+  calc_pmf_any(rJC, OccDiff, rHyperP, pmf_rjc, pmf_od_rhp)
 }
 
 send_mail <- function(Id, email) {
@@ -390,8 +402,8 @@ repeat {
     PFAM_runs <- getRuns(resCounts, PFAMTable[, i])
     PFAM_rJC[i] <- JC(PFAM_runs$x, PFAM_runs$y)
   }
-  PFAM_tdr <- tdr_pfam(PFAM_rJC)
-  PFAM_tdr_rhp <- tdr_pfam_rhp(PFAM_Hyper)
+  PFAM_OccDiff <- abs(PFAMCounts - sum(resCounts))
+  PFAM_pmf <- calc_pmf_pfam(PFAM_rJC, PFAM_OccDiff, PFAM_Hyper)
 
   PFAMs <- colnames(PFAMTable)
 
@@ -414,8 +426,8 @@ repeat {
     TIGRFAM_runs <- getRuns(resCounts, TIGRFAMTable[, i])
     TIGRFAM_rJC[i] <- JC(TIGRFAM_runs$x, TIGRFAM_runs$y)
   }
-  TIGRFAM_tdr <- tdr_tigrfam(TIGRFAM_rJC)
-  TIGRFAM_tdr_rhp <- tdr_tigrfam_rhp(TIGRFAM_Hyper)
+  TIGRFAM_OccDiff <- abs(TIGRFAMCounts - sum(resCounts))
+  TIGRFAM_pmf <- calc_pmf_tigrfam(TIGRFAM_rJC, TIGRFAM_OccDiff, TIGRFAM_Hyper)
 
   TIGRFAMs <- colnames(TIGRFAMTable)
 
@@ -437,8 +449,8 @@ repeat {
     KO_runs <- getRuns(resCounts, KOTable[, i])
     KO_rJC[i] <- JC(KO_runs$x, KO_runs$y)
   }
-  KO_tdr <- tdr_ko(KO_rJC)
-  KO_tdr_rhp <- tdr_ko_rhp(KO_Hyper)
+  KO_OccDiff <- abs(KOCounts - sum(resCounts))
+  KO_pmf <- calc_pmf_ko(KO_rJC, KO_OccDiff, KO_Hyper)
 
   KOs <- colnames(KOTable)
 
@@ -454,19 +466,18 @@ repeat {
   PFAMButtons <- readRDS(Ddir("PFAMButtons2.RDS"))
 
   msg("    Making PFAM results")
-  
+
   PFAM_all <- data.frame(
     Links = PFAMLinks[PFAMs],
     Description = PFAMDesc[PFAMs],
     Compare = PFAMButtons[PFAMs],
     Ov = PFAM_Ov,
     Occ = PFAMCounts,
-    OccDiff = abs(PFAMCounts - sum(resCounts)),
+    OccDiff = PFAM_OccDiff,
     JC = PFAM_JC,
     rJC = PFAM_rJC,
     rHyperP = PFAM_Hyper,
-    CS = PFAM_tdr,
-    # PMF2 = PFAM_tdr_rhp,
+    CS = PFAM_pmf,
     row.names = PFAMs,
     stringsAsFactors = FALSE
   )
@@ -477,8 +488,8 @@ repeat {
   rm(PFAM_rJC)
   rm(PFAM_JC)
   rm(PFAM_Hyper)
-  rm(PFAM_tdr)
-  rm(PFAM_tdr_rhp)
+  rm(PFAM_OccDiff)
+  rm(PFAM_pmf)
   rm(PFAMCounts)
   rm(PFAMLinks)
   rm(PFAMDesc)
@@ -497,12 +508,11 @@ repeat {
     Compare = TIGRFAMButtons[TIGRFAMs],
     Ov = TIGRFAM_Ov,
     Occ = TIGRFAMCounts,
-    OccDiff = abs(TIGRFAMCounts - sum(resCounts)),
+    OccDiff = TIGRFAM_OccDiff,
     JC = TIGRFAM_JC,
     rJC = TIGRFAM_rJC,
     rHyperP = TIGRFAM_Hyper,
-    CS = TIGRFAM_tdr,
-    # PMF2 = TIGRFAM_tdr_rhp,
+    CS = TIGRFAM_pmf,
     row.names = TIGRFAMs,
     stringsAsFactors = FALSE
   )
@@ -512,8 +522,8 @@ repeat {
   rm(TIGRFAMButtons)
   rm(TIGRFAM_rJC)
   rm(TIGRFAM_JC)
-  rm(TIGRFAM_tdr)
-  rm(TIGRFAM_tdr_rhp)
+  rm(TIGRFAM_OccDiff)
+  rm(TIGRFAM_pmf)
   rm(TIGRFAM_Hyper)
   rm(TIGRFAMCounts)
   rm(TIGRFAMLinks)
@@ -533,12 +543,11 @@ repeat {
     Compare = KOButtons[KOs],
     Ov = KO_Ov,
     Occ = KOCounts,
-    OccDiff = abs(KOCounts - sum(resCounts)),
+    OccDiff = KO_OccDiff,
     JC = KO_JC,
     rJC = KO_rJC,
     rHyperP = KO_Hyper,
-    CS = KO_tdr,
-    # PMF2 = KO_tdr_rhp,
+    CS = KO_pmf,
     row.names = KOs,
     stringsAsFactors = FALSE
   )
@@ -549,8 +558,8 @@ repeat {
   rm(KO_rJC)
   rm(KO_JC)
   rm(KO_Hyper)
-  rm(KO_tdr)
-  rm(KO_tdr_rhp)
+  rm(KO_OccDiff)
+  rm(KO_pmf)
   rm(KOCounts)
   rm(KOLinks)
   rm(KODesc)

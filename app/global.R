@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-23 19:49:55 (CET)
+# Last modified: 2020-03-25 12:09:36 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -1172,7 +1172,7 @@ make_tab_filter_network <- function(fam, blastp = FALSE, globals = list()) {
     ),
     checkboxGroupInput(
       ff("FILTER_CORR_NETWORK_CS_SECONDARY_EDGE"),
-      "Confidence Score",
+      "Confidence Score of secondary edges (CS only)",
       choices = c("Very low", "Low", "High", "Very high"),
       selected = c("Low", "High", "Very high")
     )

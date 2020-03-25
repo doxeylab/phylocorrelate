@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-25 12:09:36 (CET)
+# Last modified: 2020-03-25 13:44:08 (CET)
 # BJM Tremblay
 
 # library(profvis)
@@ -497,8 +497,13 @@ makeCorrNetwork <- function(entry, globals = list(), isBlastp = FALSE) {
   if (isBlastp) {
     data$nodes$title[data$nodes$id == entry] <- entry
   }
-  data$edges$value <- data$edges$weight / 4
-  data$edges$title <- intToCS(data$edges$weight)
+  if (globals$metric == "CS") {
+    data$edges$value <- data$edges$weight / 4
+    data$edges$title <- intToCS(data$edges$weight)
+  } else {
+    data$edges$value <- data$edges$weight
+    data$edges$title <- data$edges$weight
+  }
   data$nodes$color.background <- "gold"
   data$nodes$color.background[data$nodes$id == entry] <- "tomato"
   visNetwork(nodes = data$nodes, edges = data$edges) %>%

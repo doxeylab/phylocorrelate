@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-05-22 21:57:16 (CEST)
+# Last modified: 2020-05-22 22:02:40 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -268,7 +268,8 @@ getTIGRFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(TIGRFAMRunJaccardCoef(, entry), 3),
     rHyperP = TIGRFAMRunHyperP(, entry),
     CS = TIGRFAMBestPMF(, entry),
-    row.names = TIGRFAMs
+    row.names = TIGRFAMs,
+    stringsAsFactors = FALSE
   )
   o <- o[order(match(o$CS, c("Very high", "High", "Low", "Very low")), o$rHyperP), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
@@ -287,7 +288,8 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(KORunJaccardCoef(, entry), 3),
     rHyperP = KORunHyperP(, entry),
     CS = KOBestPMF(, entry),
-    row.names = KOs
+    row.names = KOs,
+    stringsAsFactors = FALSE
   )
   o <- o[order(match(o$CS, c("Very high", "High", "Low", "Very low")), o$rHyperP), ]
   if (keepEntry) o else o[rownames(o) != entry, ]

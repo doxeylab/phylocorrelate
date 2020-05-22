@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-03-25 13:44:08 (CET)
+# Last modified: 2020-05-22 21:57:16 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -248,9 +248,10 @@ getPFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     rJC = round(PFAMRunJaccardCoef(, entry), 3),
     rHyperP = PFAMRunHyperP(, entry),
     CS = PFAMBestPMF(, entry),
-    row.names = PFAMs
+    row.names = PFAMs,
+    stringsAsFactors = FALSE
   )
-  o <- o[order(o$CS, decreasing = TRUE), ]
+  o <- o[order(match(o$CS, c("Very high", "High", "Low", "Very low")), o$rHyperP), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -269,7 +270,7 @@ getTIGRFAMtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     CS = TIGRFAMBestPMF(, entry),
     row.names = TIGRFAMs
   )
-  o <- o[order(o$CS, decreasing = TRUE), ]
+  o <- o[order(match(o$CS, c("Very high", "High", "Low", "Very low")), o$rHyperP), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -288,7 +289,7 @@ getKOtable <- function(entry, keepEntry = FALSE, entryOcc = 0) {
     CS = KOBestPMF(, entry),
     row.names = KOs
   )
-  o <- o[order(o$CS, decreasing = TRUE), ]
+  o <- o[order(match(o$CS, c("Very high", "High", "Low", "Very low")), o$rHyperP), ]
   if (keepEntry) o else o[rownames(o) != entry, ]
 }
 
@@ -1236,6 +1237,7 @@ make_side_panel_input_info <- function(fam, blastp = FALSE, globals = list()) {
 }
 
 make_side_panel_table <- function(x) {
+  if (is.null(x)) return(NULL)
   DT::datatable(x,
     options = list(dom = "pt", bSort = FALSE),
     selection = "none",

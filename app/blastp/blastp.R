@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-03-23 20:07:04 (CET)
+# Last modified: 2020-07-25 15:37:49 (CEST)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis

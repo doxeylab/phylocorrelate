@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-05-22 22:02:40 (CEST)
+# Last modified: 2020-08-08 11:45:33 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -1531,10 +1531,13 @@ make_tab_help <- function() tagList(
 
   tags$h3("2. PhyloCorrelate didn't find any correlations for my gene."),
   tags$p("Try exploring different parameters!"),
-  tags$h4("a) Reduce the -logP threshold"),
-  tags$p("Co-occurring genes may be present below the default threshold, especially if your query gene occurs infrequently across the tree (e.g., <100 occurrences). In these cases, it is statistically harder for these patterns to achieve a significant p-value."),
+  tags$h4("a) Include \"Low\" predictions under \"Global Filters\"."),
+  # tags$p("Co-occurring genes may be present below the default threshold, especially if your query gene occurs infrequently across the tree (e.g., <100 occurrences). In these cases, it is statistically harder for these patterns to achieve a significant p-value."),
   tags$h4("b) Reduce the OccDiff parameter"),
-  tags$p("This is the different in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")
+  tags$ul(
+    tags$li("This is the difference in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")
+  )
+  # tags$p("This is the difference in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")
 )
 
 #------------------------------------------------------------------------------

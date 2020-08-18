@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-08-08 11:45:33 (CEST)
+# Last modified: 2020-08-19 01:13:30 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -1373,6 +1373,13 @@ make_tab_main <- function(fam, blastp = FALSE) {
 
   ff <- function(x) paste0(x, if (blastp) "_BLASTP_" else "_", fam)
 
+  exquery <- switch(fam,
+    KO = "Example query: fliC",
+    PFAM = "Example query: PF01890",
+    TIGRFAM = "Example query: TIGR02544",
+    ""
+  )
+
   tagList(
 
     br(),
@@ -1386,6 +1393,7 @@ make_tab_main <- function(fam, blastp = FALSE) {
           if (!blastp) searchInput(
             ff("SIDE_PANEL_INPUT_SEARCH"),
             paste0(fam, " search"),
+            placeholder = exquery,
             btnSearch = icon("search"),
             btnReset = icon("remove")
           ),

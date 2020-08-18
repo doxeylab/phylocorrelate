@@ -4,9 +4,9 @@
 
 Phylocorrelate is a phylogenetic profiling tool that detects pairs of gene/protein families with similar phylogenetic distributions. Gene co-occurrence is important to detect as it may suggest an interaction between the genes, membership in the same pathway or complex, or more general functional associations or dependencies.
 
-This repo contains source code for building the PhyloCorrelate RShinyApp. It is currently hosted at: phylocorrelate.uwaterloo.ca
+This repo contains source code for building the PhyloCorrelate RShinyApp. It is currently hosted at: [phylocorrelate.uwaterloo.ca](https://phylocorrelate.uwaterloo.ca/)
 
-PhyloCorrelate contains pre-computed correlations for 27,372 gene families across 28,315 species, and uses the GTDB bacterial tree and gene occurrences from AnnoTree including entries from KEGG, PFAM, and TIGRFAM.
+PhyloCorrelate contains pre-computed correlations for 27,372 gene families across 28,315 species, and uses the [GTDB](https://gtdb.ecogenomic.org/) bacterial tree and gene occurrences from [AnnoTree](http://annotree.uwaterloo.ca/) including entries from KEGG, PFAM, and TIGRFAM.
 
 
 ## Dependencies

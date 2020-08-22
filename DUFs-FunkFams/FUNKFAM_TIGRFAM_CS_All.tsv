@@ -1,0 +1,896 @@
+TIGRFAM	FunkFam	CS	GO	Ontology	Description	TIGRFAMDescription	TIGRFAMCount	FunkFamCount
+TIGR04183	5_102294	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	307
+TIGR01539	5_102306	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	395
+TIGR04183	5_102795	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	501
+TIGR04183	5_103086	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	709
+TIGR04156	5_103804	High	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	223
+TIGR04533	5_103804	High	NA	NA	NA	cyanoexosortase B-associated protein	191	223
+TIGR02276	5_103814	Low	NA	NA	NA	40-residue YVTN family beta-propeller repeat	11366	1971
+TIGR03556	5_106133	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	194
+TIGR02652	5_107243	Low	GO:0008150	BP	biological_process	TIGR02652 family protein	271	198
+TIGR04376	5_107243	Low	NA	NA	NA	TIGR04376 family protein	274	198
+TIGR04375	5_108947	High	NA	NA	NA	hercynine metabolism protein	56	57
+TIGR04281	5_109291	High	NA	NA	NA	putative ABC transporter PGF-CTERM-modified substrate-binding protein	1	19
+TIGR04183	5_110081	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	462
+TIGR03870	5_110180	High	GO:0046170	BP	methanol catabolic process	methanol oxidation system protein MoxJ	236	251
+TIGR03872	5_110180	High	GO:0046170	BP	methanol catabolic process	cytochrome c(L), periplasmic	287	251
+TIGR02523	5_113160	High	NA	NA	NA	type IV pilus modification protein PilV	3389	889
+TIGR03047	5_115065	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	298
+TIGR01337	5_117088	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	287
+TIGR01338	5_117088	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	287
+TIGR01339	5_117088	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	287
+TIGR03042	5_117088	High	NA	NA	NA	photosystem II protein PsbQ	296	287
+TIGR03047	5_117088	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	287
+TIGR01782	5_119222	Low	GO:0006810	BP	transport	TonB-dependent receptor	4907	2910
+TIGR03009	5_120521	High	GO:0008150	BP	biological_process	Planctomycetes uncharacterized domain TIGR03009	107	91
+TIGR03060	5_120799	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	200
+TIGR01537	5_122494	Low	GO:0019068	BP	virion assembly	phage portal protein, HK97 family	5406	325
+TIGR01554	5_122494	Low	GO:0019068	BP	virion assembly	phage major capsid protein, HK97 family	6791	325
+TIGR02525	5_122735	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	67
+TIGR00929	5_123309	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	302
+TIGR02771	5_123309	Low	GO:0000746	BP	conjugation	conjugative transfer signal peptidase TraF	1688	302
+TIGR02775	5_123309	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbG	1769	302
+TIGR02780	5_123309	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbJ	2029	302
+TIGR02782	5_123309	Low	NA	NA	NA	P-type conjugative transfer ATPase TrbB	1678	302
+TIGR02783	5_123309	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbL	1868	302
+TIGR00992	5_123472	High	NA	NA	NA	chloroplast envelope protein translocase, IAP75 family	232	267
+TIGR02652	5_123472	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	267
+TIGR03556	5_123472	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	267
+TIGR04376	5_123472	High	NA	NA	NA	TIGR04376 family protein	274	267
+TIGR01537	5_12535	Low	GO:0019068	BP	virion assembly	phage portal protein, HK97 family	5406	338
+TIGR01554	5_12535	Low	GO:0019068	BP	virion assembly	phage major capsid protein, HK97 family	6791	338
+TIGR01603	5_12535	High	GO:0019068	BP	virion assembly	phage major tail protein, phi13 family	1315	338
+TIGR02736	5_128127	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	208
+TIGR01337	5_128922	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	268
+TIGR04376	5_128922	High	NA	NA	NA	TIGR04376 family protein	274	268
+TIGR04369	5_129901	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	116
+TIGR03871	5_131245	Low	NA	NA	NA	quinoprotein dehydrogenase-associated probable ABC transporter substrate-binding protein	998	458
+TIGR02736	5_139049	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	277
+TIGR02525	5_145091	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	59
+TIGR01643	5_145788	Very high	NA	NA	NA	YD repeat (two copies)	10661	1194
+TIGR04183	5_147117	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	676
+TIGR04505	5_149832	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	64
+TIGR04548	5_149832	High	NA	NA	NA	DnaD family protein	60	64
+TIGR04375	5_153417	High	NA	NA	NA	hercynine metabolism protein	56	46
+TIGR04255	5_153698	Low	NA	NA	NA	TIGR04255 family protein	1133	158
+TIGR01537	5_15372	Low	GO:0019068	BP	virion assembly	phage portal protein, HK97 family	5406	331
+TIGR01554	5_15372	Low	GO:0019068	BP	virion assembly	phage major capsid protein, HK97 family	6791	331
+TIGR00929	5_155637	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	344
+TIGR02771	5_155637	Low	GO:0000746	BP	conjugation	conjugative transfer signal peptidase TraF	1688	344
+TIGR02775	5_155637	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbG	1769	344
+TIGR02780	5_155637	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbJ	2029	344
+TIGR02782	5_155637	Low	NA	NA	NA	P-type conjugative transfer ATPase TrbB	1678	344
+TIGR02783	5_155637	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbL	1868	344
+TIGR03556	5_159980	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	187
+TIGR03782	5_160270	Low	NA	NA	NA	Bacteroides conjugative transposon TraJ protein	720	275
+TIGR03783	5_160270	Low	GO:0032196	BP	transposition	Bacteroides conjugation system ATPase, TraG family	972	275
+TIGR00929	5_16050	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	560
+TIGR02771	5_16050	High	GO:0000746	BP	conjugation	conjugative transfer signal peptidase TraF	1688	560
+TIGR02775	5_16050	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbG	1769	560
+TIGR02780	5_16050	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbJ	2029	560
+TIGR02782	5_16050	Low	NA	NA	NA	P-type conjugative transfer ATPase TrbB	1678	560
+TIGR02783	5_16050	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbL	1868	560
+TIGR01611	5_16222	High	GO:0016032	BP	viral process	phage major tail tube protein	1969	426
+TIGR01634	5_16222	High	GO:0016032	BP	viral process	phage tail protein I	1865	426
+TIGR01644	5_16222	High	GO:0019068	BP	virion assembly	phage baseplate assembly protein V	2375	426
+TIGR01782	5_162780	Low	GO:0006810	BP	transport	TonB-dependent receptor	4907	2919
+TIGR03375	5_165581	Low	NA	NA	NA	type I secretion system ATPase	3661	1143
+TIGR01540	5_16608	Low	NA	NA	NA	phage portal protein, PBSX family	1386	322
+TIGR01551	5_16608	High	GO:0019069	BP	viral capsid assembly	phage major capsid protein, P2 family	1093	322
+TIGR03342	5_16608	Low	NA	NA	NA	sulfur relay protein, TusE/DsrC/DsvC family	4564	322
+TIGR04505	5_170655	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	55
+TIGR04522	5_170655	High	GO:0006810	BP	transport	putative energy coupling factor transporter S component	58	55
+TIGR04548	5_170655	High	NA	NA	NA	DnaD family protein	60	55
+TIGR04561	5_170655	High	NA	NA	NA	integral membrane protein	52	55
+TIGR01690	5_17222	Low	NA	NA	NA	integrative conjugative element protein, RAQPRD family	692	269
+TIGR03744	5_17222	Low	GO:0008150	BP	biological_process	conjugative transfer ATPase, PFL_4706 family	748	269
+TIGR03746	5_17222	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4703 family	689	269
+TIGR03747	5_17222	High	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4697 family	791	269
+TIGR03748	5_17222	Low	NA	NA	NA	integrating conjugative element protein PilL, PFGI-1 class	726	269
+TIGR03749	5_17222	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4704 family	740	269
+TIGR03751	5_17222	Low	GO:0008150	BP	biological_process	conjugative transfer region lipoprotein, TIGR03751 family	744	269
+TIGR03752	5_17222	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4705 family	749	269
+TIGR03754	5_17222	High	NA	NA	NA	conjugative coupling factor TraD, PFGI-1 class	781	269
+TIGR03755	5_17222	Low	NA	NA	NA	integrating conjugative element protein, PFL_4711 family	769	269
+TIGR03756	5_17222	Low	NA	NA	NA	integrating conjugative element protein, PFL_4710 family	764	269
+TIGR03759	5_17222	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4693 family	742	269
+TIGR03760	5_17222	High	NA	NA	NA	integrating conjugative element relaxase, PFGI-1 class	827	269
+TIGR03761	5_17222	High	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	269
+TIGR03764	5_17222	High	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	269
+TIGR03765	5_17222	Low	NA	NA	NA	integrating conjugative element protein, PFL_4695 family	726	269
+TIGR02241	5_173020	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	447
+TIGR02243	5_173020	High	NA	NA	NA	putative baseplate assembly protein	1700	447
+TIGR03345	5_173682	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion ATPase, ClpV1 family	3359	535
+TIGR03347	5_173682	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0111 family	3628	535
+TIGR03349	5_173682	Low	GO:0052048	BP	NA	type IV/VI secretion system protein, DotU family	3768	535
+TIGR03353	5_173682	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0114 family	3693	535
+TIGR03355	5_173682	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, EvpB/VC_A0108 family	3729	535
+TIGR03358	5_173682	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0107 family	3697	535
+TIGR03359	5_173682	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, TIGR03359 family	3671	535
+TIGR03361	5_173682	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion system Vgr family protein	3569	535
+TIGR03363	5_173682	High	NA	NA	NA	type VI secretion-associated protein, ImpA family	2695	535
+TIGR00929	5_174181	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	334
+TIGR02771	5_174181	Low	GO:0000746	BP	conjugation	conjugative transfer signal peptidase TraF	1688	334
+TIGR02775	5_174181	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbG	1769	334
+TIGR02780	5_174181	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbJ	2029	334
+TIGR02782	5_174181	Low	NA	NA	NA	P-type conjugative transfer ATPase TrbB	1678	334
+TIGR02783	5_174181	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbL	1868	334
+TIGR02736	5_175251	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	330
+TIGR01338	5_175709	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	318
+TIGR01339	5_175709	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	318
+TIGR03042	5_175709	High	NA	NA	NA	photosystem II protein PsbQ	296	318
+TIGR03045	5_175709	High	NA	NA	NA	cytochrome c-550	344	318
+TIGR03047	5_175709	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	318
+TIGR01332	5_17576	High	NA	NA	NA	cytochrome b559, alpha subunit	392	347
+TIGR01335	5_17576	High	NA	NA	NA	photosystem I core protein PsaA	379	347
+TIGR01336	5_17576	High	NA	NA	NA	photosystem I core protein PsaB	376	347
+TIGR02028	5_17576	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	347
+TIGR03043	5_17576	Low	NA	NA	NA	photosystem II core protein PsbZ	381	347
+TIGR03047	5_17576	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	347
+TIGR03060	5_17576	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	347
+TIGR02736	5_17966	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	333
+TIGR04505	5_180070	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	52
+TIGR04512	5_180070	High	GO:0008150	BP	biological_process	STREFT protein	12	52
+TIGR04548	5_180070	High	NA	NA	NA	DnaD family protein	60	52
+TIGR04561	5_180070	Very high	NA	NA	NA	integral membrane protein	52	52
+TIGR03890	5_181151	High	NA	NA	NA	nif11 domain/cupin domain protein	63	61
+TIGR04505	5_182115	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	36
+TIGR04548	5_182115	High	NA	NA	NA	DnaD family protein	60	36
+TIGR04561	5_182115	High	NA	NA	NA	integral membrane protein	52	36
+TIGR01831	5_182252	Low	NA	NA	NA	putative 3-oxoacyl-(acyl-carrier-protein) reductase	2225	981
+TIGR01644	5_182683	Low	GO:0019068	BP	virion assembly	phage baseplate assembly protein V	2375	493
+TIGR04183	5_182819	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	366
+TIGR02663	5_183668	Low	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	260
+TIGR02934	5_183668	Low	NA	NA	NA	probable nitrogen fixation protein FixT	1036	260
+TIGR01555	5_18447	Low	NA	NA	NA	phage-associated protein, HI1409 family	708	166
+TIGR04505	5_184829	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	63
+TIGR04522	5_184829	High	GO:0006810	BP	transport	putative energy coupling factor transporter S component	58	63
+TIGR04547	5_184829	High	GO:0008150	BP	biological_process	MOLPALP family lipoprotein	56	63
+TIGR04548	5_184829	High	NA	NA	NA	DnaD family protein	60	63
+TIGR02241	5_186691	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	620
+TIGR02242	5_186691	High	NA	NA	NA	phage tail protein domain	1325	620
+TIGR02243	5_186691	High	NA	NA	NA	putative baseplate assembly protein	1700	620
+TIGR01337	5_187076	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	251
+TIGR02652	5_187076	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	251
+TIGR03556	5_187076	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	251
+TIGR04376	5_187076	High	NA	NA	NA	TIGR04376 family protein	274	251
+TIGR02558	5_187473	High	GO:0030254	BP	protein secretion by the type III secretion system	type III secretion protein HrpB2	173	173
+TIGR02559	5_187473	High	NA	NA	NA	type III secretion protein HrpB7	119	173
+TIGR02561	5_187473	High	NA	NA	NA	type III secretion protein HrpB1/HrpK	173	173
+TIGR01332	5_19015	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	345
+TIGR01337	5_19015	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	345
+TIGR01338	5_19015	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	345
+TIGR01339	5_19015	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	345
+TIGR01964	5_19015	High	NA	NA	NA	CO2 hydration protein	345	345
+TIGR04505	5_191274	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	34
+TIGR04512	5_191274	High	GO:0008150	BP	biological_process	STREFT protein	12	34
+TIGR04548	5_191274	High	NA	NA	NA	DnaD family protein	60	34
+TIGR04561	5_191274	High	NA	NA	NA	integral membrane protein	52	34
+TIGR04505	5_191607	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	63
+TIGR04522	5_191607	High	GO:0006810	BP	transport	putative energy coupling factor transporter S component	58	63
+TIGR04547	5_191607	High	GO:0008150	BP	biological_process	MOLPALP family lipoprotein	56	63
+TIGR04548	5_191607	High	NA	NA	NA	DnaD family protein	60	63
+TIGR04561	5_191607	High	NA	NA	NA	integral membrane protein	52	63
+TIGR01337	5_193823	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	221
+TIGR02652	5_193823	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	221
+TIGR03556	5_193823	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	221
+TIGR01332	5_19502	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	263
+TIGR03047	5_19502	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	263
+TIGR04505	5_198174	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	45
+TIGR04548	5_198174	High	NA	NA	NA	DnaD family protein	60	45
+TIGR01788	5_202265	Low	GO:0006540	BP	glutamate decarboxylation to succinate	glutamate decarboxylase	2980	495
+TIGR04505	5_205137	High	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	62
+TIGR04522	5_205137	High	GO:0006810	BP	transport	putative energy coupling factor transporter S component	58	62
+TIGR04547	5_205137	High	GO:0008150	BP	biological_process	MOLPALP family lipoprotein	56	62
+TIGR04548	5_205137	High	NA	NA	NA	DnaD family protein	60	62
+TIGR04561	5_205137	High	NA	NA	NA	integral membrane protein	52	62
+TIGR01337	5_205191	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	221
+TIGR02652	5_205191	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	221
+TIGR03556	5_205191	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	221
+TIGR03761	5_20566	Low	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	235
+TIGR03764	5_20566	Low	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	235
+TIGR03344	5_205768	Low	GO:0009405	BP	pathogenesis	type VI secretion system effector, Hcp1 family	3720	330
+TIGR03344	5_205768	Low	GO:0052048	BP	NA	type VI secretion system effector, Hcp1 family	3720	330
+TIGR03355	5_205768	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, EvpB/VC_A0108 family	3729	330
+TIGR03358	5_205768	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0107 family	3697	330
+TIGR04183	5_206076	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	402
+TIGR04505	5_206257	Very high	NA	NA	NA	phosphate ABC transporter substrate-binding protein	64	64
+TIGR04512	5_206257	High	GO:0008150	BP	biological_process	STREFT protein	12	64
+TIGR04522	5_206257	High	GO:0006810	BP	transport	putative energy coupling factor transporter S component	58	64
+TIGR04547	5_206257	High	GO:0008150	BP	biological_process	MOLPALP family lipoprotein	56	64
+TIGR04548	5_206257	High	NA	NA	NA	DnaD family protein	60	64
+TIGR04561	5_206257	High	NA	NA	NA	integral membrane protein	52	64
+TIGR01282	5_207492	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein alpha chain	1652	353
+TIGR01285	5_207492	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	353
+TIGR01285	5_207492	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	353
+TIGR01286	5_207492	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein beta chain	1641	353
+TIGR02663	5_207492	Low	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	353
+TIGR02934	5_207492	Low	NA	NA	NA	probable nitrogen fixation protein FixT	1036	353
+TIGR02936	5_207492	Low	NA	NA	NA	ferredoxin III, nif-specific	999	353
+TIGR04183	5_209188	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	539
+TIGR01555	5_21116	High	NA	NA	NA	phage-associated protein, HI1409 family	708	313
+TIGR03033	5_21160	High	NA	NA	NA	putative phage-type endonuclease	2029	411
+TIGR03299	5_21160	High	NA	NA	NA	phage/plasmid-like protein TIGR03299	1351	411
+TIGR01539	5_214550	Low	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	314
+TIGR01635	5_21931	Low	GO:0016032	BP	viral process	phage virion morphogenesis protein	1832	317
+TIGR01337	5_22042	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	313
+TIGR01338	5_22042	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	313
+TIGR01339	5_22042	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	313
+TIGR03042	5_22042	Low	NA	NA	NA	photosystem II protein PsbQ	296	313
+TIGR03045	5_22042	High	NA	NA	NA	cytochrome c-550	344	313
+TIGR03048	5_22042	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	313
+TIGR01690	5_22999	Low	NA	NA	NA	integrative conjugative element protein, RAQPRD family	692	300
+TIGR03744	5_22999	High	GO:0008150	BP	biological_process	conjugative transfer ATPase, PFL_4706 family	748	300
+TIGR03745	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4702 family	634	300
+TIGR03746	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4703 family	689	300
+TIGR03747	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4697 family	791	300
+TIGR03748	5_22999	Low	NA	NA	NA	integrating conjugative element protein PilL, PFGI-1 class	726	300
+TIGR03749	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4704 family	740	300
+TIGR03750	5_22999	Low	NA	NA	NA	conjugative transfer region protein, TIGR03750 family	717	300
+TIGR03751	5_22999	High	GO:0008150	BP	biological_process	conjugative transfer region lipoprotein, TIGR03751 family	744	300
+TIGR03752	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4705 family	749	300
+TIGR03754	5_22999	Low	NA	NA	NA	conjugative coupling factor TraD, PFGI-1 class	781	300
+TIGR03755	5_22999	High	NA	NA	NA	integrating conjugative element protein, PFL_4711 family	769	300
+TIGR03756	5_22999	High	NA	NA	NA	integrating conjugative element protein, PFL_4710 family	764	300
+TIGR03757	5_22999	High	NA	NA	NA	integrating conjugative element protein, PFL_4709 family	596	300
+TIGR03758	5_22999	High	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4701 family	637	300
+TIGR03759	5_22999	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4693 family	742	300
+TIGR03760	5_22999	High	NA	NA	NA	integrating conjugative element relaxase, PFGI-1 class	827	300
+TIGR03761	5_22999	Low	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	300
+TIGR03764	5_22999	Low	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	300
+TIGR03765	5_22999	Low	NA	NA	NA	integrating conjugative element protein, PFL_4695 family	726	300
+TIGR03761	5_23976	Low	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	296
+TIGR03764	5_23976	Low	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	296
+TIGR01960	5_24475	Low	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	139
+TIGR01964	5_24475	High	NA	NA	NA	CO2 hydration protein	345	139
+TIGR01690	5_24795	Low	NA	NA	NA	integrative conjugative element protein, RAQPRD family	692	229
+TIGR03744	5_24795	High	GO:0008150	BP	biological_process	conjugative transfer ATPase, PFL_4706 family	748	229
+TIGR03745	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4702 family	634	229
+TIGR03746	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4703 family	689	229
+TIGR03747	5_24795	High	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4697 family	791	229
+TIGR03748	5_24795	Low	NA	NA	NA	integrating conjugative element protein PilL, PFGI-1 class	726	229
+TIGR03749	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4704 family	740	229
+TIGR03750	5_24795	Low	NA	NA	NA	conjugative transfer region protein, TIGR03750 family	717	229
+TIGR03751	5_24795	Low	GO:0008150	BP	biological_process	conjugative transfer region lipoprotein, TIGR03751 family	744	229
+TIGR03752	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4705 family	749	229
+TIGR03754	5_24795	High	NA	NA	NA	conjugative coupling factor TraD, PFGI-1 class	781	229
+TIGR03755	5_24795	High	NA	NA	NA	integrating conjugative element protein, PFL_4711 family	769	229
+TIGR03756	5_24795	Low	NA	NA	NA	integrating conjugative element protein, PFL_4710 family	764	229
+TIGR03758	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4701 family	637	229
+TIGR03759	5_24795	Low	GO:0008150	BP	biological_process	integrating conjugative element protein, PFL_4693 family	742	229
+TIGR03760	5_24795	High	NA	NA	NA	integrating conjugative element relaxase, PFGI-1 class	827	229
+TIGR03761	5_24795	High	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	229
+TIGR03764	5_24795	High	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	229
+TIGR03765	5_24795	Low	NA	NA	NA	integrating conjugative element protein, PFL_4695 family	726	229
+TIGR00403	5_24959	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	363
+TIGR01152	5_24959	High	NA	NA	NA	photosystem II D2 protein (photosystem q(a) protein)	337	363
+TIGR01153	5_24959	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	363
+TIGR01332	5_24959	High	NA	NA	NA	cytochrome b559, alpha subunit	392	363
+TIGR01335	5_24959	Low	NA	NA	NA	photosystem I core protein PsaA	379	363
+TIGR02048	5_24959	Low	GO:0006750	BP	glutathione biosynthetic process	putative glutamate--cysteine ligase	406	363
+TIGR02056	5_24959	High	NA	NA	NA	chlorophyll synthase ChlG	392	363
+TIGR02730	5_24959	High	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	363
+TIGR03038	5_24959	Low	NA	NA	NA	photosystem II reaction center protein PsbM	343	363
+TIGR03047	5_24959	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	363
+TIGR03048	5_24959	Low	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	363
+TIGR03060	5_24959	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	363
+TIGR03697	5_24959	Low	GO:0006355	BP	regulation of transcription, DNA-templated	global nitrogen regulator NtcA	396	363
+TIGR03697	5_24959	Low	GO:0006808	BP	regulation of nitrogen utilization	global nitrogen regulator NtcA	396	363
+TIGR04058	5_24959	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	363
+TIGR04059	5_24959	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty aldehyde decarbonylase	355	363
+TIGR00403	5_25579	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	334
+TIGR01153	5_25579	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	334
+TIGR01332	5_25579	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	334
+TIGR02028	5_25579	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	334
+TIGR02056	5_25579	Low	NA	NA	NA	chlorophyll synthase ChlG	392	334
+TIGR02730	5_25579	Low	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	334
+TIGR03043	5_25579	Low	NA	NA	NA	photosystem II core protein PsbZ	381	334
+TIGR03047	5_25579	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	334
+TIGR03060	5_25579	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	334
+TIGR01542	5_26314	Low	NA	NA	NA	phage portal protein, putative, A118 family	628	180
+TIGR01547	5_26314	Low	NA	NA	NA	phage terminase, large subunit, PBSX family	3130	180
+TIGR01540	5_26449	Low	NA	NA	NA	phage portal protein, PBSX family	1386	249
+TIGR01551	5_26449	Low	GO:0019069	BP	viral capsid assembly	phage major capsid protein, P2 family	1093	249
+TIGR03342	5_26449	Low	NA	NA	NA	sulfur relay protein, TusE/DsrC/DsvC family	4564	249
+TIGR01337	5_26510	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	331
+TIGR01339	5_26510	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	331
+TIGR01960	5_26510	High	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	331
+TIGR01964	5_26510	High	NA	NA	NA	CO2 hydration protein	345	331
+TIGR02028	5_26510	Low	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	331
+TIGR02048	5_26510	Low	GO:0006750	BP	glutathione biosynthetic process	putative glutamate--cysteine ligase	406	331
+TIGR02652	5_27203	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	265
+TIGR03556	5_27203	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	265
+TIGR04376	5_27203	High	NA	NA	NA	TIGR04376 family protein	274	265
+TIGR01339	5_28675	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	349
+TIGR03047	5_28978	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	308
+TIGR02652	5_29588	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	255
+TIGR03556	5_29588	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	255
+TIGR04156	5_29588	Low	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	255
+TIGR04376	5_29588	High	NA	NA	NA	TIGR04376 family protein	274	255
+TIGR01332	5_29679	High	NA	NA	NA	cytochrome b559, alpha subunit	392	298
+TIGR01337	5_29679	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	298
+TIGR01339	5_29679	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	298
+TIGR03042	5_29679	Low	NA	NA	NA	photosystem II protein PsbQ	296	298
+TIGR03047	5_29679	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	298
+TIGR00403	5_29685	Low	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	354
+TIGR01332	5_29685	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	354
+TIGR02056	5_29685	Low	NA	NA	NA	chlorophyll synthase ChlG	392	354
+TIGR02387	5_29685	High	NA	NA	NA	DNA-directed RNA polymerase, gamma subunit	383	354
+TIGR03039	5_29685	High	GO:0009769	BP	photosynthesis, light harvesting in photosystem II	photosystem II chlorophyll-binding protein CP47	402	354
+TIGR03044	5_29685	High	NA	NA	NA	photosystem II protein Psb27	396	354
+TIGR03048	5_29685	Low	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	354
+TIGR04059	5_29685	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty aldehyde decarbonylase	355	354
+TIGR00403	5_29963	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	386
+TIGR01153	5_29963	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	386
+TIGR01156	5_29963	High	GO:0055114	BP	oxidation-reduction process	cytb6/f complex subunit IV	408	386
+TIGR01332	5_29963	High	NA	NA	NA	cytochrome b559, alpha subunit	392	386
+TIGR01333	5_29963	High	NA	NA	NA	cytochrome b559, beta subunit	361	386
+TIGR02028	5_29963	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	386
+TIGR02056	5_29963	High	NA	NA	NA	chlorophyll synthase ChlG	392	386
+TIGR02654	5_29963	High	GO:0007623	BP	circadian rhythm	circadian clock protein KaiB	392	386
+TIGR02730	5_29963	High	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	386
+TIGR02732	5_29963	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	386
+TIGR03039	5_29963	Low	GO:0009769	BP	photosynthesis, light harvesting in photosystem II	photosystem II chlorophyll-binding protein CP47	402	386
+TIGR03044	5_29963	High	NA	NA	NA	photosystem II protein Psb27	396	386
+TIGR03047	5_29963	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	386
+TIGR03052	5_29963	Low	GO:0019684	BP	photosynthesis, light reaction	photosystem I reaction center subunit VIII	305	386
+TIGR03060	5_29963	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	386
+TIGR04058	5_29963	High	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	386
+TIGR04059	5_29963	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty aldehyde decarbonylase	355	386
+TIGR00403	5_30209	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	338
+TIGR01153	5_30209	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	338
+TIGR01156	5_30209	High	GO:0055114	BP	oxidation-reduction process	cytb6/f complex subunit IV	408	338
+TIGR01332	5_30209	High	NA	NA	NA	cytochrome b559, alpha subunit	392	338
+TIGR02056	5_30209	High	NA	NA	NA	chlorophyll synthase ChlG	392	338
+TIGR02387	5_30209	Low	NA	NA	NA	DNA-directed RNA polymerase, gamma subunit	383	338
+TIGR02654	5_30209	High	GO:0007623	BP	circadian rhythm	circadian clock protein KaiB	392	338
+TIGR02730	5_30209	High	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	338
+TIGR02732	5_30209	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	338
+TIGR02749	5_30209	Low	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	338
+TIGR03039	5_30209	High	GO:0009769	BP	photosynthesis, light harvesting in photosystem II	photosystem II chlorophyll-binding protein CP47	402	338
+TIGR03044	5_30209	High	NA	NA	NA	photosystem II protein Psb27	396	338
+TIGR03047	5_30209	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	338
+TIGR03048	5_30209	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	338
+TIGR03060	5_30209	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	338
+TIGR03069	5_30209	High	GO:0015979	BP	photosynthesis	photosystem II S4 domain protein	413	338
+TIGR00929	5_30298	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	349
+TIGR01821	5_30298	Low	GO:0006783	BP	heme biosynthetic process	5-aminolevulinic acid synthase	3010	349
+TIGR02771	5_30298	Low	GO:0000746	BP	conjugation	conjugative transfer signal peptidase TraF	1688	349
+TIGR02775	5_30298	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbG	1769	349
+TIGR02780	5_30298	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbJ	2029	349
+TIGR02782	5_30298	Low	NA	NA	NA	P-type conjugative transfer ATPase TrbB	1678	349
+TIGR02783	5_30298	Low	GO:0009291	BP	unidirectional conjugation	P-type conjugative transfer protein TrbL	1868	349
+TIGR01337	5_30907	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	253
+TIGR02652	5_30907	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	253
+TIGR03556	5_30907	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	253
+TIGR04376	5_30907	High	NA	NA	NA	TIGR04376 family protein	274	253
+TIGR04533	5_30907	Low	NA	NA	NA	cyanoexosortase B-associated protein	191	253
+TIGR02736	5_30951	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	330
+TIGR00403	5_31008	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	363
+TIGR01153	5_31008	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	363
+TIGR01332	5_31008	High	NA	NA	NA	cytochrome b559, alpha subunit	392	363
+TIGR01333	5_31008	High	NA	NA	NA	cytochrome b559, beta subunit	361	363
+TIGR02056	5_31008	High	NA	NA	NA	chlorophyll synthase ChlG	392	363
+TIGR02732	5_31008	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	363
+TIGR03043	5_31008	Low	NA	NA	NA	photosystem II core protein PsbZ	381	363
+TIGR03044	5_31008	High	NA	NA	NA	photosystem II protein Psb27	396	363
+TIGR03060	5_31008	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	363
+TIGR04058	5_31008	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	363
+TIGR04375	5_31098	High	NA	NA	NA	hercynine metabolism protein	56	120
+TIGR00403	5_31122	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	393
+TIGR01153	5_31122	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	393
+TIGR01332	5_31122	High	NA	NA	NA	cytochrome b559, alpha subunit	392	393
+TIGR01333	5_31122	High	NA	NA	NA	cytochrome b559, beta subunit	361	393
+TIGR02028	5_31122	Low	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	393
+TIGR02056	5_31122	High	NA	NA	NA	chlorophyll synthase ChlG	392	393
+TIGR02732	5_31122	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	393
+TIGR03039	5_31122	Low	GO:0009769	BP	photosynthesis, light harvesting in photosystem II	photosystem II chlorophyll-binding protein CP47	402	393
+TIGR03044	5_31122	Low	NA	NA	NA	photosystem II protein Psb27	396	393
+TIGR03047	5_31122	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	393
+TIGR03049	5_31122	Low	GO:0019684	BP	photosynthesis, light reaction	photosystem I reaction center subunit PsaK	403	393
+TIGR03060	5_31122	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	393
+TIGR03697	5_31122	Low	GO:0006355	BP	regulation of transcription, DNA-templated	global nitrogen regulator NtcA	396	393
+TIGR03697	5_31122	Low	GO:0006808	BP	regulation of nitrogen utilization	global nitrogen regulator NtcA	396	393
+TIGR04058	5_31122	High	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	393
+TIGR04059	5_31122	High	GO:0043447	BP	alkane biosynthetic process	long-chain fatty aldehyde decarbonylase	355	393
+TIGR01337	5_31129	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	253
+TIGR02652	5_31129	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	253
+TIGR03556	5_31129	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	253
+TIGR04156	5_31129	Low	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	253
+TIGR04376	5_31129	High	NA	NA	NA	TIGR04376 family protein	274	253
+TIGR03060	5_31449	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	179
+TIGR01332	5_31885	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	342
+TIGR01338	5_31885	Low	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	342
+TIGR02028	5_31885	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	342
+TIGR03047	5_31885	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	342
+TIGR04376	5_31920	High	NA	NA	NA	TIGR04376 family protein	274	237
+TIGR04369	5_32130	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	110
+TIGR02652	5_32145	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	254
+TIGR03556	5_32145	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	254
+TIGR04156	5_32145	Low	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	254
+TIGR04376	5_32145	High	NA	NA	NA	TIGR04376 family protein	274	254
+TIGR04346	5_32247	High	NA	NA	NA	conjugal transfer/type IV secretion protein DotA/TraY	628	397
+TIGR04369	5_32249	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	114
+TIGR01539	5_32361	Low	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	307
+TIGR00351	5_32366	Low	GO:0019645	BP	anaerobic electron transport chain	respiratory nitrate reductase, gamma subunit	4583	563
+TIGR00684	5_32366	Low	GO:0051131	BP	chaperone-mediated protein complex assembly	nitrate reductase molybdenum cofactor assembly chaperone	4487	563
+TIGR01580	5_32366	Low	GO:0009061	BP	anaerobic respiration	nitrate reductase, alpha subunit	4473	563
+TIGR01332	5_32810	High	NA	NA	NA	cytochrome b559, alpha subunit	392	376
+TIGR01333	5_32810	High	NA	NA	NA	cytochrome b559, beta subunit	361	376
+TIGR02028	5_32810	Low	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	376
+TIGR02654	5_32810	High	GO:0007623	BP	circadian rhythm	circadian clock protein KaiB	392	376
+TIGR02732	5_32810	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	376
+TIGR02749	5_32810	High	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	376
+TIGR03043	5_32810	Low	NA	NA	NA	photosystem II core protein PsbZ	381	376
+TIGR03047	5_32810	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	376
+TIGR03060	5_32810	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	376
+TIGR04058	5_32810	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	376
+TIGR02652	5_34067	Low	GO:0008150	BP	biological_process	TIGR02652 family protein	271	233
+TIGR03556	5_34067	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	233
+TIGR01338	5_34192	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	318
+TIGR01339	5_34192	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	318
+TIGR03042	5_34192	High	NA	NA	NA	photosystem II protein PsbQ	296	318
+TIGR03045	5_34192	High	NA	NA	NA	cytochrome c-550	344	318
+TIGR03047	5_34192	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	318
+TIGR01337	5_34467	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	245
+TIGR02652	5_34467	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	245
+TIGR03556	5_34467	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	245
+TIGR04376	5_34467	High	NA	NA	NA	TIGR04376 family protein	274	245
+TIGR01337	5_35376	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	257
+TIGR02652	5_35376	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	257
+TIGR03556	5_35376	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	257
+TIGR04376	5_35376	High	NA	NA	NA	TIGR04376 family protein	274	257
+TIGR04369	5_35423	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	103
+TIGR01332	5_35458	High	NA	NA	NA	cytochrome b559, alpha subunit	392	362
+TIGR01333	5_35458	Low	NA	NA	NA	cytochrome b559, beta subunit	361	362
+TIGR02056	5_35458	Low	NA	NA	NA	chlorophyll synthase ChlG	392	362
+TIGR02749	5_35458	High	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	362
+TIGR03047	5_35458	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	362
+TIGR03048	5_35458	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	362
+TIGR03060	5_35458	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	362
+TIGR03697	5_35458	Low	GO:0006355	BP	regulation of transcription, DNA-templated	global nitrogen regulator NtcA	396	362
+TIGR03697	5_35458	Low	GO:0006808	BP	regulation of nitrogen utilization	global nitrogen regulator NtcA	396	362
+TIGR01539	5_35483	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	467
+TIGR01540	5_35621	Low	NA	NA	NA	phage portal protein, PBSX family	1386	341
+TIGR01551	5_35621	Low	GO:0019069	BP	viral capsid assembly	phage major capsid protein, P2 family	1093	341
+TIGR03342	5_35621	Low	NA	NA	NA	sulfur relay protein, TusE/DsrC/DsvC family	4564	341
+TIGR01337	5_35799	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	323
+TIGR01338	5_35799	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	323
+TIGR01339	5_35799	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	323
+TIGR01960	5_35799	Low	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	323
+TIGR01964	5_35799	High	NA	NA	NA	CO2 hydration protein	345	323
+TIGR02652	5_35799	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	323
+TIGR03042	5_35799	High	NA	NA	NA	photosystem II protein PsbQ	296	323
+TIGR03045	5_35799	Low	NA	NA	NA	cytochrome c-550	344	323
+TIGR03047	5_35799	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	323
+TIGR02652	5_36116	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	253
+TIGR04376	5_36116	High	NA	NA	NA	TIGR04376 family protein	274	253
+TIGR01337	5_36620	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	245
+TIGR02652	5_36620	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	245
+TIGR03556	5_36620	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	245
+TIGR02652	5_36927	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	167
+TIGR03556	5_36927	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	167
+TIGR04376	5_36927	High	NA	NA	NA	TIGR04376 family protein	274	167
+TIGR00992	5_36966	High	NA	NA	NA	chloroplast envelope protein translocase, IAP75 family	232	256
+TIGR02652	5_36966	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	256
+TIGR03556	5_36966	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	256
+TIGR04376	5_36966	High	NA	NA	NA	TIGR04376 family protein	274	256
+TIGR01153	5_37069	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	329
+TIGR01332	5_37069	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	329
+TIGR01339	5_37328	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	232
+TIGR02652	5_37401	Low	GO:0008150	BP	biological_process	TIGR02652 family protein	271	187
+TIGR03556	5_37401	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	187
+TIGR04376	5_37401	High	NA	NA	NA	TIGR04376 family protein	274	187
+TIGR03045	5_37723	Low	NA	NA	NA	cytochrome c-550	344	222
+TIGR03556	5_37723	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	222
+TIGR04376	5_37723	High	NA	NA	NA	TIGR04376 family protein	274	222
+TIGR01337	5_37851	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	230
+TIGR02652	5_37851	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	230
+TIGR03556	5_37851	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	230
+TIGR04376	5_37883	Low	NA	NA	NA	TIGR04376 family protein	274	161
+TIGR02028	5_38219	Low	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	281
+TIGR02652	5_38544	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	271
+TIGR03556	5_38544	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	271
+TIGR04376	5_38544	High	NA	NA	NA	TIGR04376 family protein	274	271
+TIGR01337	5_39262	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	232
+TIGR01339	5_39262	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	232
+TIGR01337	5_39624	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	296
+TIGR01338	5_39624	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	296
+TIGR01339	5_39624	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	296
+TIGR01964	5_39624	High	NA	NA	NA	CO2 hydration protein	345	296
+TIGR02028	5_39624	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	296
+TIGR03511	5_39658	Low	NA	NA	NA	gliding motility-associated lipoprotein GldH	2521	2638
+TIGR03517	5_39658	Low	NA	NA	NA	gliding motility-associated protein GldM	2362	2638
+TIGR01337	5_39675	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	207
+TIGR02652	5_39675	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	207
+TIGR03556	5_39675	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	207
+TIGR04376	5_39675	High	NA	NA	NA	TIGR04376 family protein	274	207
+TIGR04376	5_39779	High	NA	NA	NA	TIGR04376 family protein	274	258
+TIGR01337	5_40151	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	247
+TIGR02652	5_40151	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	247
+TIGR03556	5_40151	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	247
+TIGR04376	5_40151	Low	NA	NA	NA	TIGR04376 family protein	274	247
+TIGR02652	5_40214	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	256
+TIGR03556	5_40214	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	256
+TIGR04376	5_40214	High	NA	NA	NA	TIGR04376 family protein	274	256
+TIGR01153	5_40570	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	330
+TIGR01332	5_40570	High	NA	NA	NA	cytochrome b559, alpha subunit	392	330
+TIGR03060	5_40570	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	330
+TIGR01782	5_40711	High	GO:0006810	BP	transport	TonB-dependent receptor	4907	2770
+TIGR03075	5_41131	Low	NA	NA	NA	PQQ-dependent dehydrogenase, methanol/ethanol family	3408	798
+TIGR03871	5_41131	High	NA	NA	NA	quinoprotein dehydrogenase-associated probable ABC transporter substrate-binding protein	998	798
+TIGR03874	5_41131	High	NA	NA	NA	c-type cytochrome, methanol metabolism-related	480	798
+TIGR04559	5_41131	High	NA	NA	NA	quinoprotein relay system zinc metallohydrolase 2	721	798
+TIGR01153	5_41160	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	409
+TIGR01333	5_41160	Low	NA	NA	NA	cytochrome b559, beta subunit	361	409
+TIGR02732	5_41160	Low	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	409
+TIGR03047	5_41160	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	409
+TIGR03060	5_41160	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	409
+TIGR04058	5_41160	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	409
+TIGR01332	5_41624	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	347
+TIGR01337	5_41624	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	347
+TIGR01338	5_41624	Low	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	347
+TIGR01339	5_41624	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	347
+TIGR02028	5_41624	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	347
+TIGR03556	5_41685	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	223
+TIGR01337	5_41806	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	203
+TIGR01555	5_41862	Low	NA	NA	NA	phage-associated protein, HI1409 family	708	349
+TIGR01337	5_42067	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	221
+TIGR01964	5_42067	Low	NA	NA	NA	CO2 hydration protein	345	221
+TIGR02652	5_42067	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	221
+TIGR03556	5_42067	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	221
+TIGR04376	5_42067	High	NA	NA	NA	TIGR04376 family protein	274	221
+TIGR00992	5_42122	Low	NA	NA	NA	chloroplast envelope protein translocase, IAP75 family	232	216
+TIGR03556	5_42122	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	216
+TIGR04156	5_42122	High	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	216
+TIGR04533	5_42122	High	NA	NA	NA	cyanoexosortase B-associated protein	191	216
+TIGR01282	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein alpha chain	1652	381
+TIGR01285	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	381
+TIGR01285	5_42371	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	381
+TIGR01286	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein beta chain	1641	381
+TIGR01287	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogenase iron protein	2358	381
+TIGR01290	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogenase cofactor biosynthesis protein NifB	2018	381
+TIGR01290	5_42371	Low	GO:0051186	BP	cofactor metabolic process	nitrogenase cofactor biosynthesis protein NifB	2018	381
+TIGR01817	5_42371	Low	NA	NA	NA	Nif-specific regulatory protein	1969	381
+TIGR02663	5_42371	Low	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	381
+TIGR02934	5_42371	Low	NA	NA	NA	probable nitrogen fixation protein FixT	1036	381
+TIGR01555	5_42653	Low	NA	NA	NA	phage-associated protein, HI1409 family	708	576
+TIGR02652	5_42861	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	207
+TIGR03556	5_42861	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	207
+TIGR04156	5_42861	High	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	207
+TIGR04533	5_42861	Low	NA	NA	NA	cyanoexosortase B-associated protein	191	207
+TIGR01539	5_43271	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	277
+TIGR01644	5_43271	Low	GO:0019068	BP	virion assembly	phage baseplate assembly protein V	2375	277
+TIGR02652	5_43613	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	198
+TIGR03556	5_43613	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	198
+TIGR04183	5_45287	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	611
+TIGR01332	5_45588	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	256
+TIGR01337	5_45588	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	256
+TIGR01960	5_45588	High	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	256
+TIGR01964	5_45588	High	NA	NA	NA	CO2 hydration protein	345	256
+TIGR03047	5_45588	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	256
+TIGR01338	5_46550	Low	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	118
+TIGR02736	5_46652	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	322
+TIGR01337	5_47133	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	197
+TIGR01338	5_47133	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	197
+TIGR01339	5_47133	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	197
+TIGR01964	5_47133	Low	NA	NA	NA	CO2 hydration protein	345	197
+TIGR03042	5_47133	Low	NA	NA	NA	photosystem II protein PsbQ	296	197
+TIGR03044	5_47133	Low	NA	NA	NA	photosystem II protein Psb27	396	197
+TIGR04369	5_48264	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	107
+TIGR03375	5_48268	Low	NA	NA	NA	type I secretion system ATPase	3661	1145
+TIGR02525	5_48453	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	74
+TIGR02652	5_48958	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	270
+TIGR03556	5_48958	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	270
+TIGR04376	5_48958	High	NA	NA	NA	TIGR04376 family protein	274	270
+TIGR01337	5_49235	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	264
+TIGR02652	5_49235	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	264
+TIGR03556	5_49235	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	264
+TIGR04156	5_49235	Low	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	264
+TIGR02525	5_49451	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	78
+TIGR03697	5_49459	High	GO:0006355	BP	regulation of transcription, DNA-templated	global nitrogen regulator NtcA	396	113
+TIGR03697	5_49459	High	GO:0006808	BP	regulation of nitrogen utilization	global nitrogen regulator NtcA	396	113
+TIGR00403	5_49860	Low	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	376
+TIGR01153	5_49860	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	376
+TIGR01332	5_49860	High	NA	NA	NA	cytochrome b559, alpha subunit	392	376
+TIGR01333	5_49860	High	NA	NA	NA	cytochrome b559, beta subunit	361	376
+TIGR01337	5_49860	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	376
+TIGR01339	5_49860	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	376
+TIGR02028	5_49860	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	376
+TIGR02387	5_49860	Low	NA	NA	NA	DNA-directed RNA polymerase, gamma subunit	383	376
+TIGR02654	5_49860	High	GO:0007623	BP	circadian rhythm	circadian clock protein KaiB	392	376
+TIGR02730	5_49860	Low	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	376
+TIGR02732	5_49860	High	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	376
+TIGR02749	5_49860	High	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	376
+TIGR03043	5_49860	High	NA	NA	NA	photosystem II core protein PsbZ	381	376
+TIGR03047	5_49860	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	376
+TIGR03048	5_49860	Low	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	376
+TIGR03060	5_49860	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	376
+TIGR04058	5_49860	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	376
+TIGR01337	5_50055	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	225
+TIGR02652	5_50055	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	225
+TIGR03556	5_50055	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	225
+TIGR04376	5_50055	High	NA	NA	NA	TIGR04376 family protein	274	225
+TIGR01337	5_50190	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	261
+TIGR01960	5_50190	Low	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	261
+TIGR01964	5_50190	Low	NA	NA	NA	CO2 hydration protein	345	261
+TIGR03045	5_51729	Low	NA	NA	NA	cytochrome c-550	344	270
+TIGR04376	5_52138	High	NA	NA	NA	TIGR04376 family protein	274	261
+TIGR04376	5_53756	High	NA	NA	NA	TIGR04376 family protein	274	210
+TIGR01646	5_53791	High	NA	NA	NA	Rhs element Vgr protein	1529	622
+TIGR02241	5_53791	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	622
+TIGR00403	5_54364	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	335
+TIGR01153	5_54364	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	335
+TIGR01332	5_54364	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	335
+TIGR02028	5_54364	High	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	335
+TIGR02056	5_54364	Low	NA	NA	NA	chlorophyll synthase ChlG	392	335
+TIGR02730	5_54364	Low	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	335
+TIGR03043	5_54364	Low	NA	NA	NA	photosystem II core protein PsbZ	381	335
+TIGR03047	5_54364	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	335
+TIGR03060	5_54364	Low	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	335
+TIGR01337	5_54581	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	165
+TIGR02652	5_54581	Low	GO:0008150	BP	biological_process	TIGR02652 family protein	271	165
+TIGR03556	5_54581	Low	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	165
+TIGR01555	5_56192	High	NA	NA	NA	phage-associated protein, HI1409 family	708	568
+TIGR02525	5_56200	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	87
+TIGR01153	5_56262	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	356
+TIGR01335	5_56262	Low	NA	NA	NA	photosystem I core protein PsaA	379	356
+TIGR02387	5_56262	High	NA	NA	NA	DNA-directed RNA polymerase, gamma subunit	383	356
+TIGR03039	5_56262	Low	GO:0009769	BP	photosynthesis, light harvesting in photosystem II	photosystem II chlorophyll-binding protein CP47	402	356
+TIGR03044	5_56262	High	NA	NA	NA	photosystem II protein Psb27	396	356
+TIGR03047	5_56262	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	356
+TIGR03048	5_56262	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	356
+TIGR02652	5_56541	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	213
+TIGR04376	5_56541	High	NA	NA	NA	TIGR04376 family protein	274	213
+TIGR02525	5_56941	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	53
+TIGR01646	5_57234	High	NA	NA	NA	Rhs element Vgr protein	1529	634
+TIGR02241	5_57234	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	634
+TIGR00403	5_57249	High	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	392
+TIGR01153	5_57249	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	392
+TIGR01332	5_57249	High	NA	NA	NA	cytochrome b559, alpha subunit	392	392
+TIGR01333	5_57249	High	NA	NA	NA	cytochrome b559, beta subunit	361	392
+TIGR01336	5_57249	High	NA	NA	NA	photosystem I core protein PsaB	376	392
+TIGR02028	5_57249	Low	GO:0015995	BP	chlorophyll biosynthetic process	geranylgeranyl reductase	400	392
+TIGR02048	5_57249	Low	GO:0006750	BP	glutathione biosynthetic process	putative glutamate--cysteine ligase	406	392
+TIGR02387	5_57249	Low	NA	NA	NA	DNA-directed RNA polymerase, gamma subunit	383	392
+TIGR02654	5_57249	High	GO:0007623	BP	circadian rhythm	circadian clock protein KaiB	392	392
+TIGR02732	5_57249	High	NA	NA	NA	9,9'-di-cis-zeta-carotene desaturase	376	392
+TIGR03038	5_57249	High	NA	NA	NA	photosystem II reaction center protein PsbM	343	392
+TIGR03043	5_57249	High	NA	NA	NA	photosystem II core protein PsbZ	381	392
+TIGR03044	5_57249	High	NA	NA	NA	photosystem II protein Psb27	396	392
+TIGR03047	5_57249	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	392
+TIGR03048	5_57249	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	392
+TIGR03049	5_57249	Low	GO:0019684	BP	photosynthesis, light reaction	photosystem I reaction center subunit PsaK	403	392
+TIGR03052	5_57249	High	GO:0019684	BP	photosynthesis, light reaction	photosystem I reaction center subunit VIII	305	392
+TIGR03060	5_57249	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	392
+TIGR01282	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein alpha chain	1652	420
+TIGR01283	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase MoFe cofactor biosynthesis protein NifE	1683	420
+TIGR01283	5_57297	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase MoFe cofactor biosynthesis protein NifE	1683	420
+TIGR01285	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	420
+TIGR01285	5_57297	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	420
+TIGR01286	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein beta chain	1641	420
+TIGR01287	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase iron protein	2358	420
+TIGR01290	5_57297	Low	GO:0009399	BP	nitrogen fixation	nitrogenase cofactor biosynthesis protein NifB	2018	420
+TIGR01290	5_57297	Low	GO:0051186	BP	cofactor metabolic process	nitrogenase cofactor biosynthesis protein NifB	2018	420
+TIGR01817	5_57297	Low	NA	NA	NA	Nif-specific regulatory protein	1969	420
+TIGR02663	5_57297	High	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	420
+TIGR02934	5_57297	High	NA	NA	NA	probable nitrogen fixation protein FixT	1036	420
+TIGR02935	5_57297	Low	NA	NA	NA	probable nitrogen fixation protein	967	420
+TIGR02936	5_57297	Low	NA	NA	NA	ferredoxin III, nif-specific	999	420
+TIGR01338	5_57375	Low	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	320
+TIGR01339	5_57375	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	320
+TIGR01540	5_57519	Low	NA	NA	NA	phage portal protein, PBSX family	1386	320
+TIGR01551	5_57519	High	GO:0019069	BP	viral capsid assembly	phage major capsid protein, P2 family	1093	320
+TIGR03342	5_57519	Low	NA	NA	NA	sulfur relay protein, TusE/DsrC/DsvC family	4564	320
+TIGR02525	5_58045	High	NA	NA	NA	plasmid transfer ATPase TraJ	74	64
+TIGR03890	5_58053	High	NA	NA	NA	nif11 domain/cupin domain protein	63	57
+TIGR04375	5_58053	High	NA	NA	NA	hercynine metabolism protein	56	57
+TIGR03355	5_58075	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, EvpB/VC_A0108 family	3729	314
+TIGR03359	5_58075	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, TIGR03359 family	3671	314
+TIGR01337	5_58197	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	206
+TIGR01338	5_58197	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	206
+TIGR01339	5_58197	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	206
+TIGR01964	5_58197	High	NA	NA	NA	CO2 hydration protein	345	206
+TIGR03045	5_58197	Low	NA	NA	NA	cytochrome c-550	344	206
+TIGR04376	5_58586	High	NA	NA	NA	TIGR04376 family protein	274	207
+TIGR03556	5_59240	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	263
+TIGR04376	5_59240	High	NA	NA	NA	TIGR04376 family protein	274	263
+TIGR03890	5_59290	High	NA	NA	NA	nif11 domain/cupin domain protein	63	57
+TIGR04375	5_59290	High	NA	NA	NA	hercynine metabolism protein	56	57
+TIGR04376	5_59528	Low	NA	NA	NA	TIGR04376 family protein	274	171
+TIGR04183	5_59876	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	710
+TIGR01285	5_60272	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	431
+TIGR01285	5_60272	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	431
+TIGR01290	5_60272	Low	GO:0009399	BP	nitrogen fixation	nitrogenase cofactor biosynthesis protein NifB	2018	431
+TIGR01290	5_60272	Low	GO:0051186	BP	cofactor metabolic process	nitrogenase cofactor biosynthesis protein NifB	2018	431
+TIGR02663	5_60272	Low	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	431
+TIGR02934	5_60272	Low	NA	NA	NA	probable nitrogen fixation protein FixT	1036	431
+TIGR02935	5_60272	Low	NA	NA	NA	probable nitrogen fixation protein	967	431
+TIGR04375	5_61645	High	NA	NA	NA	hercynine metabolism protein	56	58
+TIGR03890	5_63008	High	NA	NA	NA	nif11 domain/cupin domain protein	63	57
+TIGR04375	5_63008	High	NA	NA	NA	hercynine metabolism protein	56	57
+TIGR04375	5_63238	High	NA	NA	NA	hercynine metabolism protein	56	54
+TIGR01337	5_64823	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	330
+TIGR01339	5_64823	Low	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	330
+TIGR01960	5_64823	High	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	330
+TIGR01964	5_64823	High	NA	NA	NA	CO2 hydration protein	345	330
+TIGR02048	5_64823	Low	GO:0006750	BP	glutathione biosynthetic process	putative glutamate--cysteine ligase	406	330
+TIGR01540	5_66657	Low	NA	NA	NA	phage portal protein, PBSX family	1386	240
+TIGR01551	5_66657	Low	GO:0019069	BP	viral capsid assembly	phage major capsid protein, P2 family	1093	240
+TIGR04183	5_67878	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	557
+TIGR02652	5_67931	Low	GO:0008150	BP	biological_process	TIGR02652 family protein	271	200
+TIGR04376	5_67931	Low	NA	NA	NA	TIGR04376 family protein	274	200
+TIGR01555	5_69495	High	NA	NA	NA	phage-associated protein, HI1409 family	708	226
+TIGR03871	5_69986	Low	NA	NA	NA	quinoprotein dehydrogenase-associated probable ABC transporter substrate-binding protein	998	477
+TIGR03743	5_70874	Low	GO:0015074	BP	DNA integration	conjugative coupling factor TraD, SXT/TOL subfamily	397	173
+TIGR00403	5_71388	Low	GO:0019684	BP	photosynthesis, light reaction	NADH-plastoquinone oxidoreductase, I subunit	401	399
+TIGR01153	5_71388	High	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	399
+TIGR01333	5_71388	Low	NA	NA	NA	cytochrome b559, beta subunit	361	399
+TIGR02730	5_71388	High	GO:0016117	BP	carotenoid biosynthetic process	carotene isomerase	409	399
+TIGR04058	5_71388	High	GO:0043447	BP	alkane biosynthetic process	long-chain fatty acyl-ACP reductase (aldehyde-forming)	350	399
+TIGR04059	5_71388	Low	GO:0043447	BP	alkane biosynthetic process	long-chain fatty aldehyde decarbonylase	355	399
+TIGR01332	5_71981	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	313
+TIGR01333	5_71981	Low	NA	NA	NA	cytochrome b559, beta subunit	361	313
+TIGR01337	5_71981	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	313
+TIGR01338	5_71981	High	GO:0015979	BP	photosynthesis	phycocyanin, alpha subunit	313	313
+TIGR01339	5_71981	High	GO:0015979	BP	photosynthesis	phycocyanin, beta subunit	320	313
+TIGR03044	5_71981	Low	NA	NA	NA	photosystem II protein Psb27	396	313
+TIGR03045	5_71981	Low	NA	NA	NA	cytochrome c-550	344	313
+TIGR03047	5_71981	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	313
+TIGR01156	5_72814	Low	GO:0055114	BP	oxidation-reduction process	cytb6/f complex subunit IV	408	180
+TIGR01332	5_72814	Low	NA	NA	NA	cytochrome b559, alpha subunit	392	180
+TIGR00025	5_72828	Low	GO:0006810	BP	transport	ABC transporter efflux protein, DrrB family	6683	968
+TIGR00089	5_72828	Low	NA	NA	NA	radical SAM methylthiotransferase, MiaB/RimO family	9380	968
+TIGR04375	5_74121	High	NA	NA	NA	hercynine metabolism protein	56	64
+TIGR02652	5_74677	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	170
+TIGR04156	5_75496	High	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	208
+TIGR04321	5_76285	High	GO:0008150	BP	biological_process	spiro-SPASM protein	195	232
+TIGR01539	5_77668	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	238
+TIGR01634	5_77668	Low	GO:0016032	BP	viral process	phage tail protein I	1865	238
+TIGR01644	5_77668	Low	GO:0019068	BP	virion assembly	phage baseplate assembly protein V	2375	238
+TIGR01539	5_78109	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	576
+TIGR01538	5_78429	High	GO:0051027	BP	DNA transport	phage portal protein, SPP1 family	1287	261
+TIGR01641	5_78429	Low	GO:0016032	BP	viral process	phage head morphogenesis protein, SPP1 gp7 family	2949	261
+TIGR01641	5_78429	Low	GO:0019068	BP	virion assembly	phage head morphogenesis protein, SPP1 gp7 family	2949	261
+TIGR01282	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein alpha chain	1652	383
+TIGR01285	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	383
+TIGR01285	5_79535	Low	GO:0051188	BP	cofactor biosynthetic process	nitrogenase molybdenum-iron cofactor biosynthesis protein NifN	1157	383
+TIGR01286	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogenase molybdenum-iron protein beta chain	1641	383
+TIGR01287	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogenase iron protein	2358	383
+TIGR01290	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogenase cofactor biosynthesis protein NifB	2018	383
+TIGR01290	5_79535	Low	GO:0051186	BP	cofactor metabolic process	nitrogenase cofactor biosynthesis protein NifB	2018	383
+TIGR01817	5_79535	Low	NA	NA	NA	Nif-specific regulatory protein	1969	383
+TIGR02663	5_79535	Low	GO:0009399	BP	nitrogen fixation	nitrogen fixation protein NifX	1213	383
+TIGR02934	5_79535	Low	NA	NA	NA	probable nitrogen fixation protein FixT	1036	383
+TIGR04183	5_79556	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	648
+TIGR03736	5_79697	Low	NA	NA	NA	PRTRC system ThiF family protein	728	163
+TIGR03737	5_79697	Low	NA	NA	NA	PRTRC system protein B	651	163
+TIGR03738	5_79697	Low	NA	NA	NA	PRTRC system protein C	593	163
+TIGR03556	5_80288	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	166
+TIGR03783	5_80489	Low	GO:0032196	BP	transposition	Bacteroides conjugation system ATPase, TraG family	972	313
+TIGR01603	5_80798	High	GO:0019068	BP	virion assembly	phage major tail protein, phi13 family	1315	179
+TIGR01337	5_81394	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	252
+TIGR02652	5_81394	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	252
+TIGR03556	5_81394	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	252
+TIGR04376	5_81394	High	NA	NA	NA	TIGR04376 family protein	274	252
+TIGR03870	5_81833	High	GO:0046170	BP	methanol catabolic process	methanol oxidation system protein MoxJ	236	133
+TIGR01153	5_83305	Low	NA	NA	NA	photosystem II 44 kDa subunit reaction center protein	371	360
+TIGR01332	5_83305	High	NA	NA	NA	cytochrome b559, alpha subunit	392	360
+TIGR01333	5_83305	Low	NA	NA	NA	cytochrome b559, beta subunit	361	360
+TIGR02056	5_83305	Low	NA	NA	NA	chlorophyll synthase ChlG	392	360
+TIGR02749	5_83305	High	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	360
+TIGR03047	5_83305	High	NA	NA	NA	photosystem II reaction center protein Psb28	402	360
+TIGR03048	5_83305	High	GO:0009773	BP	photosynthetic electron transport in photosystem I	photosystem I iron-sulfur protein PsaC	390	360
+TIGR03060	5_83305	High	GO:0010207	BP	photosystem II assembly	photosystem II biogenesis protein Psp29	398	360
+TIGR03697	5_83305	Low	GO:0006355	BP	regulation of transcription, DNA-templated	global nitrogen regulator NtcA	396	360
+TIGR03697	5_83305	Low	GO:0006808	BP	regulation of nitrogen utilization	global nitrogen regulator NtcA	396	360
+TIGR02736	5_83475	High	GO:0055114	BP	oxidation-reduction process	cytochrome c oxidase, cbb3-type, CcoQ subunit	320	335
+TIGR04376	5_83775	High	NA	NA	NA	TIGR04376 family protein	274	258
+TIGR02749	5_84097	Low	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	107
+TIGR00929	5_84630	Low	NA	NA	NA	type IV secretion/conjugal transfer ATPase, VirB4 family	3153	388
+TIGR01337	5_86279	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	271
+TIGR04375	5_86554	High	NA	NA	NA	hercynine metabolism protein	56	64
+TIGR03075	5_87361	Low	NA	NA	NA	PQQ-dependent dehydrogenase, methanol/ethanol family	3408	779
+TIGR03871	5_87361	High	NA	NA	NA	quinoprotein dehydrogenase-associated probable ABC transporter substrate-binding protein	998	779
+TIGR03874	5_87361	Low	NA	NA	NA	c-type cytochrome, methanol metabolism-related	480	779
+TIGR04559	5_87361	High	NA	NA	NA	quinoprotein relay system zinc metallohydrolase 2	721	779
+TIGR01348	5_88351	Low	GO:0006086	BP	acetyl-CoA biosynthetic process from pyruvate	dihydrolipoyllysine-residue acetyltransferase	6079	485
+TIGR03047	5_88540	Low	NA	NA	NA	photosystem II reaction center protein Psb28	402	298
+TIGR01960	5_89477	Low	NA	NA	NA	NAD(P)H dehydrogenase, subunit NdhF3 family	343	138
+TIGR01964	5_89477	High	NA	NA	NA	CO2 hydration protein	345	138
+TIGR02563	5_90444	Low	GO:0043571	BP	maintenance of CRISPR repeat elements	CRISPR-associated endoribonuclease Cas6/Csy4, subtype I-F/YPEST	877	192
+TIGR03637	5_90444	Low	NA	NA	NA	CRISPR-associated endonuclease Cas1, subtype I-F/YPEST	784	192
+TIGR01539	5_90743	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	470
+TIGR01555	5_91136	High	NA	NA	NA	phage-associated protein, HI1409 family	708	576
+TIGR01337	5_92587	Low	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	146
+TIGR01782	5_93156	High	GO:0006810	BP	transport	TonB-dependent receptor	4907	2802
+TIGR02652	5_93881	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	269
+TIGR03556	5_93881	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	269
+TIGR04156	5_93881	High	GO:0043687	BP	post-translational protein modification	cyanoexosortase B	191	269
+TIGR04376	5_93881	High	NA	NA	NA	TIGR04376 family protein	274	269
+TIGR04183	5_95091	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	594
+TIGR03763	5_95584	Low	GO:0043687	BP	post-translational protein modification	cyanoexosortase A	159	256
+TIGR01555	5_97981	Low	NA	NA	NA	phage-associated protein, HI1409 family	708	504
+TIGR02749	5_98359	High	GO:0010236	BP	plastoquinone biosynthetic process	solanesyl diphosphate synthase	396	120
+TIGR04369	5_98359	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	120
+TIGR03747	5_98893	Low	GO:0008150	BP	biological_process	integrating conjugative element membrane protein, PFL_4697 family	791	230
+TIGR03755	5_98893	Low	NA	NA	NA	integrating conjugative element protein, PFL_4711 family	769	230
+TIGR03760	5_98893	Low	NA	NA	NA	integrating conjugative element relaxase, PFGI-1 class	827	230
+TIGR03761	5_98893	Low	NA	NA	NA	integrating conjugative element protein, PFL_4669 family	718	230
+TIGR03764	5_98893	Low	NA	NA	NA	integrating conjugative element, PFGI_1 class, ParB family protein	687	230
+TIGR01348	5_99975	Low	GO:0006086	BP	acetyl-CoA biosynthetic process from pyruvate	dihydrolipoyllysine-residue acetyltransferase	6079	381
+TIGR02241	6_100031	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	896
+TIGR02242	6_100031	High	NA	NA	NA	phage tail protein domain	1325	896
+TIGR02243	6_100031	High	NA	NA	NA	putative baseplate assembly protein	1700	896
+TIGR03187	6_105583	Low	NA	NA	NA	DGQHR domain	1524	255
+TIGR01539	6_105635	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	273
+TIGR00072	6_110286	Low	NA	NA	NA	hydrogenase maturation protease	3818	200
+TIGR04435	6_119580	Low	NA	NA	NA	restriction system-associated AAA family ATPase	162	587
+TIGR02688	6_131012	Low	NA	NA	NA	TIGR02688 family protein	574	147
+TIGR02653	6_138163	Very high	GO:0008150	BP	biological_process	conserved hypothetical protein	993	1379
+TIGR02687	6_138163	Very high	NA	NA	NA	TIGR02687 family protein	1008	1379
+TIGR02653	6_138164	Very high	GO:0008150	BP	biological_process	conserved hypothetical protein	993	1650
+TIGR02687	6_138164	Very high	NA	NA	NA	TIGR02687 family protein	1008	1650
+TIGR00571	6_152893	Low	GO:0006306	BP	DNA methylation	DNA adenine methylase	5895	426
+TIGR03986	6_154791	High	NA	NA	NA	CRISPR-associated protein	700	283
+TIGR01413	6_156435	Low	NA	NA	NA	Dyp-type peroxidase family	5345	690
+TIGR01782	6_167637	Low	GO:0006810	BP	transport	TonB-dependent receptor	4907	2822
+TIGR01413	6_179748	Low	NA	NA	NA	Dyp-type peroxidase family	5345	619
+TIGR01646	6_194586	High	NA	NA	NA	Rhs element Vgr protein	1529	619
+TIGR02241	6_194586	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	619
+TIGR01539	6_19736	High	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	740
+TIGR00028	6_19810	High	NA	NA	NA	toxin-antitoxin system PIN domain toxin	933	397
+TIGR00072	6_24394	Low	NA	NA	NA	hydrogenase maturation protease	3818	761
+TIGR00074	6_24394	Low	NA	NA	NA	hydrogenase assembly chaperone HypC/HupF	5985	761
+TIGR00391	6_24394	Low	GO:0055114	BP	oxidation-reduction process	hydrogenase (NiFe) small subunit (hydA)	3945	761
+TIGR00345	6_30143	High	NA	NA	NA	transport-energizing ATPase, TRC40/GET3/ArsA family	2660	886
+TIGR01635	6_30477	Low	GO:0016032	BP	viral process	phage virion morphogenesis protein	1832	490
+TIGR04183	6_39249	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	786
+TIGR01603	6_39646	Low	GO:0019068	BP	virion assembly	phage major tail protein, phi13 family	1315	191
+TIGR01603	6_40171	Low	GO:0019068	BP	virion assembly	phage major tail protein, phi13 family	1315	181
+TIGR04183	6_40571	Low	NA	NA	NA	Por secretion system C-terminal sorting domain	4855	952
+TIGR04369	6_43282	High	NA	NA	NA	oxidoreductase/SelD-related fusion protein	109	113
+TIGR02276	6_45088	Low	NA	NA	NA	40-residue YVTN family beta-propeller repeat	11366	3918
+TIGR01782	6_45776	High	GO:0006810	BP	transport	TonB-dependent receptor	4907	2804
+TIGR02241	6_46553	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	516
+TIGR02243	6_46553	High	NA	NA	NA	putative baseplate assembly protein	1700	516
+TIGR01539	6_47235	Low	GO:0019068	BP	virion assembly	phage portal protein, lambda family	2115	319
+TIGR03345	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion ATPase, ClpV1 family	3359	656
+TIGR03347	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0111 family	3628	656
+TIGR03349	6_53023	High	GO:0052048	BP	NA	type IV/VI secretion system protein, DotU family	3768	656
+TIGR03353	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0114 family	3693	656
+TIGR03355	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, EvpB/VC_A0108 family	3729	656
+TIGR03357	6_53023	Low	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion system lysozyme-like protein	3523	656
+TIGR03358	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, VC_A0107 family	3697	656
+TIGR03359	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion protein, TIGR03359 family	3671	656
+TIGR03361	6_53023	High	GO:0033103	BP	protein secretion by the type VI secretion system	type VI secretion system Vgr family protein	3569	656
+TIGR03363	6_53023	High	NA	NA	NA	type VI secretion-associated protein, ImpA family	2695	656
+TIGR02241	6_59858	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	537
+TIGR02243	6_59858	High	NA	NA	NA	putative baseplate assembly protein	1700	537
+TIGR01413	6_61302	Low	NA	NA	NA	Dyp-type peroxidase family	5345	409
+TIGR01603	6_62357	High	GO:0019068	BP	virion assembly	phage major tail protein, phi13 family	1315	318
+TIGR04246	6_63808	Very high	GO:0019333	BP	denitrification pathway	nitrous-oxide reductase, Sec-dependent	961	959
+TIGR04247	6_63808	High	GO:0051186	BP	cofactor metabolic process	nitrous oxide reductase family maturation protein NosD	2176	959
+TIGR04247	6_63808	High	GO:0071941	BP	nitrogen cycle metabolic process	nitrous oxide reductase family maturation protein NosD	2176	959
+TIGR01538	6_65058	High	GO:0051027	BP	DNA transport	phage portal protein, SPP1 family	1287	248
+TIGR01641	6_65058	Low	GO:0016032	BP	viral process	phage head morphogenesis protein, SPP1 gp7 family	2949	248
+TIGR01641	6_65058	Low	GO:0019068	BP	virion assembly	phage head morphogenesis protein, SPP1 gp7 family	2949	248
+TIGR01875	6_77531	Low	GO:0043571	BP	maintenance of CRISPR repeat elements	CRISPR-associated autoregulator DevR family	121	93
+TIGR02241	6_88528	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	886
+TIGR02242	6_88528	High	NA	NA	NA	phage tail protein domain	1325	886
+TIGR02243	6_88528	High	NA	NA	NA	putative baseplate assembly protein	1700	886
+TIGR02653	6_94538	Very high	GO:0008150	BP	biological_process	conserved hypothetical protein	993	1302
+TIGR02687	6_94538	Very high	NA	NA	NA	TIGR02687 family protein	1008	1302
+TIGR01646	6_99572	High	NA	NA	NA	Rhs element Vgr protein	1529	624
+TIGR02241	6_99572	High	NA	NA	NA	conserved hypothetical phage tail region protein	2571	624
+TIGR01788	7_118448	Low	GO:0006540	BP	glutamate decarboxylation to succinate	glutamate decarboxylase	2980	560
+TIGR00571	7_23895	Low	GO:0006306	BP	DNA methylation	DNA adenine methylase	5895	523
+TIGR01337	7_25366	High	GO:0015979	BP	photosynthesis	allophycocyanin, beta subunit	334	264
+TIGR02652	7_25366	High	GO:0008150	BP	biological_process	TIGR02652 family protein	271	264
+TIGR03556	7_25366	High	NA	NA	NA	deoxyribodipyrimidine photo-lyase, 8-HDF type	252	264
+TIGR04376	7_25366	High	NA	NA	NA	TIGR04376 family protein	274	264
+TIGR02653	7_43123	Very high	GO:0008150	BP	biological_process	conserved hypothetical protein	993	1328
+TIGR02687	7_43123	Very high	NA	NA	NA	TIGR02687 family protein	1008	1328
+TIGR04246	7_95298	Very high	GO:0019333	BP	denitrification pathway	nitrous-oxide reductase, Sec-dependent	961	966
+TIGR04247	7_95298	High	GO:0051186	BP	cofactor metabolic process	nitrous oxide reductase family maturation protein NosD	2176	966
+TIGR04247	7_95298	High	GO:0071941	BP	nitrogen cycle metabolic process	nitrous oxide reductase family maturation protein NosD	2176	966

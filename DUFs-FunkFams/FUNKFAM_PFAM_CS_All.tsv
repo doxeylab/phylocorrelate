@@ -1,0 +1,812 @@
+PFAM	FunkFam	CS	GO	Ontology	Description	PFAMDescription	PFAMCount	FunkFamCount
+PF00355	5_103814	Low	GO:0055114	BP	oxidation-reduction process	Rieske [2Fe-2S] domain	17693	1971
+PF01061	5_103814	Low	NA	NA	NA	ABC-2 type transporter	21774	1971
+PF08241	5_103814	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	1971
+PF12804	5_103814	Low	NA	NA	NA	MobA-like NTP transferase domain	22198	1971
+PF13489	5_103814	Low	NA	NA	NA	Methyltransferase domain	22564	1971
+PF00665	5_104358	Low	GO:0015074	BP	DNA integration	Integrase core domain	17755	876
+PF13401	5_104358	Low	NA	NA	NA	AAA domain	11136	876
+PF03574	5_106133	High	GO:0043158	BP	heterocyst differentiation	Peptidase family S48	194	194
+PF03574	5_107375	Low	GO:0043158	BP	heterocyst differentiation	Peptidase family S48	194	138
+PF02315	5_110180	High	GO:0015946	BP	methanol oxidation	Methanol dehydrogenase beta subunit	238	251
+PF02315	5_110180	High	GO:0055114	BP	oxidation-reduction process	Methanol dehydrogenase beta subunit	238	251
+PF07634	5_112716	High	NA	NA	NA	RtxA repeat	104	94
+PF02341	5_123472	Low	NA	NA	NA	RbcX protein	272	267
+PF09654	5_123472	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	267
+PF12532	5_126467	High	NA	NA	NA	Protein of unknown function (DUF3732)	756	459
+PF14594	5_127485	High	NA	NA	NA	Siphovirus ReqiPepy6 Gp37-like protein	609	398
+PF09442	5_128127	Low	NA	NA	NA	Domain of unknown function (DUF2018)	319	208
+PF15436	5_128127	Low	NA	NA	NA	Plasminogen-binding protein pgbA N-terminal	335	208
+PF03574	5_129181	High	GO:0043158	BP	heterocyst differentiation	Peptidase family S48	194	190
+PF01641	5_129798	Low	GO:0055114	BP	oxidation-reduction process	SelR domain	20463	1134
+PF13460	5_129798	Low	NA	NA	NA	NAD(P)H-binding	18965	1134
+PF13561	5_129798	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	1134
+PF00578	5_131222	Low	GO:0055114	BP	oxidation-reduction process	AhpC/TSA family	24298	2281
+PF08241	5_131222	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	2281
+PF01527	5_133602	Low	GO:0006313	BP	transposition, DNA-mediated	Transposase	13168	721
+PF08966	5_139049	Low	NA	NA	NA	Domain of unknown function (DUF1882)	280	277
+PF02543	5_146708	Low	GO:0009058	BP	biosynthetic process	Carbamoyltransferase N-terminus	5489	1290
+PF10045	5_15710	High	NA	NA	NA	Uncharacterized conserved protein (DUF2280)	482	408
+PF00672	5_158127	Low	GO:0007165	BP	signal transduction	HAMP domain	24216	3360
+PF13426	5_158127	Low	NA	NA	NA	PAS domain	18851	3360
+PF10758	5_16608	Low	NA	NA	NA	Protein of unknown function (DUF2586)	541	322
+PF10761	5_16608	High	NA	NA	NA	Protein of unknown function (DUF2590)	350	322
+PF10772	5_16608	High	NA	NA	NA	Protein of unknown function (DUF2597)	343	322
+PF10963	5_16608	High	NA	NA	NA	Phage tail assembly chaperone	351	322
+PF13304	5_166548	Low	NA	NA	NA	AAA domain, putative AbiEii toxin, Type IV TA system	16155	615
+PF11679	5_17222	High	NA	NA	NA	Protein of unknown function (DUF3275)	341	269
+PF13009	5_173010	High	NA	NA	NA	Putative phage integrase	275	186
+PF09442	5_175251	Low	NA	NA	NA	Domain of unknown function (DUF2018)	319	330
+PF02941	5_175709	Low	GO:0015979	BP	photosynthesis	Ferredoxin thioredoxin reductase variable alpha chain	328	318
+PF06514	5_175709	Low	GO:0042549	BP	photosystem II stabilization	Photosystem II 12 kDa extrinsic protein (PsbU)	341	318
+PF06514	5_175709	Low	GO:0015979	BP	photosynthesis	Photosystem II 12 kDa extrinsic protein (PsbU)	341	318
+PF02605	5_17576	Low	GO:0015979	BP	photosynthesis	Photosystem I reaction centre subunit XI	400	347
+PF03912	5_17576	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	347
+PF10726	5_17576	Low	NA	NA	NA	Protein of function (DUF2518)	393	347
+PF11282	5_17576	Low	NA	NA	NA	Protein of unknown function (DUF3082)	383	347
+PF11317	5_17576	Low	NA	NA	NA	Protein of unknown function (DUF3119)	393	347
+PF11332	5_17576	Low	NA	NA	NA	Protein of unknown function (DUF3134)	399	347
+PF12527	5_17576	Low	NA	NA	NA	Protein of unknown function (DUF3727)	403	347
+PF15436	5_17966	Low	NA	NA	NA	Plasminogen-binding protein pgbA N-terminal	335	333
+PF09654	5_187076	High	NA	NA	NA	Protein of unknown function (DUF2396)	271	251
+PF09483	5_187473	High	NA	NA	NA	Type III secretion protein (HpaP)	187	173
+PF09486	5_187473	High	NA	NA	NA	Bacterial type III secretion protein (HrpB7)	190	173
+PF09487	5_187473	High	NA	NA	NA	Bacterial type III secretion protein (HrpB2)	198	173
+PF09502	5_187473	High	NA	NA	NA	Bacterial type III secretion protein (HrpB4)	215	173
+PF09613	5_187473	High	NA	NA	NA	Bacterial type III secretion protein (HrpB1_HrpK)	195	173
+PF11681	5_18852	High	NA	NA	NA	Protein of unknown function (DUF3277)	336	239
+PF11681	5_19230	Low	NA	NA	NA	Protein of unknown function (DUF3277)	336	174
+PF12128	5_19394	High	NA	NA	NA	Protein of unknown function (DUF3584)	731	485
+PF11317	5_19502	Low	NA	NA	NA	Protein of unknown function (DUF3119)	393	263
+PF00515	5_199557	Low	NA	NA	NA	Tetratricopeptide repeat	18113	2551
+PF07719	5_199557	Low	NA	NA	NA	Tetratricopeptide repeat	21055	2551
+PF13414	5_199557	Low	NA	NA	NA	TPR repeat	23116	2551
+PF14457	5_202139	High	NA	NA	NA	Prokaryotic E2 family A	417	377
+PF14594	5_207391	High	NA	NA	NA	Siphovirus ReqiPepy6 Gp37-like protein	609	366
+PF10792	5_22042	Low	NA	NA	NA	Protein of unknown function (DUF2605)	290	313
+PF13252	5_23237	High	NA	NA	NA	Protein of unknown function (DUF4043)	521	428
+PF13264	5_23392	Low	NA	NA	NA	Domain of unknown function (DUF4055)	625	475
+PF13554	5_23392	Low	NA	NA	NA	Bacteriophage related domain of unknown function	581	475
+PF00283	5_24959	Low	GO:0015979	BP	photosynthesis	Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits	393	363
+PF00284	5_24959	Low	GO:0015979	BP	photosynthesis	Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit	391	363
+PF01716	5_24959	Low	GO:0042549	BP	photosystem II stabilization	Manganese-stabilising protein / photosystem II polypeptide	402	363
+PF01716	5_24959	Low	GO:0010207	BP	photosystem II assembly	Manganese-stabilising protein / photosystem II polypeptide	402	363
+PF02392	5_24959	Low	GO:0015979	BP	photosynthesis	Ycf4	387	363
+PF02605	5_24959	Low	GO:0015979	BP	photosynthesis	Photosystem I reaction centre subunit XI	400	363
+PF10674	5_24959	High	NA	NA	NA	Protein of unknown function (DUF2488)	380	363
+PF11267	5_24959	Low	NA	NA	NA	Domain of unknown function (DUF3067)	393	363
+PF11910	5_24959	Low	GO:0055114	BP	oxidation-reduction process	Cyanobacterial and plant NDH-1 subunit O	399	363
+PF12095	5_25579	Low	NA	NA	NA	Protein CHLORORESPIRATORY REDUCTION 7	393	334
+PF10665	5_26314	High	NA	NA	NA	Minor capsid protein	229	180
+PF12691	5_26314	High	NA	NA	NA	Minor capsid protein from bacteriophage	224	180
+PF10761	5_26449	High	NA	NA	NA	Protein of unknown function (DUF2590)	350	249
+PF10772	5_26449	High	NA	NA	NA	Protein of unknown function (DUF2597)	343	249
+PF10963	5_26449	High	NA	NA	NA	Phage tail assembly chaperone	351	249
+PF11681	5_26770	Low	NA	NA	NA	Protein of unknown function (DUF3277)	336	178
+PF02341	5_27203	Low	NA	NA	NA	RbcX protein	272	265
+PF09654	5_27203	High	NA	NA	NA	Protein of unknown function (DUF2396)	271	265
+PF11863	5_28154	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	643
+PF09654	5_29588	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	255
+PF06485	5_29685	Low	NA	NA	NA	RNA-binding protein Tab2/Atab2	400	354
+PF11016	5_29685	Low	NA	NA	NA	Protein of unknown function (DUF2854)	399	354
+PF11341	5_29685	Low	NA	NA	NA	Protein of unknown function (DUF3143)	397	354
+PF11375	5_29685	High	NA	NA	NA	Protein of unknown function (DUF3177)	409	354
+PF01701	5_29963	Low	GO:0015979	BP	photosynthesis	Photosystem I reaction centre subunit IX / PsaJ	355	386
+PF01716	5_29963	Low	GO:0042549	BP	photosystem II stabilization	Manganese-stabilising protein / photosystem II polypeptide	402	386
+PF01716	5_29963	Low	GO:0010207	BP	photosystem II assembly	Manganese-stabilising protein / photosystem II polypeptide	402	386
+PF02392	5_29963	Low	GO:0015979	BP	photosynthesis	Ycf4	387	386
+PF03912	5_29963	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	386
+PF06298	5_29963	Low	GO:0015979	BP	photosynthesis	Photosystem II protein Y (PsbY)	355	386
+PF06485	5_29963	Low	NA	NA	NA	RNA-binding protein Tab2/Atab2	400	386
+PF08846	5_29963	Low	NA	NA	NA	Domain of unknown function (DUF1816)	389	386
+PF08848	5_29963	Low	NA	NA	NA	Domain of unknown function (DUF1818)	402	386
+PF08865	5_29963	Low	NA	NA	NA	Domain of unknown function (DUF1830)	392	386
+PF10674	5_29963	High	NA	NA	NA	Protein of unknown function (DUF2488)	380	386
+PF10742	5_29963	High	NA	NA	NA	Protein of unknown function (DUF2555)	391	386
+PF11152	5_29963	Low	NA	NA	NA	Cofactor assembly of complex C subunit B, CCB2/CCB4	401	386
+PF11341	5_29963	Low	NA	NA	NA	Protein of unknown function (DUF3143)	397	386
+PF11352	5_29963	Low	NA	NA	NA	Protein of unknown function (DUF3155)	393	386
+PF11833	5_29963	Low	NA	NA	NA	Protein CHAPERONE-LIKE PROTEIN OF POR1-like	399	386
+PF12058	5_29963	Low	NA	NA	NA	Protein of unknown function (DUF3539)	389	386
+PF12452	5_29963	Low	NA	NA	NA	Protein of unknown function (DUF3685)	396	386
+PF00283	5_30209	Low	GO:0015979	BP	photosynthesis	Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits	393	338
+PF00284	5_30209	Low	GO:0015979	BP	photosynthesis	Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit	391	338
+PF01716	5_30209	Low	GO:0042549	BP	photosystem II stabilization	Manganese-stabilising protein / photosystem II polypeptide	402	338
+PF01716	5_30209	Low	GO:0010207	BP	photosystem II assembly	Manganese-stabilising protein / photosystem II polypeptide	402	338
+PF06485	5_30209	Low	NA	NA	NA	RNA-binding protein Tab2/Atab2	400	338
+PF06799	5_30209	Low	NA	NA	NA	Conserved in the green lineage and diatoms 27	399	338
+PF10674	5_30209	Low	NA	NA	NA	Protein of unknown function (DUF2488)	380	338
+PF10726	5_30209	Low	NA	NA	NA	Protein of function (DUF2518)	393	338
+PF10742	5_30209	Low	NA	NA	NA	Protein of unknown function (DUF2555)	391	338
+PF11152	5_30209	Low	NA	NA	NA	Cofactor assembly of complex C subunit B, CCB2/CCB4	401	338
+PF11237	5_30209	Low	NA	NA	NA	Protein of unknown function (DUF3038)	399	338
+PF11341	5_30209	Low	NA	NA	NA	Protein of unknown function (DUF3143)	397	338
+PF13326	5_30209	Low	GO:0010207	BP	photosystem II assembly	Photosystem II Pbs27	398	338
+PF11137	5_30374	High	NA	NA	NA	Protein of unknown function (DUF2909)	3380	3564
+PF11334	5_30828	Low	NA	NA	NA	Protein of unknown function (DUF3136)	121	112
+PF02341	5_30907	High	NA	NA	NA	RbcX protein	272	253
+PF09654	5_30907	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	253
+PF15436	5_30951	Low	NA	NA	NA	Plasminogen-binding protein pgbA N-terminal	335	330
+PF00283	5_31008	Low	GO:0015979	BP	photosynthesis	Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits	393	363
+PF00284	5_31008	Low	GO:0015979	BP	photosynthesis	Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit	391	363
+PF10674	5_31008	Low	NA	NA	NA	Protein of unknown function (DUF2488)	380	363
+PF11910	5_31008	Low	GO:0055114	BP	oxidation-reduction process	Cyanobacterial and plant NDH-1 subunit O	399	363
+PF00283	5_31122	Low	GO:0015979	BP	photosynthesis	Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits	393	393
+PF00284	5_31122	Low	GO:0015979	BP	photosynthesis	Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit	391	393
+PF11371	5_31122	Low	NA	NA	NA	Protein of unknown function (DUF3172)	380	393
+PF11691	5_31122	Low	NA	NA	NA	Protein of unknown function (DUF3288)	394	393
+PF11910	5_31122	Low	GO:0055114	BP	oxidation-reduction process	Cyanobacterial and plant NDH-1 subunit O	399	393
+PF11393	5_32247	High	NA	NA	NA	Type-IV b secretion system, inner-membrane complex component	682	397
+PF12293	5_32247	High	NA	NA	NA	Putative outer membrane core complex of type IVb secretion	468	397
+PF03912	5_32810	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	376
+PF10726	5_32810	Low	NA	NA	NA	Protein of function (DUF2518)	393	376
+PF11347	5_32810	Low	NA	NA	NA	Protein of unknown function (DUF3148)	381	376
+PF11909	5_32810	Low	GO:0055114	BP	oxidation-reduction process	NADH-quinone oxidoreductase cyanobacterial subunit N	395	376
+PF11947	5_32810	Low	NA	NA	NA	Photosynthesis affected mutant 68	401	376
+PF11681	5_33263	High	NA	NA	NA	Protein of unknown function (DUF3277)	336	336
+PF02941	5_34192	Low	GO:0015979	BP	photosynthesis	Ferredoxin thioredoxin reductase variable alpha chain	328	318
+PF06514	5_34192	Low	GO:0042549	BP	photosystem II stabilization	Photosystem II 12 kDa extrinsic protein (PsbU)	341	318
+PF06514	5_34192	Low	GO:0015979	BP	photosynthesis	Photosystem II 12 kDa extrinsic protein (PsbU)	341	318
+PF09654	5_34467	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	245
+PF09654	5_35376	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	257
+PF14217	5_35376	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	257
+PF08846	5_35458	Low	NA	NA	NA	Domain of unknown function (DUF1816)	389	362
+PF08865	5_35458	Low	NA	NA	NA	Domain of unknown function (DUF1830)	392	362
+PF11016	5_35458	High	NA	NA	NA	Protein of unknown function (DUF2854)	399	362
+PF11267	5_35458	Low	NA	NA	NA	Domain of unknown function (DUF3067)	393	362
+PF11833	5_35458	Low	NA	NA	NA	Protein CHAPERONE-LIKE PROTEIN OF POR1-like	399	362
+PF10761	5_35621	High	NA	NA	NA	Protein of unknown function (DUF2590)	350	341
+PF10772	5_35621	High	NA	NA	NA	Protein of unknown function (DUF2597)	343	341
+PF10963	5_35621	High	NA	NA	NA	Phage tail assembly chaperone	351	341
+PF09150	5_35799	Low	GO:0016037	BP	light absorption	Orange carotenoid protein, N-terminal	286	323
+PF09654	5_35799	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	323
+PF10792	5_35799	Low	NA	NA	NA	Protein of unknown function (DUF2605)	290	323
+PF11016	5_35799	Low	NA	NA	NA	Protein of unknown function (DUF2854)	399	323
+PF09654	5_36116	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	253
+PF09654	5_36620	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	245
+PF09442	5_36675	Low	NA	NA	NA	Domain of unknown function (DUF2018)	319	309
+PF12163	5_36675	Low	NA	NA	NA	DNA replication regulator	336	309
+PF09654	5_36966	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	256
+PF14217	5_36966	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	256
+PF09654	5_37851	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	230
+PF04485	5_38544	Low	NA	NA	NA	Phycobilisome degradation protein nblA	260	271
+PF09654	5_38544	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	271
+PF08844	5_39624	High	NA	NA	NA	Domain of unknown function (DUF1815)	303	296
+PF11318	5_39624	Low	NA	NA	NA	Protein of unknown function (DUF3120)	394	296
+PF02341	5_40214	Low	NA	NA	NA	RbcX protein	272	256
+PF09654	5_40214	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	256
+PF11267	5_41160	Low	NA	NA	NA	Domain of unknown function (DUF3067)	393	409
+PF12452	5_41160	Low	NA	NA	NA	Protein of unknown function (DUF3685)	396	409
+PF02341	5_41685	Low	NA	NA	NA	RbcX protein	272	223
+PF11041	5_41862	Low	NA	NA	NA	Protein of unknown function (DUF2612)	605	349
+PF11681	5_41862	High	NA	NA	NA	Protein of unknown function (DUF3277)	336	349
+PF09654	5_42067	High	NA	NA	NA	Protein of unknown function (DUF2396)	271	221
+PF11863	5_42653	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	576
+PF02341	5_43613	Low	NA	NA	NA	RbcX protein	272	198
+PF13264	5_43729	High	NA	NA	NA	Domain of unknown function (DUF4055)	625	469
+PF11334	5_44850	High	NA	NA	NA	Protein of unknown function (DUF3136)	121	122
+PF00069	5_44925	Low	GO:0006468	BP	protein phosphorylation	Protein kinase domain	19376	1029
+PF08844	5_45588	Low	NA	NA	NA	Domain of unknown function (DUF1815)	303	256
+PF10792	5_45588	Low	NA	NA	NA	Protein of unknown function (DUF2605)	290	256
+PF08966	5_47794	Low	NA	NA	NA	Domain of unknown function (DUF1882)	280	274
+PF09654	5_48958	High	NA	NA	NA	Protein of unknown function (DUF2396)	271	270
+PF14217	5_48958	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	270
+PF09654	5_49235	High	NA	NA	NA	Protein of unknown function (DUF2396)	271	264
+PF08241	5_49422	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	1093
+PF13489	5_49422	Low	NA	NA	NA	Methyltransferase domain	22564	1093
+PF03912	5_49860	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	376
+PF06485	5_49860	Low	NA	NA	NA	RNA-binding protein Tab2/Atab2	400	376
+PF08846	5_49860	Low	NA	NA	NA	Domain of unknown function (DUF1816)	389	376
+PF08865	5_49860	Low	NA	NA	NA	Domain of unknown function (DUF1830)	392	376
+PF10726	5_49860	Low	NA	NA	NA	Protein of function (DUF2518)	393	376
+PF11347	5_49860	Low	NA	NA	NA	Protein of unknown function (DUF3148)	381	376
+PF11909	5_49860	Low	GO:0055114	BP	oxidation-reduction process	NADH-quinone oxidoreductase cyanobacterial subunit N	395	376
+PF11947	5_49860	Low	NA	NA	NA	Photosynthesis affected mutant 68	401	376
+PF09654	5_50055	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	225
+PF11137	5_53031	Low	NA	NA	NA	Protein of unknown function (DUF2909)	3380	3288
+PF12095	5_54364	Low	NA	NA	NA	Protein CHLORORESPIRATORY REDUCTION 7	393	335
+PF11863	5_56192	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	568
+PF13262	5_56192	Low	NA	NA	NA	Protein of unknown function (DUF4054)	612	568
+PF06799	5_56262	Low	NA	NA	NA	Conserved in the green lineage and diatoms 27	399	356
+PF11332	5_56262	Low	NA	NA	NA	Protein of unknown function (DUF3134)	399	356
+PF11341	5_56262	Low	NA	NA	NA	Protein of unknown function (DUF3143)	397	356
+PF11375	5_56262	High	NA	NA	NA	Protein of unknown function (DUF3177)	409	356
+PF14217	5_56541	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	213
+PF00283	5_57249	Low	GO:0015979	BP	photosynthesis	Cytochrome b559, alpha (gene psbE) and beta (gene psbF)subunits	393	392
+PF00284	5_57249	Low	GO:0015979	BP	photosynthesis	Lumenal portion of Cytochrome b559, alpha (gene psbE) subunit	391	392
+PF03912	5_57249	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	392
+PF08846	5_57249	Low	NA	NA	NA	Domain of unknown function (DUF1816)	389	392
+PF10716	5_57249	Low	GO:0055114	BP	oxidation-reduction process	NADH dehydrogenase transmembrane subunit	355	392
+PF10718	5_57249	Low	NA	NA	NA	Hypothetical chloroplast protein Ycf34	384	392
+PF10726	5_57249	Low	NA	NA	NA	Protein of function (DUF2518)	393	392
+PF11237	5_57249	Low	NA	NA	NA	Protein of unknown function (DUF3038)	399	392
+PF11282	5_57249	Low	NA	NA	NA	Protein of unknown function (DUF3082)	383	392
+PF11317	5_57249	Low	NA	NA	NA	Protein of unknown function (DUF3119)	393	392
+PF11318	5_57249	Low	NA	NA	NA	Protein of unknown function (DUF3120)	394	392
+PF11910	5_57249	High	GO:0055114	BP	oxidation-reduction process	Cyanobacterial and plant NDH-1 subunit O	399	392
+PF12095	5_57249	Low	NA	NA	NA	Protein CHLORORESPIRATORY REDUCTION 7	393	392
+PF05484	5_57297	High	NA	NA	NA	LRV protein FeS4 cluster	397	420
+PF10758	5_57519	Low	NA	NA	NA	Protein of unknown function (DUF2586)	541	320
+PF10761	5_57519	High	NA	NA	NA	Protein of unknown function (DUF2590)	350	320
+PF10772	5_57519	High	NA	NA	NA	Protein of unknown function (DUF2597)	343	320
+PF10963	5_57519	High	NA	NA	NA	Phage tail assembly chaperone	351	320
+PF11821	5_61120	High	NA	NA	NA	Protein of unknown function (DUF3341)	3230	2779
+PF10761	5_66657	High	NA	NA	NA	Protein of unknown function (DUF2590)	350	240
+PF10772	5_66657	High	NA	NA	NA	Protein of unknown function (DUF2597)	343	240
+PF10963	5_66657	High	NA	NA	NA	Phage tail assembly chaperone	351	240
+PF08843	5_68430	Low	NA	NA	NA	Nucleotidyl transferase AbiEii toxin, Type IV TA system	10102	1025
+PF10674	5_71388	High	NA	NA	NA	Protein of unknown function (DUF2488)	380	399
+PF03912	5_71981	Low	GO:0015979	BP	photosynthesis	Psb28 protein	403	313
+PF11016	5_71981	Low	NA	NA	NA	Protein of unknown function (DUF2854)	399	313
+PF03574	5_75579	High	GO:0043158	BP	heterocyst differentiation	Peptidase family S48	194	185
+PF09960	5_79583	High	NA	NA	NA	Uncharacterised protein conserved in bacteria (DUF2194)	526	427
+PF00665	5_80647	Low	GO:0015074	BP	DNA integration	Integrase core domain	17755	652
+PF01695	5_80647	Low	NA	NA	NA	IstB-like ATP binding protein	12382	652
+PF00044	5_80923	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	948
+PF00121	5_80923	Low	GO:0008152	BP	metabolic process	Triosephosphate isomerase	26009	948
+PF00177	5_80923	Low	NA	NA	NA	Ribosomal protein S7p/S5e	25184	948
+PF00298	5_80923	Low	GO:0006412	BP	translation	Ribosomal protein L11, RNA binding domain	25295	948
+PF00318	5_80923	Low	GO:0006412	BP	translation	Ribosomal protein S2	26126	948
+PF00466	5_80923	Low	GO:0042254	BP	ribosome biogenesis	Ribosomal protein L10	25304	948
+PF00542	5_80923	Low	GO:0006412	BP	translation	Ribosomal protein L7/L12 C-terminal domain	25267	948
+PF00687	5_80923	Low	NA	NA	NA	Ribosomal protein L1p/L10e family	24633	948
+PF00829	5_80923	Low	NA	NA	NA	Ribosomal prokaryotic L21 protein	25967	948
+PF00958	5_80923	Low	GO:0006177	BP	GMP biosynthetic process	GMP synthase C terminal domain	23549	948
+PF00958	5_80923	Low	GO:0006164	BP	purine nucleotide biosynthetic process	GMP synthase C terminal domain	23549	948
+PF01016	5_80923	Low	GO:0006412	BP	translation	Ribosomal L27 protein	26025	948
+PF02357	5_80923	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	948
+PF02800	5_80923	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	25864	948
+PF03946	5_80923	Low	NA	NA	NA	Ribosomal protein L11, N-terminal domain	25256	948
+PF04563	5_80923	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit	24982	948
+PF05697	5_80923	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	948
+PF05697	5_80923	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	948
+PF06071	5_80923	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	948
+PF13184	5_80923	Low	NA	NA	NA	NusA-like KH domain	26152	948
+PF09654	5_81394	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	252
+PF14217	5_81394	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	252
+PF07556	5_82070	High	NA	NA	NA	Protein of unknown function (DUF1538)	2413	2054
+PF06799	5_83305	Low	NA	NA	NA	Conserved in the green lineage and diatoms 27	399	360
+PF08846	5_83305	Low	NA	NA	NA	Domain of unknown function (DUF1816)	389	360
+PF11016	5_83305	High	NA	NA	NA	Protein of unknown function (DUF2854)	399	360
+PF11267	5_83305	Low	NA	NA	NA	Domain of unknown function (DUF3067)	393	360
+PF11341	5_83305	Low	NA	NA	NA	Protein of unknown function (DUF3143)	397	360
+PF08966	5_83475	Low	NA	NA	NA	Domain of unknown function (DUF1882)	280	335
+PF15436	5_83475	Low	NA	NA	NA	Plasminogen-binding protein pgbA N-terminal	335	335
+PF08152	5_85116	Low	NA	NA	NA	GUCT (NUC152) domain	16	69
+PF11482	5_85116	High	NA	NA	NA	Protein of unknown function (DUF3208)	69	69
+PF11497	5_85116	High	NA	NA	NA	NADH-quinone oxidoreductase chain 15	68	69
+PF12723	5_85116	High	NA	NA	NA	Protein of unknown function (DUF3809)	68	69
+PF11863	5_91136	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	576
+PF13262	5_91136	Low	NA	NA	NA	Protein of unknown function (DUF4054)	612	576
+PF06613	5_92483	High	GO:0045892	BP	negative regulation of transcription, DNA-templated	KorB C-terminal beta-barrel domain	117	80
+PF03574	5_93881	Low	GO:0043158	BP	heterocyst differentiation	Peptidase family S48	194	269
+PF11041	5_96031	Low	NA	NA	NA	Protein of unknown function (DUF2612)	605	513
+PF11863	5_96031	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	513
+PF00044	5_97547	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1020
+PF00338	5_97547	Low	NA	NA	NA	Ribosomal protein S10p/S20e	25443	1020
+PF01381	5_97547	Low	NA	NA	NA	Helix-turn-helix	24979	1020
+PF11482	5_97866	Low	NA	NA	NA	Protein of unknown function (DUF3208)	69	61
+PF11497	5_97866	Low	NA	NA	NA	NADH-quinone oxidoreductase chain 15	68	61
+PF12723	5_97866	High	NA	NA	NA	Protein of unknown function (DUF3809)	68	61
+PF11863	5_97981	Low	NA	NA	NA	Protein of unknown function (DUF3383)	794	504
+PF00044	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1501
+PF00107	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Zinc-binding dehydrogenase	22139	1501
+PF00113	5_99586	Low	NA	NA	NA	Enolase, C-terminal TIM barrel domain	25084	1501
+PF00118	5_99586	Low	NA	NA	NA	TCP-1/cpn60 chaperonin family	25718	1501
+PF00162	5_99586	Low	GO:0006096	BP	glycolytic process	Phosphoglycerate kinase	25988	1501
+PF00163	5_99586	Low	NA	NA	NA	Ribosomal protein S4/S9 N-terminal domain	25984	1501
+PF00164	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S12/S23	25224	1501
+PF00166	5_99586	Low	GO:0006457	BP	protein folding	Chaperonin 10 Kd subunit	25494	1501
+PF00177	5_99586	Low	NA	NA	NA	Ribosomal protein S7p/S5e	25184	1501
+PF00189	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S3, C-terminal domain	25660	1501
+PF00196	5_99586	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Bacterial regulatory proteins, luxR family	21836	1501
+PF00205	5_99586	Low	NA	NA	NA	Thiamine pyrophosphate enzyme, central domain	21795	1501
+PF00213	5_99586	Low	GO:0015986	BP	ATP synthesis coupled proton transport	ATP synthase delta (OSCP) subunit	23929	1501
+PF00215	5_99586	Low	GO:0006207	BP	'de novo' pyrimidine nucleobase biosynthetic process	Orotidine 5'-phosphate decarboxylase / HUMPS family	23907	1501
+PF00238	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L14p/L23e	25796	1501
+PF00252	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L16p/L10e	25740	1501
+PF00253	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S14p/S29e	23419	1501
+PF00281	5_99586	Low	NA	NA	NA	Ribosomal protein L5	25773	1501
+PF00298	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L11, RNA binding domain	25295	1501
+PF00300	5_99586	Low	NA	NA	NA	Histidine phosphatase superfamily (branch 1)	24999	1501
+PF00308	5_99586	Low	NA	NA	NA	Bacterial dnaA  protein	26017	1501
+PF00310	5_99586	Low	NA	NA	NA	Glutamine amidotransferases class-II	20386	1501
+PF00333	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S5, N-terminal domain	25896	1501
+PF00347	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L6	25913	1501
+PF00366	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S17	25760	1501
+PF00380	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S9/S16	26095	1501
+PF00410	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S8	25908	1501
+PF00416	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S13/S18	25979	1501
+PF00436	5_99586	Low	NA	NA	NA	Single-strand binding protein family	26309	1501
+PF00438	5_99586	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, N-terminal domain	24472	1501
+PF00453	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L20	26122	1501
+PF00464	5_99586	Low	NA	NA	NA	Serine hydroxymethyltransferase	25446	1501
+PF00466	5_99586	Low	GO:0042254	BP	ribosome biogenesis	Ribosomal protein L10	25304	1501
+PF00471	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L33	23165	1501
+PF00475	5_99586	Low	GO:0000105	BP	histidine biosynthetic process	Imidazoleglycerol-phosphate dehydratase	20130	1501
+PF00478	5_99586	Low	GO:0055114	BP	oxidation-reduction process	IMP dehydrogenase / GMP reductase domain	24320	1501
+PF00542	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L7/L12 C-terminal domain	25267	1501
+PF00584	5_99586	Low	GO:0006886	BP	intracellular protein transport	SecE/Sec61-gamma subunits of protein translocation complex	24378	1501
+PF00584	5_99586	Low	GO:0006605	BP	protein targeting	SecE/Sec61-gamma subunits of protein translocation complex	24378	1501
+PF00591	5_99586	Low	GO:0008152	BP	metabolic process	Glycosyl transferase family, a/b domain	22637	1501
+PF00627	5_99586	Low	NA	NA	NA	UBA/TS-N domain	25202	1501
+PF00665	5_99586	Very high	GO:0015074	BP	DNA integration	Integrase core domain	17755	1501
+PF00673	5_99586	Low	NA	NA	NA	ribosomal L5P family C-terminus	25842	1501
+PF00684	5_99586	Low	NA	NA	NA	DnaJ central domain	25246	1501
+PF00692	5_99586	Low	NA	NA	NA	dUTPase	23068	1501
+PF00707	5_99586	Low	GO:0006413	BP	translational initiation	Translation initiation factor IF-3, C-terminal domain	26041	1501
+PF00709	5_99586	Low	GO:0006164	BP	purine nucleotide biosynthetic process	Adenylosuccinate synthetase	23932	1501
+PF00712	5_99586	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, N-terminal domain	25759	1501
+PF00764	5_99586	Low	GO:0006526	BP	arginine biosynthetic process	Arginosuccinate synthase	21046	1501
+PF00800	5_99586	Low	GO:0009094	BP	L-phenylalanine biosynthetic process	Prephenate dehydratase	21182	1501
+PF00815	5_99586	Low	GO:0000105	BP	histidine biosynthetic process	Histidinol dehydrogenase	20340	1501
+PF00815	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Histidinol dehydrogenase	20340	1501
+PF00817	5_99586	Low	GO:0006281	BP	DNA repair	impB/mucB/samB family	23225	1501
+PF00828	5_99586	Low	NA	NA	NA	Ribosomal proteins 50S-L15, 50S-L18e, 60S-L27A	25814	1501
+PF00830	5_99586	Low	NA	NA	NA	Ribosomal L28 family	24806	1501
+PF00831	5_99586	Low	GO:0006412	BP	translation	Ribosomal L29 protein	25386	1501
+PF00857	5_99586	Low	GO:0008152	BP	metabolic process	Isochorismatase family	19592	1501
+PF00861	5_99586	Low	GO:0006412	BP	translation	Ribosomal L18 of archaea, bacteria, mitoch. and chloroplast	25789	1501
+PF00889	5_99586	Low	GO:0006414	BP	translational elongation	Elongation factor TS	26290	1501
+PF00958	5_99586	Low	GO:0006177	BP	GMP biosynthetic process	GMP synthase C terminal domain	23549	1501
+PF00958	5_99586	Low	GO:0006164	BP	purine nucleotide biosynthetic process	GMP synthase C terminal domain	23549	1501
+PF00977	5_99586	Low	GO:0000105	BP	histidine biosynthetic process	Histidine biosynthesis protein	21082	1501
+PF00984	5_99586	Low	GO:0055114	BP	oxidation-reduction process	UDP-glucose/GDP-mannose dehydrogenase family, central domain	21830	1501
+PF01016	5_99586	Low	GO:0006412	BP	translation	Ribosomal L27 protein	26025	1501
+PF01035	5_99586	Low	GO:0006281	BP	DNA repair	6-O-methylguanine DNA methyltransferase, DNA binding domain	24056	1501
+PF01043	5_99586	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1501
+PF01061	5_99586	Low	NA	NA	NA	ABC-2 type transporter	21774	1501
+PF01071	5_99586	Low	NA	NA	NA	Phosphoribosylglycinamide synthetase, ATP-grasp (A) domain	23338	1501
+PF01084	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1501
+PF01132	5_99586	Low	GO:0006414	BP	translational elongation	Elongation factor P (EF-P) OB domain	25781	1501
+PF01176	5_99586	Low	GO:0006413	BP	translational initiation	Translation initiation factor 1A / IF-1	25906	1501
+PF01196	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L17	26215	1501
+PF01197	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L31	25995	1501
+PF01245	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L19	26142	1501
+PF01259	5_99586	Low	NA	NA	NA	SAICAR synthetase	23210	1501
+PF01266	5_99586	Low	GO:0055114	BP	oxidation-reduction process	FAD dependent oxidoreductase	22871	1501
+PF01367	5_99586	Low	NA	NA	NA	5'-3' exonuclease, C-terminal SAM fold	25972	1501
+PF01381	5_99586	Low	NA	NA	NA	Helix-turn-helix	24979	1501
+PF01475	5_99586	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Ferric uptake regulator family	23740	1501
+PF01527	5_99586	High	GO:0006313	BP	transposition, DNA-mediated	Transposase	13168	1501
+PF01625	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Peptide methionine sulfoxide reductase	21388	1501
+PF01632	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein L35	25501	1501
+PF01634	5_99586	Low	GO:0000105	BP	histidine biosynthetic process	ATP phosphoribosyltransferase	20217	1501
+PF01636	5_99586	Low	NA	NA	NA	Phosphotransferase enzyme family	22115	1501
+PF01668	5_99586	Low	NA	NA	NA	SmpB protein	25791	1501
+PF01709	5_99586	Low	NA	NA	NA	Transcriptional regulator	25981	1501
+PF01725	5_99586	Low	GO:0009143	BP	nucleoside triphosphate catabolic process	Ham1 family	24678	1501
+PF01783	5_99586	Low	GO:0006412	BP	translation	Ribosomal L32p protein family	24492	1501
+PF01808	5_99586	Low	GO:0006164	BP	purine nucleotide biosynthetic process	AICARFT/IMPCHase bienzyme	23165	1501
+PF01872	5_99586	Low	GO:0009231	BP	riboflavin biosynthetic process	RibD C-terminal domain	21946	1501
+PF01872	5_99586	Low	GO:0055114	BP	oxidation-reduction process	RibD C-terminal domain	21946	1501
+PF02096	5_99586	Low	NA	NA	NA	60Kd inner membrane protein	26063	1501
+PF02153	5_99586	Low	GO:0006571	BP	tyrosine biosynthetic process	Prephenate dehydrogenase	20982	1501
+PF02153	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Prephenate dehydrogenase	20982	1501
+PF02195	5_99586	Low	NA	NA	NA	ParB-like nuclease domain	24871	1501
+PF02357	5_99586	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1501
+PF02403	5_99586	Low	NA	NA	NA	Seryl-tRNA synthetase N-terminal domain	25664	1501
+PF02683	5_99586	Low	GO:0017004	BP	cytochrome complex assembly	Cytochrome C biogenesis protein transmembrane region	21880	1501
+PF02683	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Cytochrome C biogenesis protein transmembrane region	21880	1501
+PF02739	5_99586	Low	NA	NA	NA	5'-3' exonuclease, N-terminal resolvase-like domain	26057	1501
+PF02767	5_99586	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, central domain	25805	1501
+PF02768	5_99586	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, C-terminal domain	25904	1501
+PF02772	5_99586	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, central domain	24552	1501
+PF02800	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	25864	1501
+PF02843	5_99586	Low	GO:0009113	BP	purine nucleobase biosynthetic process	Phosphoribosylglycinamide synthetase, C domain	23280	1501
+PF02844	5_99586	Low	GO:0009113	BP	purine nucleobase biosynthetic process	Phosphoribosylglycinamide synthetase, N domain	22902	1501
+PF02885	5_99586	Low	NA	NA	NA	Glycosyl transferase family, helical bundle domain	22295	1501
+PF03147	5_99586	Low	NA	NA	NA	Ferredoxin-fold anticodon binding domain	25560	1501
+PF03358	5_99586	Low	NA	NA	NA	NADPH-dependent FMN reductase	20995	1501
+PF03446	5_99586	Low	GO:0055114	BP	oxidation-reduction process	NAD binding domain of 6-phosphogluconate dehydrogenase	19521	1501
+PF03484	5_99586	Low	GO:0006432	BP	phenylalanyl-tRNA aminoacylation	tRNA synthetase B5 domain	25634	1501
+PF03485	5_99586	Low	GO:0006420	BP	arginyl-tRNA aminoacylation	Arginyl tRNA synthetase N terminal domain	25575	1501
+PF03719	5_99586	Low	GO:0006412	BP	translation	Ribosomal protein S5, C-terminal domain	25975	1501
+PF03721	5_99586	Low	GO:0055114	BP	oxidation-reduction process	UDP-glucose/GDP-mannose dehydrogenase family, NAD binding domain	21855	1501
+PF03726	5_99586	Low	GO:0006396	BP	RNA processing	Polyribonucleotide nucleotidyltransferase, RNA binding domain	23888	1501
+PF03946	5_99586	Low	NA	NA	NA	Ribosomal protein L11, N-terminal domain	25256	1501
+PF03952	5_99586	Low	NA	NA	NA	Enolase, N-terminal domain	24728	1501
+PF04851	5_99586	Low	NA	NA	NA	Type III restriction enzyme, res subunit	26189	1501
+PF04998	5_99586	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 5	25447	1501
+PF05491	5_99586	Low	GO:0006281	BP	DNA repair	RuvB C-terminal winged helix domain	25667	1501
+PF05491	5_99586	Low	GO:0006310	BP	DNA recombination	RuvB C-terminal winged helix domain	25667	1501
+PF05697	5_99586	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1501
+PF05697	5_99586	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1501
+PF05698	5_99586	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF) C-terminus	24033	1501
+PF05698	5_99586	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF) C-terminus	24033	1501
+PF06071	5_99586	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1501
+PF06421	5_99586	Low	NA	NA	NA	GTP-binding protein LepA C-terminus	25825	1501
+PF07516	5_99586	Low	GO:0017038	BP	protein import	SecA Wing and Scaffold domain	26154	1501
+PF07517	5_99586	Low	GO:0017038	BP	protein import	SecA DEAD-like domain	26064	1501
+PF07883	5_99586	Low	NA	NA	NA	Cupin domain	23778	1501
+PF08207	5_99586	Low	NA	NA	NA	Elongation factor P (EF-P) KOW-like domain	26144	1501
+PF08240	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Alcohol dehydrogenase GroES-like domain	22195	1501
+PF08241	5_99586	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	1501
+PF08299	5_99586	Low	GO:0006275	BP	regulation of DNA replication	Bacterial dnaA protein helix-turn-helix	25734	1501
+PF08299	5_99586	Low	GO:0006270	BP	DNA replication initiation	Bacterial dnaA protein helix-turn-helix	25734	1501
+PF08459	5_99586	Low	NA	NA	NA	UvrC Helix-hairpin-helix N-terminal	25901	1501
+PF08501	5_99586	Low	GO:0055114	BP	oxidation-reduction process	Shikimate dehydrogenase substrate binding domain	22827	1501
+PF09285	5_99586	Low	GO:0043043	BP	peptide biosynthetic process	Elongation factor P, C-terminal	26200	1501
+PF09335	5_99586	Low	NA	NA	NA	SNARE associated Golgi protein	23631	1501
+PF11799	5_99586	Low	GO:0006281	BP	DNA repair	impB/mucB/samB family C-terminal domain	22701	1501
+PF12002	5_99586	Low	NA	NA	NA	MgsA AAA+ ATPase C terminal	23933	1501
+PF12344	5_99586	Low	NA	NA	NA	Ultra-violet resistance protein B	25640	1501
+PF12681	5_99586	Low	NA	NA	NA	Glyoxalase-like domain	20821	1501
+PF12695	5_99586	Low	NA	NA	NA	Alpha/beta hydrolase family	23656	1501
+PF12697	5_99586	Low	NA	NA	NA	Alpha/beta hydrolase family	25298	1501
+PF12710	5_99586	Low	NA	NA	NA	haloacid dehalogenase-like hydrolase	19503	1501
+PF12802	5_99586	Low	NA	NA	NA	MarR family	16756	1501
+PF12804	5_99586	Low	NA	NA	NA	MobA-like NTP transferase domain	22198	1501
+PF12840	5_99586	Low	NA	NA	NA	Helix-turn-helix domain	17848	1501
+PF12849	5_99586	Low	NA	NA	NA	PBP superfamily domain	20678	1501
+PF13147	5_99586	Low	NA	NA	NA	NA	22472	1501
+PF13184	5_99586	Low	NA	NA	NA	NusA-like KH domain	26152	1501
+PF13193	5_99586	Low	NA	NA	NA	AMP-binding enzyme C-terminal domain	22906	1501
+PF13302	5_99586	Low	NA	NA	NA	Acetyltransferase (GNAT) domain	21839	1501
+PF13411	5_99586	Low	GO:0006355	BP	regulation of transcription, DNA-templated	MerR HTH family regulatory protein	23482	1501
+PF13450	5_99586	Low	NA	NA	NA	NAD(P)-binding Rossmann-like domain	21199	1501
+PF13460	5_99586	Low	NA	NA	NA	NAD(P)H-binding	18965	1501
+PF13507	5_99586	Low	NA	NA	NA	CobB/CobQ-like glutamine amidotransferase domain	22881	1501
+PF13522	5_99586	Low	NA	NA	NA	Glutamine amidotransferase domain	23919	1501
+PF13560	5_99586	Low	NA	NA	NA	Helix-turn-helix domain	15106	1501
+PF13561	5_99586	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	1501
+PF13793	5_99586	Low	NA	NA	NA	N-terminal domain of ribose phosphate pyrophosphokinase	24674	1501
+PF14602	5_99586	Low	NA	NA	NA	Hexapeptide repeat of succinyl-transferase	21203	1501
+PF14748	5_99586	Low	NA	NA	NA	Pyrroline-5-carboxylate reductase dimerisation	21767	1501
+PF06125	6_10616	High	NA	NA	NA	Bacterial protein of unknown function (DUF961)	423	290
+PF09345	6_11051	High	NA	NA	NA	Domain of unknown function (DUF1987)	1354	1030
+PF08890	6_111258	High	NA	NA	NA	Phage XkdN-like tail assembly chaperone protein, TAC	878	624
+PF09393	6_111258	High	NA	NA	NA	Phage tail tube protein	882	624
+PF10934	6_111258	High	NA	NA	NA	Protein of unknown function (DUF2634)	949	624
+PF13520	6_120214	High	GO:0055085	BP	transmembrane transport	Amino acid permease	18228	3983
+PF13302	6_122308	Low	NA	NA	NA	Acetyltransferase (GNAT) domain	21839	1463
+PF02767	6_122746	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, central domain	25805	863
+PF02768	6_122746	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, C-terminal domain	25904	863
+PF03062	6_133793	Low	NA	NA	NA	MBOAT, membrane-bound O-acyltransferase family	9980	1060
+PF13795	6_13450	Low	NA	NA	NA	HupE / UreJ protein	4751	1016
+PF00044	6_138163	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1379
+PF00436	6_138163	Low	NA	NA	NA	Single-strand binding protein family	26309	1379
+PF00772	6_138163	Low	GO:0006260	BP	DNA replication	DnaB-like helicase N terminal domain	26173	1379
+PF01043	6_138163	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1379
+PF01084	6_138163	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1379
+PF01381	6_138163	Low	NA	NA	NA	Helix-turn-helix	24979	1379
+PF01668	6_138163	Low	NA	NA	NA	SmpB protein	25791	1379
+PF01807	6_138163	Low	GO:0006260	BP	DNA replication	CHC2 zinc finger	25914	1379
+PF02357	6_138163	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1379
+PF02773	6_138163	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, C-terminal domain	24800	1379
+PF04851	6_138163	Low	NA	NA	NA	Type III restriction enzyme, res subunit	26189	1379
+PF05697	6_138163	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1379
+PF05697	6_138163	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1379
+PF07516	6_138163	Low	GO:0017038	BP	protein import	SecA Wing and Scaffold domain	26154	1379
+PF08275	6_138163	Low	NA	NA	NA	DNA primase catalytic core, N-terminal domain	26042	1379
+PF08665	6_138163	High	NA	NA	NA	PglZ domain	4597	1379
+PF08747	6_138163	Very high	NA	NA	NA	Domain of unknown function (DUF1788)	1337	1379
+PF08849	6_138163	High	NA	NA	NA	Putative inner membrane protein (DUF1819)	1258	1379
+PF12344	6_138163	Low	NA	NA	NA	Ultra-violet resistance protein B	25640	1379
+PF13337	6_138163	High	NA	NA	NA	Putative ATP-dependent Lon protease	1563	1379
+PF13603	6_138163	Low	GO:0006418	BP	tRNA aminoacylation for protein translation	Leucyl-tRNA synthetase, Domain 2	25635	1379
+PF13659	6_138163	High	NA	NA	NA	NA	20798	1379
+PF00044	6_138164	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1650
+PF00118	6_138164	Low	NA	NA	NA	TCP-1/cpn60 chaperonin family	25718	1650
+PF00121	6_138164	Low	GO:0008152	BP	metabolic process	Triosephosphate isomerase	26009	1650
+PF00166	6_138164	Low	GO:0006457	BP	protein folding	Chaperonin 10 Kd subunit	25494	1650
+PF00181	6_138164	Low	GO:0006412	BP	translation	Ribosomal Proteins L2, RNA binding domain	25441	1650
+PF00276	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L23	25636	1650
+PF00297	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L3	25562	1650
+PF00298	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L11, RNA binding domain	25295	1650
+PF00338	6_138164	Low	NA	NA	NA	Ribosomal protein S10p/S20e	25443	1650
+PF00436	6_138164	Low	NA	NA	NA	Single-strand binding protein family	26309	1650
+PF00438	6_138164	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, N-terminal domain	24472	1650
+PF00453	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L20	26122	1650
+PF00466	6_138164	Low	GO:0042254	BP	ribosome biogenesis	Ribosomal protein L10	25304	1650
+PF00562	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 6	25250	1650
+PF00573	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L4/L1 family	25668	1650
+PF00623	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 2	24707	1650
+PF00627	6_138164	Low	NA	NA	NA	UBA/TS-N domain	25202	1650
+PF00687	6_138164	Low	NA	NA	NA	Ribosomal protein L1p/L10e family	24633	1650
+PF00707	6_138164	Low	GO:0006413	BP	translational initiation	Translation initiation factor IF-3, C-terminal domain	26041	1650
+PF00750	6_138164	Low	NA	NA	NA	tRNA synthetases class I (R)	26268	1650
+PF00772	6_138164	Low	GO:0006260	BP	DNA replication	DnaB-like helicase N terminal domain	26173	1650
+PF00831	6_138164	Low	GO:0006412	BP	translation	Ribosomal L29 protein	25386	1650
+PF00889	6_138164	Low	GO:0006414	BP	translational elongation	Elongation factor TS	26290	1650
+PF00958	6_138164	Low	GO:0006177	BP	GMP biosynthetic process	GMP synthase C terminal domain	23549	1650
+PF00958	6_138164	Low	GO:0006164	BP	purine nucleotide biosynthetic process	GMP synthase C terminal domain	23549	1650
+PF01018	6_138164	Low	NA	NA	NA	GTP1/OBG	25327	1650
+PF01043	6_138164	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1650
+PF01084	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1650
+PF01195	6_138164	Low	NA	NA	NA	Peptidyl-tRNA hydrolase	26231	1650
+PF01197	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L31	25995	1650
+PF01245	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L19	26142	1650
+PF01250	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein S6	26036	1650
+PF01281	6_138164	Low	NA	NA	NA	Ribosomal protein L9, N-terminal domain	25448	1650
+PF01381	6_138164	Low	NA	NA	NA	Helix-turn-helix	24979	1650
+PF01434	6_138164	Low	GO:0006508	BP	proteolysis	Peptidase family M41	26398	1650
+PF01632	6_138164	Low	GO:0006412	BP	translation	Ribosomal protein L35	25501	1650
+PF01668	6_138164	Low	NA	NA	NA	SmpB protein	25791	1650
+PF01725	6_138164	Low	GO:0009143	BP	nucleoside triphosphate catabolic process	Ham1 family	24678	1650
+PF01746	6_138164	Low	NA	NA	NA	tRNA (Guanine-1)-methyltransferase	26278	1650
+PF01807	6_138164	Low	GO:0006260	BP	DNA replication	CHC2 zinc finger	25914	1650
+PF02357	6_138164	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1650
+PF02367	6_138164	Low	GO:0002949	BP	tRNA threonylcarbamoyladenosine modification	Threonylcarbamoyl adenosine biosynthesis protein TsaE	25787	1650
+PF02739	6_138164	Low	NA	NA	NA	5'-3' exonuclease, N-terminal resolvase-like domain	26057	1650
+PF02773	6_138164	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, C-terminal domain	24800	1650
+PF02800	6_138164	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	25864	1650
+PF02911	6_138164	Low	GO:0009058	BP	biosynthetic process	Formyl transferase, C-terminal domain	25746	1650
+PF03143	6_138164	Low	NA	NA	NA	Elongation factor Tu C-terminal domain	24618	1650
+PF03485	6_138164	Low	GO:0006420	BP	arginyl-tRNA aminoacylation	Arginyl tRNA synthetase N terminal domain	25575	1650
+PF03764	6_138164	Low	NA	NA	NA	Elongation factor G, domain IV	26070	1650
+PF03796	6_138164	Low	GO:0006260	BP	DNA replication	DnaB-like helicase C terminal domain	26445	1650
+PF03947	6_138164	Low	GO:0006412	BP	translation	Ribosomal Proteins L2, C-terminal domain	25556	1650
+PF03948	6_138164	Low	NA	NA	NA	Ribosomal protein L9, C-terminal domain	25486	1650
+PF04560	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 7	25047	1650
+PF04563	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit	24982	1650
+PF04565	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 3	24765	1650
+PF04851	6_138164	Low	NA	NA	NA	Type III restriction enzyme, res subunit	26189	1650
+PF04983	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 3	24922	1650
+PF04997	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 1	24706	1650
+PF04998	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 5	25447	1650
+PF05000	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 4	23695	1650
+PF05697	6_138164	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1650
+PF05697	6_138164	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1650
+PF06071	6_138164	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1650
+PF07516	6_138164	Low	GO:0017038	BP	protein import	SecA Wing and Scaffold domain	26154	1650
+PF07517	6_138164	Low	GO:0017038	BP	protein import	SecA DEAD-like domain	26064	1650
+PF08275	6_138164	Low	NA	NA	NA	DNA primase catalytic core, N-terminal domain	26042	1650
+PF08529	6_138164	Low	GO:0031554	BP	regulation of DNA-templated transcription, termination	NusA N-terminal domain	26089	1650
+PF08665	6_138164	High	NA	NA	NA	PglZ domain	4597	1650
+PF08747	6_138164	Very high	NA	NA	NA	Domain of unknown function (DUF1788)	1337	1650
+PF08849	6_138164	High	NA	NA	NA	Putative inner membrane protein (DUF1819)	1258	1650
+PF10385	6_138164	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit external 1 domain	24715	1650
+PF12002	6_138164	Low	NA	NA	NA	MgsA AAA+ ATPase C terminal	23933	1650
+PF12344	6_138164	Low	NA	NA	NA	Ultra-violet resistance protein B	25640	1650
+PF13184	6_138164	Low	NA	NA	NA	NusA-like KH domain	26152	1650
+PF13337	6_138164	Low	NA	NA	NA	Putative ATP-dependent Lon protease	1563	1650
+PF13603	6_138164	Low	GO:0006418	BP	tRNA aminoacylation for protein translation	Leucyl-tRNA synthetase, Domain 2	25635	1650
+PF13659	6_138164	Very high	NA	NA	NA	NA	20798	1650
+PF13793	6_138164	Low	NA	NA	NA	N-terminal domain of ribose phosphate pyrophosphokinase	24674	1650
+PF14492	6_138164	Low	NA	NA	NA	Elongation Factor G, domain II	26172	1650
+PF00044	6_139780	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1488
+PF00297	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L3	25562	1488
+PF00298	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L11, RNA binding domain	25295	1488
+PF00312	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein S15	26255	1488
+PF00318	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein S2	26126	1488
+PF00338	6_139780	Low	NA	NA	NA	Ribosomal protein S10p/S20e	25443	1488
+PF00380	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein S9/S16	26095	1488
+PF00438	6_139780	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, N-terminal domain	24472	1488
+PF00453	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L20	26122	1488
+PF00466	6_139780	Low	GO:0042254	BP	ribosome biogenesis	Ribosomal protein L10	25304	1488
+PF00542	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L7/L12 C-terminal domain	25267	1488
+PF00627	6_139780	Low	NA	NA	NA	UBA/TS-N domain	25202	1488
+PF00707	6_139780	Low	GO:0006413	BP	translational initiation	Translation initiation factor IF-3, C-terminal domain	26041	1488
+PF00828	6_139780	Low	NA	NA	NA	Ribosomal proteins 50S-L15, 50S-L18e, 60S-L27A	25814	1488
+PF00886	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein S16	25914	1488
+PF01000	6_139780	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb3/RpoA insert domain	26091	1488
+PF01035	6_139780	Low	GO:0006281	BP	DNA repair	6-O-methylguanine DNA methyltransferase, DNA binding domain	24056	1488
+PF01043	6_139780	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1488
+PF01084	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1488
+PF01245	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L19	26142	1488
+PF01381	6_139780	Low	NA	NA	NA	Helix-turn-helix	24979	1488
+PF01632	6_139780	Low	GO:0006412	BP	translation	Ribosomal protein L35	25501	1488
+PF02357	6_139780	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1488
+PF02367	6_139780	Low	GO:0002949	BP	tRNA threonylcarbamoyladenosine modification	Threonylcarbamoyl adenosine biosynthesis protein TsaE	25787	1488
+PF02403	6_139780	Low	NA	NA	NA	Seryl-tRNA synthetase N-terminal domain	25664	1488
+PF02768	6_139780	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, C-terminal domain	25904	1488
+PF02800	6_139780	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	25864	1488
+PF03946	6_139780	Low	NA	NA	NA	Ribosomal protein L11, N-terminal domain	25256	1488
+PF04563	6_139780	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit	24982	1488
+PF04851	6_139780	Low	NA	NA	NA	Type III restriction enzyme, res subunit	26189	1488
+PF05697	6_139780	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1488
+PF05697	6_139780	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1488
+PF06071	6_139780	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1488
+PF06421	6_139780	Low	NA	NA	NA	GTP-binding protein LepA C-terminus	25825	1488
+PF07517	6_139780	Low	GO:0017038	BP	protein import	SecA DEAD-like domain	26064	1488
+PF08529	6_139780	Low	GO:0031554	BP	regulation of DNA-templated transcription, termination	NusA N-terminal domain	26089	1488
+PF09285	6_139780	Low	GO:0043043	BP	peptide biosynthetic process	Elongation factor P, C-terminal	26200	1488
+PF11987	6_139780	Low	NA	NA	NA	Translation-initiation factor 2	26284	1488
+PF12344	6_139780	Low	NA	NA	NA	Ultra-violet resistance protein B	25640	1488
+PF13522	6_139780	Low	NA	NA	NA	Glutamine amidotransferase domain	23919	1488
+PF13304	6_141112	Low	NA	NA	NA	AAA domain, putative AbiEii toxin, Type IV TA system	16155	760
+PF02543	6_141757	Low	GO:0009058	BP	biosynthetic process	Carbamoyltransferase N-terminus	5489	1054
+PF01035	6_147119	Low	GO:0006281	BP	DNA repair	6-O-methylguanine DNA methyltransferase, DNA binding domain	24056	1242
+PF01245	6_147119	Low	GO:0006412	BP	translation	Ribosomal protein L19	26142	1242
+PF01381	6_147119	Low	NA	NA	NA	Helix-turn-helix	24979	1242
+PF01668	6_147119	Low	NA	NA	NA	SmpB protein	25791	1242
+PF02367	6_147119	Low	GO:0002949	BP	tRNA threonylcarbamoyladenosine modification	Threonylcarbamoyl adenosine biosynthesis protein TsaE	25787	1242
+PF02403	6_147119	Low	NA	NA	NA	Seryl-tRNA synthetase N-terminal domain	25664	1242
+PF08529	6_147119	Low	GO:0031554	BP	regulation of DNA-templated transcription, termination	NusA N-terminal domain	26089	1242
+PF13304	6_153102	Low	NA	NA	NA	AAA domain, putative AbiEii toxin, Type IV TA system	16155	793
+PF13032	6_167254	High	NA	NA	NA	RNaseH domain of pPIWI_RE	465	398
+PF13421	6_171362	Low	NA	NA	NA	SPFH domain-Band 7 family	5255	2987
+PF00107	6_25011	Low	GO:0055114	BP	oxidation-reduction process	Zinc-binding dehydrogenase	22139	1653
+PF08240	6_25011	Low	GO:0055114	BP	oxidation-reduction process	Alcohol dehydrogenase GroES-like domain	22195	1653
+PF13561	6_25011	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	1653
+PF08890	6_25198	High	NA	NA	NA	Phage XkdN-like tail assembly chaperone protein, TAC	878	451
+PF09393	6_25198	High	NA	NA	NA	Phage tail tube protein	882	451
+PF10844	6_25198	High	NA	NA	NA	Protein of unknown function (DUF2577)	761	451
+PF10934	6_25198	Low	NA	NA	NA	Protein of unknown function (DUF2634)	949	451
+PF13182	6_26517	High	NA	NA	NA	Protein of unknown function (DUF4007)	1068	1023
+PF00044	6_31337	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1144
+PF00164	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S12/S23	25224	1144
+PF00166	6_31337	Low	GO:0006457	BP	protein folding	Chaperonin 10 Kd subunit	25494	1144
+PF00177	6_31337	Low	NA	NA	NA	Ribosomal protein S7p/S5e	25184	1144
+PF00181	6_31337	Low	GO:0006412	BP	translation	Ribosomal Proteins L2, RNA binding domain	25441	1144
+PF00189	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S3, C-terminal domain	25660	1144
+PF00203	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S19	25552	1144
+PF00237	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L22p/L17e	25623	1144
+PF00238	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L14p/L23e	25796	1144
+PF00252	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L16p/L10e	25740	1144
+PF00276	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L23	25636	1144
+PF00281	6_31337	Low	NA	NA	NA	Ribosomal protein L5	25773	1144
+PF00297	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L3	25562	1144
+PF00298	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L11, RNA binding domain	25295	1144
+PF00318	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S2	26126	1144
+PF00333	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S5, N-terminal domain	25896	1144
+PF00338	6_31337	Low	NA	NA	NA	Ribosomal protein S10p/S20e	25443	1144
+PF00344	6_31337	Low	GO:0015031	BP	protein transport	SecY translocase	26195	1144
+PF00347	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L6	25913	1144
+PF00366	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S17	25760	1144
+PF00380	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S9/S16	26095	1144
+PF00410	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S8	25908	1144
+PF00466	6_31337	Low	GO:0042254	BP	ribosome biogenesis	Ribosomal protein L10	25304	1144
+PF00542	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L7/L12 C-terminal domain	25267	1144
+PF00562	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 6	25250	1144
+PF00572	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L13	26186	1144
+PF00573	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L4/L1 family	25668	1144
+PF00623	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 2	24707	1144
+PF00673	6_31337	Low	NA	NA	NA	ribosomal L5P family C-terminus	25842	1144
+PF00687	6_31337	Low	NA	NA	NA	Ribosomal protein L1p/L10e family	24633	1144
+PF00707	6_31337	Low	GO:0006413	BP	translational initiation	Translation initiation factor IF-3, C-terminal domain	26041	1144
+PF00712	6_31337	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, N-terminal domain	25759	1144
+PF00763	6_31337	Low	GO:0055114	BP	oxidation-reduction process	Tetrahydrofolate dehydrogenase/cyclohydrolase, catalytic domain	25400	1144
+PF00828	6_31337	Low	NA	NA	NA	Ribosomal proteins 50S-L15, 50S-L18e, 60S-L27A	25814	1144
+PF00831	6_31337	Low	GO:0006412	BP	translation	Ribosomal L29 protein	25386	1144
+PF01000	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb3/RpoA insert domain	26091	1144
+PF01016	6_31337	Low	GO:0006412	BP	translation	Ribosomal L27 protein	26025	1144
+PF01043	6_31337	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1144
+PF01084	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1144
+PF01132	6_31337	Low	GO:0006414	BP	translational elongation	Elongation factor P (EF-P) OB domain	25781	1144
+PF01193	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb3/Rpb11 dimerisation domain	26195	1144
+PF01196	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L17	26215	1144
+PF01632	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein L35	25501	1144
+PF01807	6_31337	Low	GO:0006260	BP	DNA replication	CHC2 zinc finger	25914	1144
+PF02096	6_31337	Low	NA	NA	NA	60Kd inner membrane protein	26063	1144
+PF02357	6_31337	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1144
+PF02403	6_31337	Low	NA	NA	NA	Seryl-tRNA synthetase N-terminal domain	25664	1144
+PF02767	6_31337	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, central domain	25805	1144
+PF02768	6_31337	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, C-terminal domain	25904	1144
+PF03143	6_31337	Low	NA	NA	NA	Elongation factor Tu C-terminal domain	24618	1144
+PF03484	6_31337	Low	GO:0006432	BP	phenylalanyl-tRNA aminoacylation	tRNA synthetase B5 domain	25634	1144
+PF03719	6_31337	Low	GO:0006412	BP	translation	Ribosomal protein S5, C-terminal domain	25975	1144
+PF03764	6_31337	Low	NA	NA	NA	Elongation factor G, domain IV	26070	1144
+PF03946	6_31337	Low	NA	NA	NA	Ribosomal protein L11, N-terminal domain	25256	1144
+PF03947	6_31337	Low	GO:0006412	BP	translation	Ribosomal Proteins L2, C-terminal domain	25556	1144
+PF03952	6_31337	Low	NA	NA	NA	Enolase, N-terminal domain	24728	1144
+PF04560	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 7	25047	1144
+PF04561	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 2	24752	1144
+PF04563	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit	24982	1144
+PF04565	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb2, domain 3	24765	1144
+PF04983	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 3	24922	1144
+PF04997	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 1	24706	1144
+PF04998	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 5	25447	1144
+PF05000	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase Rpb1, domain 4	23695	1144
+PF05697	6_31337	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1144
+PF05697	6_31337	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1144
+PF06071	6_31337	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1144
+PF07516	6_31337	Low	GO:0017038	BP	protein import	SecA Wing and Scaffold domain	26154	1144
+PF07517	6_31337	Low	GO:0017038	BP	protein import	SecA DEAD-like domain	26064	1144
+PF08207	6_31337	Low	NA	NA	NA	Elongation factor P (EF-P) KOW-like domain	26144	1144
+PF08275	6_31337	Low	NA	NA	NA	DNA primase catalytic core, N-terminal domain	26042	1144
+PF08299	6_31337	Low	GO:0006275	BP	regulation of DNA replication	Bacterial dnaA protein helix-turn-helix	25734	1144
+PF08299	6_31337	Low	GO:0006270	BP	DNA replication initiation	Bacterial dnaA protein helix-turn-helix	25734	1144
+PF08529	6_31337	Low	GO:0031554	BP	regulation of DNA-templated transcription, termination	NusA N-terminal domain	26089	1144
+PF09285	6_31337	Low	GO:0043043	BP	peptide biosynthetic process	Elongation factor P, C-terminal	26200	1144
+PF10385	6_31337	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit external 1 domain	24715	1144
+PF13603	6_31337	Low	GO:0006418	BP	tRNA aminoacylation for protein translation	Leucyl-tRNA synthetase, Domain 2	25635	1144
+PF14492	6_31337	Low	NA	NA	NA	Elongation Factor G, domain II	26172	1144
+PF02543	6_36100	Low	GO:0009058	BP	biosynthetic process	Carbamoyltransferase N-terminus	5489	1384
+PF11551	6_40571	High	NA	NA	NA	Outer membrane protein Omp28	838	952
+PF05762	6_41394	High	NA	NA	NA	VWA domain containing CoxE-like protein	9976	1843
+PF07728	6_41394	High	NA	NA	NA	AAA domain (dynein-related subfamily)	16404	1843
+PF00107	6_45088	Low	GO:0055114	BP	oxidation-reduction process	Zinc-binding dehydrogenase	22139	3918
+PF00113	6_45088	Low	NA	NA	NA	Enolase, C-terminal TIM barrel domain	25084	3918
+PF00215	6_45088	Low	GO:0006207	BP	'de novo' pyrimidine nucleobase biosynthetic process	Orotidine 5'-phosphate decarboxylase / HUMPS family	23907	3918
+PF00464	6_45088	Low	NA	NA	NA	Serine hydroxymethyltransferase	25446	3918
+PF00578	6_45088	Low	GO:0055114	BP	oxidation-reduction process	AhpC/TSA family	24298	3918
+PF00984	6_45088	Low	GO:0055114	BP	oxidation-reduction process	UDP-glucose/GDP-mannose dehydrogenase family, central domain	21830	3918
+PF01035	6_45088	Low	GO:0006281	BP	DNA repair	6-O-methylguanine DNA methyltransferase, DNA binding domain	24056	3918
+PF03720	6_45088	Low	GO:0055114	BP	oxidation-reduction process	UDP-glucose/GDP-mannose dehydrogenase family, UDP binding domain	21328	3918
+PF03721	6_45088	Low	GO:0055114	BP	oxidation-reduction process	UDP-glucose/GDP-mannose dehydrogenase family, NAD binding domain	21855	3918
+PF03952	6_45088	Low	NA	NA	NA	Enolase, N-terminal domain	24728	3918
+PF08240	6_45088	Low	GO:0055114	BP	oxidation-reduction process	Alcohol dehydrogenase GroES-like domain	22195	3918
+PF08241	6_45088	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	3918
+PF12681	6_45088	Low	NA	NA	NA	Glyoxalase-like domain	20821	3918
+PF12695	6_45088	Low	NA	NA	NA	Alpha/beta hydrolase family	23656	3918
+PF13561	6_45088	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	3918
+PF14498	6_45551	Low	NA	NA	NA	Glycosyl hydrolase family 65, N-terminal domain	3705	2010
+PF03062	6_54148	Low	NA	NA	NA	MBOAT, membrane-bound O-acyltransferase family	9980	1235
+PF11863	6_54585	High	NA	NA	NA	Protein of unknown function (DUF3383)	794	572
+PF01797	6_5472	High	GO:0006313	BP	transposition, DNA-mediated	Transposase IS200 like	12538	2320
+PF09960	6_56043	High	NA	NA	NA	Uncharacterised protein conserved in bacteria (DUF2194)	526	417
+PF12532	6_57255	High	NA	NA	NA	Protein of unknown function (DUF3732)	756	644
+PF12532	6_57421	High	NA	NA	NA	Protein of unknown function (DUF3732)	756	468
+PF08241	6_57909	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	2487
+PF08890	6_63870	High	NA	NA	NA	Phage XkdN-like tail assembly chaperone protein, TAC	878	627
+PF09393	6_63870	High	NA	NA	NA	Phage tail tube protein	882	627
+PF10844	6_63870	High	NA	NA	NA	Protein of unknown function (DUF2577)	761	627
+PF10934	6_63870	High	NA	NA	NA	Protein of unknown function (DUF2634)	949	627
+PF02543	6_67196	Low	GO:0009058	BP	biosynthetic process	Carbamoyltransferase N-terminus	5489	1183
+PF00380	6_67581	Low	GO:0006412	BP	translation	Ribosomal protein S9/S16	26095	1131
+PF00627	6_67581	Low	NA	NA	NA	UBA/TS-N domain	25202	1131
+PF00712	6_67581	Low	GO:0006260	BP	DNA replication	DNA polymerase III beta subunit, N-terminal domain	25759	1131
+PF00889	6_67581	Low	GO:0006414	BP	translational elongation	Elongation factor TS	26290	1131
+PF01035	6_67581	Low	GO:0006281	BP	DNA repair	6-O-methylguanine DNA methyltransferase, DNA binding domain	24056	1131
+PF01381	6_67581	Low	NA	NA	NA	Helix-turn-helix	24979	1131
+PF01632	6_67581	Low	GO:0006412	BP	translation	Ribosomal protein L35	25501	1131
+PF01725	6_67581	Low	GO:0009143	BP	nucleoside triphosphate catabolic process	Ham1 family	24678	1131
+PF02195	6_67581	Low	NA	NA	NA	ParB-like nuclease domain	24871	1131
+PF03358	6_67581	Low	NA	NA	NA	NADPH-dependent FMN reductase	20995	1131
+PF05697	6_67581	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1131
+PF05697	6_67581	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1131
+PF06071	6_67581	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1131
+PF08299	6_67581	Low	GO:0006275	BP	regulation of DNA replication	Bacterial dnaA protein helix-turn-helix	25734	1131
+PF08299	6_67581	Low	GO:0006270	BP	DNA replication initiation	Bacterial dnaA protein helix-turn-helix	25734	1131
+PF08529	6_67581	Low	GO:0031554	BP	regulation of DNA-templated transcription, termination	NusA N-terminal domain	26089	1131
+PF12681	6_67581	Low	NA	NA	NA	Glyoxalase-like domain	20821	1131
+PF00107	6_70476	Low	GO:0055114	BP	oxidation-reduction process	Zinc-binding dehydrogenase	22139	1653
+PF08240	6_70476	Low	GO:0055114	BP	oxidation-reduction process	Alcohol dehydrogenase GroES-like domain	22195	1653
+PF12695	6_70476	Low	NA	NA	NA	Alpha/beta hydrolase family	23656	1653
+PF13561	6_70476	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	1653
+PF01043	6_72463	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	881
+PF04563	6_72463	Low	GO:0006351	BP	transcription, DNA-templated	RNA polymerase beta subunit	24982	881
+PF12261	6_79918	Low	NA	NA	NA	Thermostable hemolysin	1427	1543
+PF11299	6_80582	High	NA	NA	NA	Protein of unknown function (DUF3100)	1323	1169
+PF13182	6_92605	Very high	NA	NA	NA	Protein of unknown function (DUF4007)	1068	877
+PF02543	6_94478	Low	GO:0009058	BP	biosynthetic process	Carbamoyltransferase N-terminus	5489	1154
+PF00044	6_94538	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, NAD binding domain	25811	1302
+PF00436	6_94538	Low	NA	NA	NA	Single-strand binding protein family	26309	1302
+PF01084	6_94538	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1302
+PF01281	6_94538	Low	NA	NA	NA	Ribosomal protein L9, N-terminal domain	25448	1302
+PF01381	6_94538	Low	NA	NA	NA	Helix-turn-helix	24979	1302
+PF01434	6_94538	Low	GO:0006508	BP	proteolysis	Peptidase family M41	26398	1302
+PF01668	6_94538	Low	NA	NA	NA	SmpB protein	25791	1302
+PF02772	6_94538	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, central domain	24552	1302
+PF02773	6_94538	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, C-terminal domain	24800	1302
+PF08665	6_94538	High	NA	NA	NA	PglZ domain	4597	1302
+PF08747	6_94538	Very high	NA	NA	NA	Domain of unknown function (DUF1788)	1337	1302
+PF08849	6_94538	High	NA	NA	NA	Putative inner membrane protein (DUF1819)	1258	1302
+PF13337	6_94538	High	NA	NA	NA	Putative ATP-dependent Lon protease	1563	1302
+PF13603	6_94538	Low	GO:0006418	BP	tRNA aminoacylation for protein translation	Leucyl-tRNA synthetase, Domain 2	25635	1302
+PF13659	6_94538	High	NA	NA	NA	NA	20798	1302
+PF07287	6_9577	Very high	NA	NA	NA	Acyclic terpene utilisation family protein AtuA	5365	3862
+PF08241	6_9577	Low	GO:0008152	BP	metabolic process	Methyltransferase domain	24084	3862
+PF13561	6_9577	Low	NA	NA	NA	Enoyl-(Acyl carrier protein) reductase	23041	3862
+PF02341	7_25366	Low	NA	NA	NA	RbcX protein	272	264
+PF09654	7_25366	Low	NA	NA	NA	Protein of unknown function (DUF2396)	271	264
+PF14217	7_25366	Low	NA	NA	NA	Domain of unknown function (DUF4327)	273	264
+PF00436	7_43123	Low	NA	NA	NA	Single-strand binding protein family	26309	1328
+PF00772	7_43123	Low	GO:0006260	BP	DNA replication	DnaB-like helicase N terminal domain	26173	1328
+PF01043	7_43123	Low	GO:0017038	BP	protein import	SecA preprotein cross-linking domain	25739	1328
+PF01084	7_43123	Low	GO:0006412	BP	translation	Ribosomal protein S18	25863	1328
+PF01250	7_43123	Low	GO:0006412	BP	translation	Ribosomal protein S6	26036	1328
+PF01381	7_43123	Low	NA	NA	NA	Helix-turn-helix	24979	1328
+PF01434	7_43123	Low	GO:0006508	BP	proteolysis	Peptidase family M41	26398	1328
+PF01668	7_43123	Low	NA	NA	NA	SmpB protein	25791	1328
+PF01807	7_43123	Low	GO:0006260	BP	DNA replication	CHC2 zinc finger	25914	1328
+PF02357	7_43123	Low	GO:0006355	BP	regulation of transcription, DNA-templated	Transcription termination factor nusG	25645	1328
+PF02773	7_43123	Low	GO:0006556	BP	S-adenosylmethionine biosynthetic process	S-adenosylmethionine synthetase, C-terminal domain	24800	1328
+PF02800	7_43123	Low	GO:0055114	BP	oxidation-reduction process	Glyceraldehyde 3-phosphate dehydrogenase, C-terminal domain	25864	1328
+PF02911	7_43123	Low	GO:0009058	BP	biosynthetic process	Formyl transferase, C-terminal domain	25746	1328
+PF04851	7_43123	Low	NA	NA	NA	Type III restriction enzyme, res subunit	26189	1328
+PF05697	7_43123	Low	GO:0006457	BP	protein folding	Bacterial trigger factor protein (TF)	25651	1328
+PF05697	7_43123	Low	GO:0015031	BP	protein transport	Bacterial trigger factor protein (TF)	25651	1328
+PF06071	7_43123	Low	NA	NA	NA	Protein of unknown function (DUF933)	25933	1328
+PF07516	7_43123	Low	GO:0017038	BP	protein import	SecA Wing and Scaffold domain	26154	1328
+PF08275	7_43123	Low	NA	NA	NA	DNA primase catalytic core, N-terminal domain	26042	1328
+PF08665	7_43123	High	NA	NA	NA	PglZ domain	4597	1328
+PF08747	7_43123	Very high	NA	NA	NA	Domain of unknown function (DUF1788)	1337	1328
+PF08849	7_43123	Very high	NA	NA	NA	Putative inner membrane protein (DUF1819)	1258	1328
+PF12344	7_43123	Low	NA	NA	NA	Ultra-violet resistance protein B	25640	1328
+PF13337	7_43123	High	NA	NA	NA	Putative ATP-dependent Lon protease	1563	1328
+PF13603	7_43123	Low	GO:0006418	BP	tRNA aminoacylation for protein translation	Leucyl-tRNA synthetase, Domain 2	25635	1328
+PF13659	7_43123	High	NA	NA	NA	NA	20798	1328
+PF08862	7_80772	High	NA	NA	NA	Domain of unknown function DUF1829	334	220

@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-08-19 01:13:30 (CEST)
+# Last modified: 2020-10-12 10:47:08 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -1529,7 +1529,12 @@ make_tab_help <- function() tagList(
   tags$h2("FAQ"),
 
   tags$h3("1. I can't find my gene of interest."),
-  tags$p("First, check whether your gene/protein is covered by an existing entry within the KEGG ,TIGRFAM, or PFAM database. In many cases, an entry may exist but may be labeled or described differently."),
+  tags$p("First, check whether your gene/protein is covered by an existing entry within the KEGG ,TIGRFAM, or PFAM database. In many cases, an entry may exist but may be labeled or described differently. You can also search for an existing entry using the following sequence search tools:"),
+  tags$ul(
+    tags$li("PFAM sequence search:", tags$a(href="https://pfam.xfam.org", "https://pfam.xfam.org")),
+    tags$li("PFAM/TIGRFAM HMM-based sequence search:", tags$a(href="http://blast.jcvi.org/web-hmm/", "http://blast.jcvi.org/web-hmm/")),
+    tags$li("BlastKOALA KO assignment:", tags$a(href="https://www.kegg.jp/blastkoala/", "https://www.kegg.jp/blastkoala/"))
+  ),
   tags$p("If your gene does not exist, you may submit your (protein) sequence of interest and PhyloCorrelate will:"),
   tags$ol(
     tags$li("BLAST the sequence against the AnnoTree database"),
@@ -1539,11 +1544,17 @@ make_tab_help <- function() tagList(
 
   tags$h3("2. PhyloCorrelate didn't find any correlations for my gene."),
   tags$p("Try exploring different parameters!"),
-  tags$h4("a) Include \"Low\" predictions under \"Global Filters\"."),
+  tags$h5("a) Include \"Low\" predictions under \"Global Filters\"."),
   # tags$p("Co-occurring genes may be present below the default threshold, especially if your query gene occurs infrequently across the tree (e.g., <100 occurrences). In these cases, it is statistically harder for these patterns to achieve a significant p-value."),
-  tags$h4("b) Reduce the OccDiff parameter"),
+  tags$h5("b) Reduce the OccDiff parameter."),
   tags$ul(
     tags$li("This is the difference in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")
+  ),
+  tags$h5("c) Include \"Very low\" predictions under \"Global Filters\", and instead fine-tune individual metric scores."),
+  tags$ul(
+    tags$li("Max OccDiff + Max -log10(rHyperP): Good levels of function match prediction can be achieved with -log10(rHyperP) scores of 180 or higher for PFAM, 150 or higher for TIGRFAM, and 210 or higher for KO (see Figure 2A of Tremblay et al.). Below this, restricting the max OccDiff can be used to maintain these levels of function match prediction. We have seen acceptable levels of prediction with a max OccDiff of 10000 for -log10(rHyperP) of 100-150, and a max OccDiff of 5000 for -log10(rHyperP) of 50-100."),
+    tags$li("Min JC: The JC metric generally does not perform well for detecting likely function matches (see Figure 2A of Tremblay et al.), though the exception is scores between KOs of 0.9 or higher."),
+    tags$li("Min rJC: Acceptable function match prediction can be achieved at 0.6 or higher for PFAM, and 0.5 or higher for TIGRFAM and KO (see Figure 2A of Tremblay et al.).")
   )
   # tags$p("This is the difference in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")
 )

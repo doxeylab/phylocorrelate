@@ -1,7 +1,7 @@
 # PhyloCorrelate: blastp script.
 # Benjamin Jean-Marie Tremblay
 # 2019-09-17
-# Last modified: 2020-07-25 15:37:49 (CEST)
+# Last modified: 2020-12-11 10:31:55 (CET)
 # This script is meant to run in the background, as a separate
 # process from the actual app. Whenever a job is submitted, a new entry is
 # added to the "queries" file. This is detected by the script and an analysis
@@ -230,10 +230,14 @@ send_mail_msg <- function(Id, email, msg) {
 
 int2date <- function(x) as.Date(as.POSIXct.numeric(x, origin = "1970-01-01"))
 
-badBlast <- function(msg, JOBID, oA) {
+badBlast <- function(msg, JOBID, oA, email, error = FALSE) {
     msg("Bad blast.")
     saveRDS(list(status = msg, Id = JOBID, version = BlastpVer), oA,
             compress = FALSE)
+    if (!error)
+      send_mail_msg(JOBID, email, "Sorry, no hits were found. Try again with more leniant thresholds.")
+    else
+      send_mail_msg(JOBID, email, "Sorry, an error occurred during search. Your query will be looked at and rerun once fixed.")
 }
 
 msg("Launching main loop")
@@ -315,7 +319,7 @@ repeat {
     msg("  Running blastp")
     b <- system(cmd)
     if (b != 0) {
-      badBlast("BLASTP_ERROR", queries$JOBID[1], oA)
+      badBlast("BLASTP_ERROR", queries$JOBID[1], oA, queries$EMAIL[1], TRUE)
       # if (queries$EMAIL[1] != "")
       #   send_mail_msg(queries$JOBID[1], queries$EMAIL[1],
       #                 paste("Sorry, but an error occurred while running blastp.",
@@ -332,7 +336,7 @@ repeat {
   msg("    Checking if empty")
   if (nrow(res) == 0) {
     msg("    No results found")
-    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
+    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 
@@ -341,7 +345,7 @@ repeat {
   msg("    Filtering by pident")
   if (nrow(res) == 0) {
     msg("      No results")
-    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
+    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 
@@ -351,7 +355,7 @@ repeat {
   res <- res[res$qlenp >= queries$QLENP[1], ]
   if (nrow(res) == 0) {
     msg("      No results")
-    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
+    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 
@@ -363,7 +367,7 @@ repeat {
   msg("    Filtering by slenp")
   if (nrow(res) == 0) {
     msg("      No results")
-    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA)
+    badBlast("BLASTP_NOHITS", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 
@@ -375,13 +379,13 @@ repeat {
   msg("    Checking final count")
   if (sum(resCounts) <= 1) {
     msg("      Too few")
-    badBlast("BLASTP_TOOFEW", queries$JOBID[1], oA)
+    badBlast("BLASTP_TOOFEW", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 
   if (all(resCounts)) {
     msg("      Too many")
-    badBlast("BLASTP_TOOMANY", queries$JOBID[1], oA)
+    badBlast("BLASTP_TOOMANY", queries$JOBID[1], oA, queries$EMAIL[1])
     next
   }
 

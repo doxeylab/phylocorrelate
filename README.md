@@ -8,6 +8,11 @@ This repo contains source code for building the PhyloCorrelate RShinyApp. It is 
 
 PhyloCorrelate contains pre-computed correlations for 27,372 gene families across 28,315 species, and uses the [GTDB](https://gtdb.ecogenomic.org/) bacterial tree and gene occurrences from [AnnoTree](http://annotree.uwaterloo.ca/) including entries from KEGG, PFAM, and TIGRFAM.
 
+## Citation
+
+If this software proves useful in your research, please cite:
+
+Tremblay, B.J.M., Lobb, B., and Doxey, A.C. (2021). PhyloCorrelate: inferring bacterial gene-gene functional associations through large-scale phylogenetic profiling. _Bioinformatics_, 37(1), 17-22. DOI:[10.1093/bioinformatics/btaa1105](https://doi.org/10.1093/bioinformatics/btaa1105).
 
 ## Dependencies
 
@@ -45,9 +50,9 @@ Inside the `app` folder is a configuration file, `PhyloCorrConfig.txt`. Editing 
 
 ## Generating the necessary data files and BLAST database
 
-**Warning: not recommended unless you have a supercomputer or are willing to wait weeks for the analyses to complete.**
+**Warning: very computationally expensive.**
 
-Instructions on how to download and analyse the PFAM/TIGRFAM/KO tables go here.
+Instructions on how to download and analyze the PFAM/TIGRFAM/KO tables go here.
 
 ## Running the app locally
 

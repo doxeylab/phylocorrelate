@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # PhyloCorrelations v1.0
 # global.R
-# Last modified: 2020-10-21 00:21:38 (CEST)
+# Last modified: 2021-04-24 16:18:38 (CEST)
 # BJM Tremblay
 
 # library(profvis)
@@ -1553,8 +1553,8 @@ make_tab_help <- function() tagList(
   tags$h5("c) Include \"Very low\" predictions under \"Global Filters\", and instead fine-tune individual metric scores (see Advanced parameters)."),
   tags$h2("Advanced parameters"),
   tags$ul(
-    tags$li(tags$b("Max OccDiff & Max -log10(rHyperP):"), " Good levels of function match prediction can be achieved with -log10(rHyperP) scores of 180 or higher for PFAM, 150 or higher for TIGRFAM, and 210 or higher for KO (see Figure 2A of Tremblay et al.). Below this, restricting the max OccDiff can be used to maintain these levels of function match prediction. We have seen acceptable levels of prediction with a max OccDiff of 10000 for -log10(rHyperP) of 100-150, and a max OccDiff of 5000 for -log10(rHyperP) of 50-100."),
-    tags$li(tags$b("Min JC:"), " The JC metric generally does not perform well for detecting likely function matches (see Figure 2A of Tremblay et al.), though the exception is scores between KOs of 0.9 or higher."),
+    tags$li(tags$b("Max OccDiff & Max -log10(rHyperP):"), " Good levels of function match prediction can be achieved with -log10(rHyperP) scores of 180 or higher for PFAM, 150 or higher for TIGRFAM, and 210 or higher for KO (see Figure 2A of Tremblay et al., 2021). Below this, restricting the max OccDiff can be used to maintain these levels of function match prediction. We have seen acceptable levels of prediction with a max OccDiff of 10000 for -log10(rHyperP) of 100-150, and a max OccDiff of 5000 for -log10(rHyperP) of 50-100."),
+    tags$li(tags$b("Min JC:"), " The JC metric generally does not perform well for detecting likely function matches (see Figure 2A of Tremblay et al., 2021), though the exception is scores between KOs of 0.9 or higher."),
     tags$li(tags$b("Min rJC:"), " Acceptable function match prediction can be achieved at 0.6 or higher for PFAM, and 0.5 or higher for TIGRFAM and KO (see Figure 2A of Tremblay et al.).")
   )
   # tags$p("This is the difference in the number of occurrences of your query gene and potential correlating genes across the tree. If you increase this value, you may start detecting dependency-type relationships where your query gene depends on the existence of other genes for its function.")

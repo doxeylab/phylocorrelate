@@ -234,10 +234,12 @@ badBlast <- function(msg, JOBID, oA, email, error = FALSE) {
     msg("Bad blast.")
     saveRDS(list(status = msg, Id = JOBID, version = BlastpVer), oA,
             compress = FALSE)
-    if (!error)
-      send_mail_msg(JOBID, email, "Sorry, no hits were found. Try again with more leniant thresholds.")
-    else
-      send_mail_msg(JOBID, email, "Sorry, an error occurred during search. Your query will be looked at and rerun once fixed.")
+    if (!is.null(email) && !is.na(email) && email != "" && length(email) > 0) {
+      if (!error)
+        send_mail_msg(JOBID, email, "Sorry, no hits were found. Try again with more leniant thresholds.")
+      else
+        send_mail_msg(JOBID, email, "Sorry, an error occurred during search. Your query will be looked at and rerun once fixed.")
+    }
 }
 
 msg("Launching main loop")
